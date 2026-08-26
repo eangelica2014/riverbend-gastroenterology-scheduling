@@ -1,0 +1,30 @@
+flowchart TB
+  subgraph S[Systemic Design Method — solve the bounded problem]
+    direction LR
+    A[01 Observe\nperson · workflow · signal] --> B[02 Frame\nproblem · constraints · promise]
+    B --> C[03 Build\ndata · model · interface · handoff]
+    C --> D[04 Validate\nusefulness · reliability · comprehension]
+    D -.learning.-> A
+  end
+
+  subgraph I[Four-Stage Innovation Method — carry evidence into action]
+    direction LR
+    E[01 Sense\nclinic artifacts + outcomes] --> F[02 Reason\npolicy · inference · evidence]
+    F --> G[03 Deploy\nproduct + FDE workflow]
+    G --> H[04 Improve\noutcomes + human-gated feedback]
+    H -.continuous loop.-> E
+  end
+
+  A -.grounds.-> E
+  B -.structures.-> F
+  C -.operationalizes.-> G
+  D -.governs.-> H
+
+  classDef ink fill:#102A24,color:#F4F0E6,stroke:#102A24,stroke-width:2px;
+  classDef paper fill:#FBF8F0,color:#102A24,stroke:#26463E,stroke-width:1px;
+  classDef attention fill:#F05A28,color:#FFFFFF,stroke:#BF3D18,stroke-width:2px;
+  classDef verified fill:#B9D531,color:#102A24,stroke:#597000,stroke-width:2px;
+  class A,B,C,D paper;
+  class E,F,G,H ink;
+  class B,F attention;
+  class D,H verified;

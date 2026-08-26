@@ -107,7 +107,12 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+.manus-logs/
 
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
 .project-config.json
+
+# Internal review and execution notes
+artifacts/prd_visual_review_notes.md
+todo.md

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this case study or its evaluation patterns, please cite it as follows."
+title: "Riverbend Gastroenterology Scheduling"
+type: software
+authors:
+  - family-names: "Aton"
+    given-names: "Eangelica Germano"
+repository-code: "https://github.com/eangelica2014/riverbend-gastroenterology-scheduling"
+url: "https://2026.eangelica.com/"
+version: 1.0.0
+date-released: 2026-08-26
+license: MIT
+abstract: "An inspectable synthetic-data voice-agent and FDE platform case study for gastroenterology scheduling."

@@ -1,0 +1,23 @@
+<slide id="close">
+  <background color="ink"/>
+  <shape id="top-rule" type="rect" x="0" y="0" width="1280" height="12" fill="persimmon"/>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743407855_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDM0MDc4NTVfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEUCIQC64GB4HAPxHcwKUQhrPtZJm~CocIBNPkxxpHuiHBKapAIgZrPhbg7YbRARy2qOEAFmRwr0XqsoyzADLnMjL8Fjd6M_" x="1162" y="24" width="48" height="48" fit="contain"/>
+  <text id="section-label" x="60" y="42" width="520" height="24" font="mono" size="13" color="chartreuse" wrap="false"><strong>DISCUSSION HUB · CHOOSE THE NEXT DEPTH</strong></text>
+  <text id="close-title" x="60" y="154" width="720" height="156" font="display" size="58" color="paper" line-height="1.02"><p><strong>Build the next care system</strong></p><p><strong>beside the field.</strong></p></text>
+  <shape id="close-rule" type="line" x="64" y="330" width="620" height="0" stroke="persimmon" stroke-width="5"/>
+  <text id="close-principle" x="64" y="356" width="700" height="92" font="body" size="23" color="paper" line-height="1.35"><p>Human first.</p><p>Evidence in the interface.</p><p><strong color="chartreuse">Scale only what the outcome earns.</strong></p></text>
+  <text id="close-presenter" x="64" y="534" width="620" height="54" font="body" size="20" color="paper"><p><strong>Eangelica Germano Aton</strong></p><p font="mono" size="12" color="#A8B5AF">TECHNICAL PRODUCT LEAD · NYC</p></text>
+  <shape id="agent-tab" type="rect" x="860" y="130" width="350" height="60" fill="chartreuse"/>
+  <text id="agent-link" x="880" y="142" width="310" height="36" font="mono" size="13" color="ink" align="center" anchor="middle"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/agent"><strong>RUN AGENT →</strong></a></text>
+  <shape id="platform-tab" type="rect" x="860" y="206" width="350" height="60" fill="paper"/>
+  <text id="platform-link" x="880" y="218" width="310" height="36" font="mono" size="13" color="ink" align="center" anchor="middle"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/platform"><strong>OPEN FIELDFlow →</strong></a></text>
+  <shape id="experiments-tab" type="rect" x="860" y="282" width="350" height="60" fill="paper"/>
+  <text id="experiments-link" x="880" y="294" width="310" height="36" font="mono" size="13" color="ink" align="center" anchor="middle"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/experiments"><strong>REVIEW EXPERIMENTS →</strong></a></text>
+  <shape id="method-tab" type="rect" x="860" y="358" width="350" height="60" fill="paper"/>
+  <text id="method-link" x="880" y="370" width="310" height="36" font="mono" size="13" color="ink" align="center" anchor="middle"><a slide="dual_method"><strong>METHOD HOME →</strong></a></text>
+  <shape id="questions-tab" type="rect" x="860" y="434" width="350" height="60" fill="persimmon"/>
+  <text id="questions-text" x="880" y="446" width="310" height="36" font="mono" size="13" color="paper" align="center" anchor="middle"><strong>QUESTIONS / DISCUSSION</strong></text>
+  <text id="close-note" x="860" y="530" width="350" height="58" font="mono" size="12" color="#A8B5AF" align="right"><p>PHASE 1 · AGENT</p><p>PHASE 2 · PLATFORM</p><p>P0 · EVIDENCE</p></text>
+  <shape id="footer-rule" type="line" x="60" y="652" width="1150" height="0" stroke="#F7F5F044" stroke-width="1"/>
+  <text id="page-number" x="60" y="680" width="180" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">18 / CLOSE</text>
+</slide>

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "tenantId": "riverbend-gastro-demo",
+  "effectiveDate": "2026-08-26",
+  "source": {
+    "title": "Riverbend Gastroenterology — Scheduling Rules and Sample Data",
+    "type": "candidate-provided-pdf",
+    "environment": "synthetic-take-home"
+  },
+  "scope": {
+    "supportedIntents": [
+      "book_appointment",
+      "confirm_appointment",
+      "cancel_appointment",
+      "reschedule_appointment",
+      "clinic_hours",
+      "clinic_location",
+      "parking",
+      "human_request"
+    ],
+    "clinicalAdviceAllowed": false
+  },
+  "verification": {
+    "lookupSignals": ["normalized_phone"],
+    "requiredBeforeDisclosure": ["date_of_birth"],
+    "requiredBeforeMutation": ["date_of_birth", "explicit_action_confirmation"],
+    "duplicateNameRule": "never_disambiguate_by_name_alone"
+  },
+  "rules": [
+    {
+      "id": "RB-SAFE-01",
+      "name": "Emergency boundary",
+      "condition": "possible_emergency",
+      "decision": "instruct_911_then_transfer_nurse_line",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-SAFE-02",
+      "name": "Clinical judgment boundary",
+      "condition": "urgent_or_requires_clinical_judgment",
+      "decision": "transfer_nurse_line_without_medical_advice",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-AGE-01",
+      "name": "Adults only",
+      "condition": "age_on_effective_date < 18",
+      "decision": "deny_booking",
+      "reasonCode": "UNDER_18",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-COV-01",
+      "name": "Active insurance required",
+      "condition": "coverage.active != true",
+      "decision": "deny_booking",
+      "reasonCode": "INACTIVE_INSURANCE",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-COV-02",
+      "name": "Policy number or card required at scheduling",
+      "condition": "session.insurancePolicyAvailable != true",
+      "decision": "deny_booking",
+      "reasonCode": "POLICY_NUMBER_REQUIRED",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-DISCH-01",
+      "name": "Discharged patients cannot be booked",
+      "condition": "patient.dischargedFromPractice == true",
+      "decision": "deny_booking_and_transfer_front_desk",
+      "reasonCode": "DISCHARGED_FROM_PRACTICE",
+      "severity": "critical"
+    },
+    {
+      "id": "RB-VISIT-01",
+      "name": "New versus follow-up classification",
+      "condition": "lastSeen is null OR lastSeen < effectiveDate minus 3 calendar years",
+      "decision": "new_patient",
+      "otherwise": "follow_up"
+    },
+    {
+      "id": "RB-DUR-01",
+      "name": "Visit duration",
+      "condition": "visitType == new_patient",
+      "decision": "30_minutes",
+      "otherwise": "15_minutes"
+    },
+    {
+      "id": "RB-PROV-01",
+      "name": "Follow-up assigned-provider continuity",
+      "condition": "visitType == follow_up AND requestedProvider != assignedProvider",
+      "decision": "require_office_approval",
+      "reasonCode": "DIFFERENT_PROVIDER_APPROVAL_REQUIRED"
+    },
+    {
+      "id": "RB-CRANE-01",
+      "name": "Dr. Crane office day",
+      "condition": "requestedProvider == PROV-CRANE AND dayOfWeek != Thursday",
+      "decision": "do_not_offer_dr_crane",
+      "reasonCode": "DR_CRANE_THURSDAYS_ONLY"
+    },
+    {
+      "id": "RB-CRANE-02",
+      "name": "Crane-team weekday alternative",
+      "condition": "assignedProvider == PROV-CRANE AND dayOfWeek != Thursday AND caller_accepts_paired_clinician",
+      "decision": "offer_PROV-MENDEZ"
+    },
+    {
+      "id": "RB-SLOT-01",
+      "name": "Offer soonest eligible appointment",
+      "condition": "eligibleSlots.length > 0",
+      "decision": "sort_start_ascending_and_offer_first"
+    },
+    {
+      "id": "RB-TBD-01",
+      "name": "Annual physical policy unresolved",
+      "condition": "intent == annual_physical",
+      "decision": "transfer_front_desk",
+      "reasonCode": "POLICY_TBD"
+    },
+    {
+      "id": "RB-UNSUP-01",
+      "name": "Unsupported administrative request",
+      "condition": "intent_not_supported_after_one_repair",
+      "decision": "transfer_front_desk",
+      "reasonCode": "UNSUPPORTED_INTENT"
+    }
+  ],
+  "transfers": {
+    "frontDesk": {
+      "phone": "(555) 010-2000",
+      "reasons": ["human_request", "billing", "annual_physical", "unsupported_intent", "office_approval"]
+    },
+    "nurseLine": {
+      "phone": "(555) 010-2911",
+      "reasons": ["urgent_medical_concern", "clinical_judgment", "possible_emergency"]
+    }
+  },
+  "openAmbiguities": [
+    {
+      "id": "RB-AMB-01",
+      "sourceConflict": "Dr. Whitfield's Works column says Mon–Wed + Fri (AM), while the Location cell says Maple Grove (Thu afternoons at Lakeside).",
+      "risk": "A silent interpretation could generate an unauthorized Thursday or wrong-location slot.",
+      "demoDecision": "Generate no Thursday Dr. Whitfield slots and use only explicitly listed Mon–Wed plus Friday-morning availability. Route any Thursday/alternate-location preference for office confirmation.",
+      "owner": "Riverbend operations lead",
+      "status": "open"
+    },
+    {
+      "id": "RB-AMB-02",
+      "sourceConflict": "Annual wellness and physical visits are under consideration but not implemented.",
+      "risk": "The agent could create an unsupported visit type.",
+      "demoDecision": "Do not schedule; transfer to the front desk.",
+      "owner": "Riverbend operations lead",
+      "status": "open"
+    },
+    {
+      "id": "RB-AMB-03",
+      "sourceConflict": "Sample data provides coverage status but no policy numbers.",
+      "risk": "Inventing a policy number would create false data; omitting the gate would violate clinic policy.",
+      "demoDecision": "Capture only a session-level confirmation that the caller has the card or policy number available; never generate or display a fake number.",
+      "owner": "Demo design assumption",
+      "status": "resolved_for_demo"
+    }
+  ]
+}

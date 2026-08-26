@@ -1,16 +1,32 @@
+/**
+ * Clinical Field Notebook design: every route sits inside one evidence-oriented folio shell
+ * so the Phase 1 agent and Phase 2 platform read as a coherent product system.
+ */
+
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { AppShell } from "./components/AppShell";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Agent from "./pages/Agent";
+import Architecture from "./pages/Architecture";
+import Experiments from "./pages/Experiments";
 import Home from "./pages/Home";
+import Platform from "./pages/Platform";
+import Tests from "./pages/Tests";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/agent"} component={Agent} />
+      <Route path={"/architecture"} component={Architecture} />
+      <Route path={"/tests"} component={Tests} />
+      <Route path={"/platform"} component={Platform} />
+      <Route path={"/experiments"} component={Experiments} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -32,7 +48,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <AppShell>
+            <Router />
+          </AppShell>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

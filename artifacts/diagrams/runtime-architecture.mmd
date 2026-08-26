@@ -1,0 +1,34 @@
+flowchart LR
+  A[Caller\nvoice or text] --> B[Conversation\norchestrator]
+  B --> C{Safety gate}
+  C -->|possible emergency| D[911 instruction\n+ nurse line]
+  C -->|administrative| E{Identity gate}
+  E -->|not verified| F[Repair or\nfront desk]
+  E -->|verified| G[Versioned\npolicy engine]
+  G -->|denied| H[Reason-coded\ntransfer or stop]
+  G -->|allowed| I[Typed tool\nregistry]
+  I --> J[Patient / coverage]
+  I --> K[Schedule / slot]
+  I --> L[Appointment mutation]
+  I --> M[Human transfer]
+  J --> N[Tenant adapter]
+  K --> N
+  L --> N
+  N --> O[(EHR / PMS)]
+  B -.redacted event.-> P[Trace + replay]
+  C -.reason code.-> P
+  E -.verification state.-> P
+  G -.rule IDs.-> P
+  I -.request + receipt.-> P
+
+  classDef ink fill:#102A24,color:#F4F0E6,stroke:#102A24,stroke-width:2px;
+  classDef paper fill:#FBF8F0,color:#102A24,stroke:#26463E,stroke-width:1px;
+  classDef attention fill:#F05A28,color:#FFFFFF,stroke:#BF3D18,stroke-width:2px;
+  classDef verified fill:#B9D531,color:#102A24,stroke:#597000,stroke-width:2px;
+  classDef stop fill:#B42318,color:#FFFFFF,stroke:#7A1C14,stroke-width:2px;
+  class A,B,G,I,N,P ink;
+  class E,C paper;
+  class F,H attention;
+  class J,K,L,M,O verified;
+  class D stop;
+

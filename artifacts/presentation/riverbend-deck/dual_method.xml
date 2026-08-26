@@ -1,0 +1,36 @@
+<slide id="dual_method">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="500" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>METHOD HUB · CLICK ANY STAGE</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787742959906_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDI5NTk5MDZfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEUCICAxc8KJJUAs85wzz7hz5wFYxtqAOTObq9e5gc3yeli1AiEAz218ZKVBDBf9UUOBT-XI8DfUsF5L1kqe-6-qLjJXrJ4_" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="840" height="54" font="heading" size="40" color="ink" wrap="false"><strong>Two methods; one delivery discipline</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="920" height="46" font="body" size="18" color="#56625D">Systemic Design solves the bounded problem. Four-Stage Innovation carries evidence into action and back into learning.</text>
+  <shape id="riverline-a" type="line" x="250" y="370" width="190" height="0" stroke="hairline" stroke-width="4" arrow-end="arrow"/>
+  <shape id="riverline-b" type="line" x="545" y="370" width="190" height="0" stroke="hairline" stroke-width="4" arrow-end="arrow"/>
+  <shape id="riverline-c" type="line" x="840" y="370" width="190" height="0" stroke="hairline" stroke-width="4" arrow-end="arrow"/>
+  <shape id="observe-card" type="rect" x="60" y="230" width="270" height="292" fill="ink"/>
+  <text id="observe-number" x="82" y="250" width="60" height="46" font="mono" size="32" color="chartreuse" wrap="false">01</text>
+  <text id="observe-pair" x="82" y="306" width="220" height="72" font="display" size="29" color="paper"><p><a slide="clinic_reality"><strong>OBSERVE</strong></a></p><p size="22" color="persimmon"><a slide="clinic_reality">SENSE</a></p></text>
+  <shape id="observe-divider" type="line" x="82" y="400" width="220" height="0" stroke="#F7F5F055" stroke-width="1"/>
+  <text id="observe-proof" x="82" y="420" width="220" height="76" font="body" size="17" color="paper" line-height="1.2">Person · workflow · source · caller signal</text>
+  <shape id="frame-card" type="rect" x="355" y="230" width="270" height="292" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="frame-number" x="377" y="250" width="60" height="46" font="mono" size="32" color="persimmon" wrap="false">02</text>
+  <text id="frame-pair" x="377" y="306" width="220" height="72" font="display" size="29" color="ink"><p><a slide="layering"><strong>FRAME</strong></a></p><p size="22" color="persimmon"><a slide="layering">REASON</a></p></text>
+  <shape id="frame-divider" type="line" x="377" y="400" width="220" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="frame-proof" x="377" y="420" width="220" height="76" font="body" size="17" color="ink" line-height="1.2">Constraints · authority · measurable promise</text>
+  <shape id="build-card" type="rect" x="650" y="230" width="270" height="292" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="build-number" x="672" y="250" width="60" height="46" font="mono" size="32" color="persimmon" wrap="false">03</text>
+  <text id="build-pair" x="672" y="306" width="220" height="72" font="display" size="29" color="ink"><p><a slide="live_agent"><strong>BUILD</strong></a></p><p size="22" color="persimmon"><a slide="live_agent">DEPLOY</a></p></text>
+  <shape id="build-divider" type="line" x="672" y="400" width="220" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="build-proof" x="672" y="420" width="220" height="76" font="body" size="17" color="ink" line-height="1.2">Data · model · interface · handoff</text>
+  <shape id="validate-card" type="rect" x="945" y="230" width="270" height="292" fill="ink"/>
+  <text id="validate-number" x="967" y="250" width="60" height="46" font="mono" size="32" color="chartreuse" wrap="false">04</text>
+  <text id="validate-pair" x="967" y="306" width="220" height="72" font="display" size="29" color="paper"><p><a slide="evaluation"><strong>VALIDATE</strong></a></p><p size="22" color="persimmon"><a slide="evaluation">IMPROVE</a></p></text>
+  <shape id="validate-divider" type="line" x="967" y="400" width="220" height="0" stroke="#F7F5F055" stroke-width="1"/>
+  <text id="validate-proof" x="967" y="420" width="220" height="76" font="body" size="17" color="paper" line-height="1.2">Usefulness · reliability · learning</text>
+  <text id="systemic-legend" x="60" y="558" width="555" height="38" font="mono" size="13" color="ink"><strong>SYSTEMIC DESIGN</strong> · INSIDE EACH PRODUCT STAGE</text>
+  <text id="innovation-legend" x="650" y="558" width="565" height="38" font="mono" size="13" color="persimmon" align="right"><strong>FOUR-STAGE INNOVATION</strong> · ACROSS THE LIFECYCLE</text>
+  <shape id="bottom-rule" type="line" x="60" y="632" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="page-number" x="60" y="680" width="190" height="18" font="mono" size="12" color="#6B7069" wrap="false">02 / METHOD HOME</text>
+  <text id="case-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="thesis">← CASE HOME</a></text>
+</slide>

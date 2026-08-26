@@ -1,0 +1,33 @@
+<slide id="live_agent">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="500" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>BUILD + DEPLOY · LIVE PRODUCT PROOF</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743093561_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMwOTM1NjFfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEUCIH1SSRJV6NY2BSrYwoCt8j6xNfv8gKJJUtg0F2WknfHlAiEAxoJJ3xXvEgBED2kJ3OGqRQ7CdnpW4FxgD~HzLRx03O8_" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="900" height="54" font="heading" size="40" color="ink" wrap="false"><strong>A caller hears calm. An FDE sees proof.</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1030" height="38" font="body" size="18" color="#56625D">One interaction; two surfaces. Voice is optional. Decision evidence is not.</text>
+  <shape id="patient-panel" type="rect" x="60" y="218" width="540" height="362" fill="mist" stroke="hairline" stroke-width="1"/>
+  <shape id="patient-header" type="rect" x="60" y="218" width="540" height="52" fill="ink"/>
+  <text id="patient-header-text" x="82" y="231" width="496" height="28" font="mono" size="13" color="paper"><strong>PATIENT SURFACE · TEXT OR VOICE</strong></text>
+  <text id="agent-turn-one" x="82" y="292" width="450" height="44" font="body" size="18" color="ink"><span font="mono" size="12" color="persimmon">AGENT</span> What would you like help with today?</text>
+  <shape id="patient-rule-one" type="line" x="82" y="345" width="496" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="caller-turn" x="126" y="362" width="430" height="34" font="body" size="18" color="ink" align="right"><strong>I need to book a follow-up.</strong> <span font="mono" size="12" color="#6B7069">CALLER</span></text>
+  <shape id="patient-rule-two" type="line" x="82" y="408" width="496" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="agent-turn-two" x="82" y="426" width="470" height="84" font="body" size="18" color="ink" line-height="1.22"><span font="mono" size="12" color="persimmon">AGENT</span> I found the earliest eligible visit with Dr. Raman. Would you like me to book it?</text>
+  <text id="patient-access" x="82" y="536" width="470" height="26" font="mono" size="12" color="#6B7069">ONE QUESTION · PLAIN LANGUAGE · HUMAN PATH</text>
+  <shape id="trace-panel" type="rect" x="630" y="218" width="580" height="362" fill="ink"/>
+  <shape id="trace-header" type="rect" x="630" y="218" width="580" height="52" fill="#0B201A"/>
+  <text id="trace-header-text" x="652" y="231" width="536" height="28" font="mono" size="13" color="chartreuse"><strong>FDE TRACE · BUNDLE v1.0.0</strong></text>
+  <text id="trace-1" x="652" y="292" width="536" height="38" font="mono" size="13" color="paper"><span color="chartreuse">✓</span> SAFETY_CLEAR <span color="#8FA49C">· RB-SAFE</span></text>
+  <shape id="trace-rule-1" type="line" x="652" y="334" width="536" height="0" stroke="#F7F5F033" stroke-width="1"/>
+  <text id="trace-2" x="652" y="348" width="536" height="38" font="mono" size="13" color="paper"><span color="chartreuse">✓</span> IDENTITY_VERIFIED <span color="#8FA49C">· DOB</span></text>
+  <shape id="trace-rule-2" type="line" x="652" y="390" width="536" height="0" stroke="#F7F5F033" stroke-width="1"/>
+  <text id="trace-3" x="652" y="404" width="536" height="38" font="mono" size="13" color="paper"><span color="chartreuse">✓</span> BOOKING_ELIGIBLE <span color="#8FA49C">· RB-VISIT-01</span></text>
+  <shape id="trace-rule-3" type="line" x="652" y="446" width="536" height="0" stroke="#F7F5F033" stroke-width="1"/>
+  <text id="trace-4" x="652" y="460" width="536" height="38" font="mono" size="13" color="paper"><span color="chartreuse">✓</span> searchAvailability <span color="#8FA49C">· EARLIEST</span></text>
+  <shape id="trace-rule-4" type="line" x="652" y="502" width="536" height="0" stroke="#F7F5F033" stroke-width="1"/>
+  <text id="trace-5" x="652" y="516" width="536" height="42" font="mono" size="13" color="paper"><span color="persimmon">●</span> PENDING_CONFIRMATION <span color="#8FA49C">· NO WRITE YET</span></text>
+  <shape id="live-link-bar" type="rect" x="60" y="600" width="1150" height="38" fill="chartreuse"/>
+  <text id="live-link" x="82" y="607" width="1106" height="24" font="mono" size="13" color="ink" align="center"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/agent"><strong>LAUNCH LIVE AGENT →</strong></a>   ·   <a slide="demo_menu"><strong>OPEN SCRIPTED DEMO MENU →</strong></a></text>
+  <text id="page-number" x="60" y="680" width="190" height="18" font="mono" size="12" color="#6B7069" wrap="false">06 / BUILD + DEPLOY</text>
+  <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
+</slide>

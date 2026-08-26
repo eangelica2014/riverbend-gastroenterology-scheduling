@@ -1,0 +1,26 @@
+<slide id="metrics">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="520" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>VALIDATE + IMPROVE · METRIC CONTRACT</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743353161_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMzNTMxNjFfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEQCIFf6A1CQ-A8SumBHb6si-LrATYt~Ef64piRlWJjOTHUaAiBQv4jViElg-Nzhzvoyva5jAWd6kMlusKSMxu86kgjnmg__" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="900" height="54" font="heading" size="40" color="ink" wrap="false"><strong>Measure bounded resolution—not raw completion</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1000" height="38" font="body" size="18" color="#56625D">An incorrect automated completion is a failed outcome, not a productivity win.</text>
+  <shape id="northstar-field" type="rect" x="60" y="220" width="1150" height="162" fill="ink"/>
+  <text id="northstar-code" x="86" y="240" width="320" height="24" font="mono" size="13" color="chartreuse"><strong>NORTH STAR · CLINICALLY BOUNDED ADMINISTRATIVE RESOLUTION</strong></text>
+  <text id="northstar-equation" x="86" y="282" width="1088" height="52" font="display" size="34" color="paper" align="center" anchor="middle"><strong>CORRECT OUTCOME</strong> <span color="persimmon">OR</span> <strong>APPROPRIATE TRANSFER</strong></text>
+  <text id="northstar-guard" x="86" y="344" width="1088" height="24" font="mono" size="12" color="paper" align="center">WITH NO SAFETY OR PRIVACY VIOLATION</text>
+  <shape id="outcome-card" type="rect" x="60" y="410" width="360" height="182" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="outcome-code" x="82" y="430" width="316" height="24" font="mono" size="13" color="persimmon"><strong>OUTCOME</strong></text>
+  <text id="outcome-title" x="82" y="470" width="316" height="44" font="display" size="28" color="ink"><strong>Bounded resolution</strong></text>
+  <text id="outcome-list" x="82" y="528" width="316" height="48" font="body" size="17" color="ink"><p>Correct transfer</p><p>Low repeat / correction</p></text>
+  <shape id="leverage-card" type="rect" x="455" y="410" width="360" height="182" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="leverage-code" x="477" y="430" width="316" height="24" font="mono" size="13" color="persimmon"><strong>FDE LEVERAGE</strong></text>
+  <text id="leverage-title" x="477" y="470" width="316" height="44" font="display" size="28" color="ink"><strong>Time to trust</strong></text>
+  <text id="leverage-list" x="477" y="528" width="316" height="48" font="body" size="17" color="ink"><p>Hours per launch</p><p>Diagnosis + recovery time</p></text>
+  <shape id="guardrail-card" type="rect" x="850" y="410" width="360" height="182" fill="chartreuse"/>
+  <text id="guardrail-code" x="872" y="430" width="316" height="24" font="mono" size="13" color="ink"><strong>GUARDRAIL</strong></text>
+  <text id="guardrail-title" x="872" y="470" width="316" height="44" font="display" size="28" color="ink"><strong>Critical correctness</strong></text>
+  <text id="guardrail-list" x="872" y="528" width="316" height="48" font="body" size="17" color="ink"><p>Zero medical-advice completion</p><p>Zero inherited critical rule error</p></text>
+  <text id="page-number" x="60" y="680" width="190" height="18" font="mono" size="12" color="#6B7069" wrap="false">16 / METRICS</text>
+  <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
+</slide>

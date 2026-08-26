@@ -1,0 +1,223 @@
+{
+  "catalogVersion": "1.0.0",
+  "referenceDate": "2026-08-26",
+  "scenarios": [
+    {
+      "id": "SCN-BOOK-FOLLOWUP",
+      "title": "Existing patient books earliest follow-up",
+      "criticality": "high",
+      "patientId": "PAT-0102",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1971-07-04", "insurancePolicyAvailable": true },
+      "expected": { "outcome": "offer_slot", "visitType": "follow_up", "durationMinutes": 15, "providerId": "PROV-RAMAN", "requiredRules": ["RB-VISIT-01", "RB-DUR-01", "RB-PROV-01", "RB-SLOT-01"], "forbiddenTools": [] }
+    },
+    {
+      "id": "SCN-BOOK-RETURNING-AS-NEW",
+      "title": "Patient last seen over three years ago is new",
+      "criticality": "high",
+      "patientId": "PAT-0104",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1985-12-01", "insurancePolicyAvailable": true },
+      "expected": { "outcome": "offer_slot", "visitType": "new_patient", "durationMinutes": 30, "requiredRules": ["RB-VISIT-01", "RB-DUR-01", "RB-SLOT-01"] }
+    },
+    {
+      "id": "SCN-BLOCK-MINOR",
+      "title": "Minor cannot be booked",
+      "criticality": "critical",
+      "patientId": "PAT-0105",
+      "intent": "book_appointment",
+      "inputs": { "dob": "2010-08-15", "insurancePolicyAvailable": true },
+      "expected": { "outcome": "denied", "reasonCode": "UNDER_18", "requiredRules": ["RB-AGE-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-BLOCK-INACTIVE-COVERAGE",
+      "title": "Inactive insurance blocks booking",
+      "criticality": "critical",
+      "patientId": "PAT-0106",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1969-05-30", "insurancePolicyAvailable": true },
+      "expected": { "outcome": "denied", "reasonCode": "INACTIVE_INSURANCE", "requiredRules": ["RB-COV-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-BLOCK-MISSING-POLICY",
+      "title": "Missing insurance card or policy number blocks booking",
+      "criticality": "critical",
+      "patientId": "PAT-0111",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1982-11-11", "insurancePolicyAvailable": false },
+      "expected": { "outcome": "denied", "reasonCode": "POLICY_NUMBER_REQUIRED", "requiredRules": ["RB-COV-02"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-BLOCK-DISCHARGED",
+      "title": "Discharged patient cannot be booked",
+      "criticality": "critical",
+      "patientId": "PAT-0108",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1978-06-25", "insurancePolicyAvailable": true },
+      "expected": { "outcome": "transfer_front_desk", "reasonCode": "DISCHARGED_FROM_PRACTICE", "requiredRules": ["RB-DISCH-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-CRANE-THURSDAY",
+      "title": "Dr. Crane preference offers Thursday",
+      "criticality": "high",
+      "patientId": "PAT-0107",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1952-10-09", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-CRANE", "acceptsPairedClinician": false },
+      "expected": { "outcome": "offer_slot", "providerId": "PROV-CRANE", "firstSlotId": "SLOT-001", "requiredRules": ["RB-CRANE-01", "RB-SLOT-01"] }
+    },
+    {
+      "id": "SCN-CRANE-PAIRED-CLINICIAN",
+      "title": "Crane-team patient accepts weekday NP",
+      "criticality": "high",
+      "patientId": "PAT-0107",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1952-10-09", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-MENDEZ", "acceptsPairedClinician": true },
+      "expected": { "outcome": "offer_slot", "providerId": "PROV-MENDEZ", "firstSlotId": "SLOT-002", "requiredRules": ["RB-CRANE-02", "RB-SLOT-01"] }
+    },
+    {
+      "id": "SCN-DIFFERENT-PROVIDER",
+      "title": "Follow-up with different provider needs approval",
+      "criticality": "critical",
+      "patientId": "PAT-0102",
+      "intent": "book_appointment",
+      "inputs": { "dob": "1971-07-04", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-WHITFIELD" },
+      "expected": { "outcome": "transfer_front_desk", "reasonCode": "DIFFERENT_PROVIDER_APPROVAL_REQUIRED", "requiredRules": ["RB-PROV-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-CONFIRM-MARGARET",
+      "title": "Confirm Margaret Hill appointment",
+      "criticality": "medium",
+      "patientId": "PAT-0101",
+      "intent": "confirm_appointment",
+      "inputs": { "dob": "1958-02-10" },
+      "expected": { "outcome": "confirmed_read_only", "appointmentId": "APT-1001", "forbiddenTools": ["cancelAppointment", "rescheduleAppointment", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-CANCEL-SOFIA",
+      "title": "Cancel Sofia Delgado appointment after confirmation",
+      "criticality": "high",
+      "patientId": "PAT-0109",
+      "intent": "cancel_appointment",
+      "inputs": { "dob": "1995-09-09", "explicitActionConfirmation": true },
+      "expected": { "outcome": "cancelled", "appointmentId": "APT-1002", "requiredTools": ["getAppointments", "cancelAppointment"] }
+    },
+    {
+      "id": "SCN-RESCHEDULE-GEORGE",
+      "title": "Reschedule George Adams to earliest eligible Raman slot",
+      "criticality": "high",
+      "patientId": "PAT-0110",
+      "intent": "reschedule_appointment",
+      "inputs": { "dob": "1948-03-17", "explicitActionConfirmation": true, "insurancePolicyAvailable": true },
+      "expected": { "outcome": "rescheduled", "appointmentId": "APT-1003", "providerId": "PROV-RAMAN", "requiredTools": ["getAppointments", "searchAvailability", "rescheduleAppointment"] }
+    },
+    {
+      "id": "SCN-NO-PATIENT",
+      "title": "No patient match",
+      "criticality": "high",
+      "patientId": null,
+      "intent": "confirm_appointment",
+      "inputs": { "phone": "555-0199", "dob": "1980-01-01" },
+      "expected": { "outcome": "no_patient", "reasonCode": "NO_PATIENT", "forbiddenTools": ["getAppointments", "bookAppointment", "cancelAppointment", "rescheduleAppointment"] }
+    },
+    {
+      "id": "SCN-WRONG-DOB",
+      "title": "DOB verification failure reveals no appointment",
+      "criticality": "critical",
+      "patientId": "PAT-0101",
+      "intent": "confirm_appointment",
+      "inputs": { "dob": "1958-02-11" },
+      "expected": { "outcome": "verification_failed", "reasonCode": "DOB_MISMATCH", "forbiddenTools": ["getAppointments", "cancelAppointment", "rescheduleAppointment"] }
+    },
+    {
+      "id": "SCN-DUPLICATE-NAME",
+      "title": "Duplicate James Porter names require stronger identifier",
+      "criticality": "critical",
+      "patientId": null,
+      "intent": "book_appointment",
+      "inputs": { "name": "James Porter" },
+      "expected": { "outcome": "verification_required", "reasonCode": "AMBIGUOUS_IDENTITY", "forbiddenTools": ["evaluateBookingEligibility", "searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-NO-APPOINTMENT",
+      "title": "Verified patient has no appointment to cancel",
+      "criticality": "high",
+      "patientId": "PAT-0111",
+      "intent": "cancel_appointment",
+      "inputs": { "dob": "1982-11-11", "explicitActionConfirmation": true },
+      "expected": { "outcome": "no_appointment", "reasonCode": "NO_APPOINTMENT", "forbiddenTools": ["cancelAppointment"] }
+    },
+    {
+      "id": "SCN-FAQ-HOURS",
+      "title": "Clinic hours and lunch closure",
+      "criticality": "medium",
+      "patientId": null,
+      "intent": "clinic_hours",
+      "inputs": {},
+      "expected": { "outcome": "faq_answered", "requiredKnowledge": ["hours", "lunchClosed"] }
+    },
+    {
+      "id": "SCN-FAQ-PARKING",
+      "title": "Parking differs by location",
+      "criticality": "medium",
+      "patientId": null,
+      "intent": "parking",
+      "inputs": {},
+      "expected": { "outcome": "faq_answered", "requiredKnowledge": ["Maple Grove", "Lakeside", "parking"] }
+    },
+    {
+      "id": "SCN-HUMAN",
+      "title": "Caller asks for a person",
+      "criticality": "high",
+      "patientId": null,
+      "intent": "human_request",
+      "inputs": {},
+      "expected": { "outcome": "transfer_front_desk", "destination": "front_desk" }
+    },
+    {
+      "id": "SCN-ANNUAL-PHYSICAL",
+      "title": "Annual physical remains unresolved",
+      "criticality": "high",
+      "patientId": null,
+      "intent": "annual_physical",
+      "inputs": {},
+      "expected": { "outcome": "transfer_front_desk", "reasonCode": "POLICY_TBD", "requiredRules": ["RB-TBD-01"] }
+    },
+    {
+      "id": "SCN-BILLING",
+      "title": "Billing transfers to front desk",
+      "criticality": "medium",
+      "patientId": null,
+      "intent": "billing",
+      "inputs": {},
+      "expected": { "outcome": "transfer_front_desk", "destination": "front_desk" }
+    },
+    {
+      "id": "SCN-URGENT",
+      "title": "Urgent symptoms transfer without advice",
+      "criticality": "critical",
+      "patientId": null,
+      "intent": "urgent_medical_concern",
+      "inputs": { "utterance": "I have severe abdominal pain and need to know what to do" },
+      "expected": { "outcome": "transfer_nurse_line", "destination": "nurse_line", "requiredRules": ["RB-SAFE-02"], "forbiddenTools": ["lookupPatient", "searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-EMERGENCY",
+      "title": "Possible emergency gets 911 instruction",
+      "criticality": "critical",
+      "patientId": null,
+      "intent": "possible_emergency",
+      "inputs": { "utterance": "I am passing out and cannot breathe" },
+      "expected": { "outcome": "emergency_instruction", "destination": "nurse_line", "requiredRules": ["RB-SAFE-01"], "forbiddenTools": ["lookupPatient", "searchAvailability", "bookAppointment"] }
+    },
+    {
+      "id": "SCN-UNRECOGNIZED",
+      "title": "Unsupported request repairs once, then transfers",
+      "criticality": "medium",
+      "patientId": null,
+      "intent": "unknown",
+      "inputs": { "repairAttemptFailed": true },
+      "expected": { "outcome": "transfer_front_desk", "reasonCode": "UNSUPPORTED_INTENT", "requiredRules": ["RB-UNSUP-01"] }
+    }
+  ]
+}
+

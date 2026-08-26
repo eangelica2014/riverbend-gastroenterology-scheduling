@@ -1,0 +1,24 @@
+flowchart LR
+  A[01\nIngest\nSource ledger] --> B[02\nClarify\nAmbiguity queue]
+  B --> C[03\nCompile\nPolicy bundle]
+  C --> D[04\nSimulate\nRegression matrix]
+  D --> E[05\nApprove\nRelease candidate]
+  E --> F[06\nDeploy\nDeployment record]
+  F --> G[07\nObserve\nQuality dashboard]
+  G --> H[08\nImprove\nChange proposal]
+  H -.approved learning.-> C
+
+  X[Clinic owner] -.disposition.-> B
+  X -.sign-off.-> E
+  Y[FDE] -.build beside field.-> A
+  Y -.diagnose.-> G
+
+  classDef ink fill:#102A24,color:#F4F0E6,stroke:#102A24,stroke-width:2px;
+  classDef paper fill:#FBF8F0,color:#102A24,stroke:#26463E,stroke-width:1px;
+  classDef attention fill:#F05A28,color:#FFFFFF,stroke:#BF3D18,stroke-width:2px;
+  classDef verified fill:#B9D531,color:#102A24,stroke:#597000,stroke-width:2px;
+  class A,C,F,G ink;
+  class B,H attention;
+  class D,E verified;
+  class X,Y paper;
+

@@ -1,0 +1,243 @@
+{
+  "project_info": {
+    "title": "Riverbend Gastroenterology Scheduling",
+    "created": 1787742835.087,
+    "last_updated": 1787743460.811,
+    "total_slides": 21
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "thesis",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "dual_method",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "clinic_reality",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "ambiguity",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "layering",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "live_agent",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "negative_guarantee",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "evaluation",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "phase1_to_platform",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "phase2_divider",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "fieldflow",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "generalization",
+      "state": "edited",
+      "pageNum": 13
+    },
+    {
+      "id": "human_gated",
+      "state": "edited",
+      "pageNum": 14
+    },
+    {
+      "id": "experiments",
+      "state": "edited",
+      "pageNum": 15
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 16
+    },
+    {
+      "id": "metrics",
+      "state": "edited",
+      "pageNum": 17
+    },
+    {
+      "id": "candidate_fit",
+      "state": "edited",
+      "pageNum": 18
+    },
+    {
+      "id": "close",
+      "state": "edited",
+      "pageNum": 19
+    },
+    {
+      "id": "demo_menu",
+      "state": "edited",
+      "pageNum": 20
+    },
+    {
+      "id": "sources",
+      "state": "edited",
+      "pageNum": 21
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Riverbend Gastroenterology Scheduling",
+      "summary": "Minimal cover with the voice-agent-to-platform story, candidate, role, and date.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "thesis",
+      "title": "The conversation can flex. The policy cannot.",
+      "summary": "Establish the central product decision and provide interactive paths to the agent, platform, and experiments.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "dual_method",
+      "title": "Two methods; one delivery discipline",
+      "summary": "Map Observe–Frame–Build–Validate to Sense–Reason–Deploy–Improve and make the method slide an interactive hub.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "clinic_reality",
+      "title": "I started with clinic reality—not a stack",
+      "summary": "Show source discipline, high-resolution verification, reference-date control, and labeled synthetic assumptions.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "ambiguity",
+      "title": "Ambiguity became a release artifact",
+      "summary": "Present the Whitfield, annual-physical, and policy-number unknowns with conservative choices and owners.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "layering",
+      "title": "Language interprets. Policy authorizes.",
+      "summary": "Separate prompt, knowledge, deterministic policy, and typed-tool authority with an interactive architecture link.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "live_agent",
+      "title": "A caller hears calm. An FDE sees proof.",
+      "summary": "Frame the live agent demonstration and contrast the patient experience with the adjacent FDE evidence trace.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "negative_guarantee",
+      "title": "The negative guarantee is the product",
+      "summary": "Show hard stops, approval paths, clinical transfer, and emergency preemption.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "evaluation",
+      "title": "A believable sentence is not enough",
+      "summary": "Present actual automated, scenario, type-check, build, and evidence-contract results.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "phase1_to_platform",
+      "title": "Phase 1 revealed the platform",
+      "summary": "Map each observed field friction to a reusable platform response.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "phase2_divider",
+      "title": "Productize the repeatable work",
+      "summary": "Minimal Phase 2 divider with the supporting principle: preserve the local truth.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "fieldflow",
+      "title": "FieldFlow makes every handoff inspectable",
+      "summary": "Show the eight-stage lifecycle, durable artifacts, gates, and live-platform interaction.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "generalization",
+      "title": "Generalize contracts—not clinic truth",
+      "summary": "Contrast reusable platform primitives with tenant-owned local policy and integration truth.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "human_gated",
+      "title": "Improvement stays human-gated",
+      "summary": "Illustrate the evidence-to-proposal-to-approval-to-regression-to-canary loop without policy drift.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "experiments",
+      "title": "Want the answer before wanting the feature",
+      "summary": "Prioritize the two P0 and two P1 experiments with evidence value and explicit scale thresholds.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Fund source-to-policy and policy-to-test first",
+      "summary": "Sequence now, next, later, and not-yet investments based on dependency and evidence.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "metrics",
+      "title": "Measure bounded resolution—not raw completion",
+      "summary": "Define the north star and pair outcome, FDE leverage, and critical guardrails.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "candidate_fit",
+      "title": "This is how I lead platform product",
+      "summary": "Connect the demonstrated healthcare, agentic delivery, builder, and FDE product skills to the role.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "close",
+      "title": "Build the next care system beside the field",
+      "summary": "Minimal closing with interactive links back to the agent, FieldFlow, experiments, and method hub.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "demo_menu",
+      "title": "Live demo menu",
+      "summary": "Provide exact scripted booking, minor, confirmation, and emergency inputs with evidence cues.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and evidence",
+      "summary": "List primary product, role, privacy, accessibility, risk, interoperability, and candidate-method sources.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

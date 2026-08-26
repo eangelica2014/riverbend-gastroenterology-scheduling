@@ -1,0 +1,34 @@
+<slide id="candidate_fit">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="520" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>ROLE FIT · PROOF IN THE WORK</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743382718_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMzODI3MThfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEUCIGXgSUoKW8Kf4J-JStpS6jP3C7pCsRSNhq07NE1JsUUwAiEAiTiVklqdeY8moVvklcsYyZzNkxshMBATMybXgI968pw_" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="900" height="54" font="heading" size="40" color="ink" wrap="false"><strong>This is how I lead platform product</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1030" height="38" font="body" size="18" color="#56625D">Begin with the person. Reason across the system. Work in the codebase. Scale only what the evidence earns.</text>
+  <shape id="health-card" type="rect" x="60" y="226" width="340" height="154" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="health-code" x="82" y="244" width="296" height="24" font="mono" size="12" color="persimmon"><a slide="clinic_reality"><strong>HEALTHCARE RESTRAINT →</strong></a></text>
+  <text id="health-title" x="82" y="284" width="296" height="40" font="display" size="25" color="ink"><strong>Workflow before automation</strong></text>
+  <text id="health-proof" x="82" y="338" width="296" height="28" font="body" size="16" color="ink">Scheduling · coverage · identity · clinical handoff</text>
+  <shape id="agent-card" type="rect" x="430" y="226" width="340" height="154" fill="ink"/>
+  <text id="agent-code" x="452" y="244" width="296" height="24" font="mono" size="12" color="chartreuse"><a slide="live_agent"><strong>AGENTIC DELIVERY →</strong></a></text>
+  <text id="agent-title" x="452" y="284" width="296" height="40" font="display" size="25" color="paper"><strong>End to end</strong></text>
+  <text id="agent-proof" x="452" y="338" width="296" height="28" font="body" size="16" color="paper">Prompt · policy · tools · voice · trace · tests</text>
+  <shape id="builder-card" type="rect" x="60" y="406" width="340" height="154" fill="ink"/>
+  <text id="builder-code" x="82" y="424" width="296" height="24" font="mono" size="12" color="chartreuse"><a slide="fieldflow"><strong>BUILDER FLUENCY →</strong></a></text>
+  <text id="builder-title" x="82" y="464" width="296" height="40" font="display" size="25" color="paper"><strong>Hands-on product</strong></text>
+  <text id="builder-proof" x="82" y="518" width="296" height="28" font="body" size="16" color="paper">React · TypeScript · APIs · cloud · CI/CD</text>
+  <shape id="fde-card" type="rect" x="430" y="406" width="340" height="154" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="fde-code" x="452" y="424" width="296" height="24" font="mono" size="12" color="persimmon"><a slide="experiments"><strong>FDE PRODUCT JUDGMENT →</strong></a></text>
+  <text id="fde-title" x="452" y="464" width="296" height="40" font="display" size="25" color="ink"><strong>Field friction → leverage</strong></text>
+  <text id="fde-proof" x="452" y="518" width="296" height="28" font="body" size="16" color="ink">Contracts · experiments · rollout · learning</text>
+  <shape id="candidate-panel" type="rect" x="820" y="226" width="390" height="334" fill="ink"/>
+  <text id="candidate-code" x="846" y="248" width="338" height="24" font="mono" size="12" color="chartreuse"><strong>TECHNICAL PRODUCT LEAD</strong></text>
+  <text id="candidate-name" x="846" y="292" width="338" height="82" font="display" size="34" color="paper" line-height="1.05"><p><strong>Eangelica</strong></p><p><strong>Germano Aton</strong></p></text>
+  <shape id="candidate-rule" type="line" x="846" y="394" width="338" height="0" stroke="persimmon" stroke-width="4"/>
+  <text id="candidate-domain" x="846" y="418" width="338" height="82" font="body" size="17" color="paper" line-height="1.35"><p>Healthcare + agentic AI</p><p>Platform + API product</p><p>Experiment-led delivery</p></text>
+  <text id="candidate-location" x="846" y="518" width="338" height="24" font="mono" size="12" color="chartreuse">NYC · ONSITE · DOMESTIC TRAVEL</text>
+  <shape id="leadership-band" type="rect" x="820" y="582" width="390" height="58" fill="chartreuse"/>
+  <text id="leadership-copy" x="842" y="594" width="346" height="34" font="body" size="16" color="ink" align="center" anchor="middle"><strong>Make the decision inspectable.</strong></text>
+  <text id="page-number" x="60" y="680" width="190" height="18" font="mono" size="12" color="#6B7069" wrap="false">17 / ROLE FIT</text>
+  <text id="case-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="thesis">← CASE HOME</a></text>
+</slide>

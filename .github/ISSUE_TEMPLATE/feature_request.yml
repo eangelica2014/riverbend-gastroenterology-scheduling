@@ -1,0 +1,44 @@
+name: Product proposal
+description: Propose an evidence-led agent, platform, accessibility, or evaluation improvement.
+title: "[Proposal]: "
+labels: [enhancement, needs-evidence]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Person, workflow, and problem
+      description: Who experiences the problem, in which workflow, and with what current consequence?
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Falsifiable hypothesis
+      description: State the expected outcome and guardrail.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Smallest useful test
+      description: Explain how the idea could be disproved before a broad build.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Scale, narrow, or stop rule
+      description: State the metric contract and decision threshold.
+    validations:
+      required: true
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Generalization boundary
+      options:
+        - Platform primitive
+        - Tenant configuration
+        - Integration adapter
+        - Requires discovery
+    validations:
+      required: true

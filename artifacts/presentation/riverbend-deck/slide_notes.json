@@ -1,0 +1,50 @@
+{
+  "ambiguity": {
+    "note": "Three items could not be solved by better prompting. The provider table contains a conflict. Annual physicals are explicitly unresolved. Policy numbers are absent. I made conservative demo choices, preserved the uncertainty, and named the production owner. In FieldFlow, this becomes an ambiguity queue that can block promotion. Once framed, we divide responsibilities across strict architectural layers."
+  },
+  "candidate_fit": {
+    "note": "This reflects how I work as a Technical Product Lead: begin with the person and workflow, make uncertainty visible, reason across the full system, work in the codebase, test negative guarantees, and translate field learning into platform leverage. My healthcare, agentic AI, API, and product-engineering background makes that combination native rather than theoretical."
+  },
+  "clinic_reality": {
+    "note": "Observe starts with the person, workflow, and signal, not the available technology. The source packets were not clean configuration. Small-preview OCR misread fields, so I re-read dense tables at high resolution and corrected the record. I pinned the reference date and labeled every synthetic appointment assumption. That source discipline is part of the product. But source work immediately surfaces unresolved ambiguities."
+  },
+  "close": {
+    "note": "Thank you for your time today. We built this care system right beside the field so that clinical trust comes first. Please feel free to run the live agent, inspect the platform architecture, or review our core experiments."
+  },
+  "cover": {
+    "note": "This case study starts with Riverbend Gastroenterology scheduling. My central decision was simple: the conversation can be flexible, but clinic authority cannot. I gave the language layer room to understand and communicate, then put identity, eligibility, provider rules, confirmation, and mutations behind deterministic contracts. Let's look at the core thesis before stepping into the agent and the platform."
+  },
+  "demo_menu": {
+    "note": "Use this appendix menu as a quick reference during recording or discussion. You can launch any of these four key scripted scenarios directly to verify our negative guarantees and trace receipts."
+  },
+  "dual_method": {
+    "note": "I used two related methods from my portfolio. Observe, Frame, Build, Validate governs how I solve a bounded problem. Sense, Reason, Deploy, Improve governs how evidence moves through a real system and returns as learning. I am not using these as labels after the fact; each stage produces visible Riverbend artifacts. Let us examine the first stage whereObserve meets Sense in the clinic source packets."
+  },
+  "evaluation": {
+    "note": "I do not treat fluent language as proof. The suite checks the reason code, rule path, required and forbidden calls, transfer destination, and whether state changed. All 18 automated assertions and 24 catalog replays pass. The build passes as well. I kept the non-blocking bundle-size warning visible because an honest read includes what remains."
+  },
+  "layering": {
+    "note": "The model interprets and communicates; it does not own patient data or clinic authority. Prompt behavior, read-only knowledge, deterministic policy, and typed tools have distinct jobs. Eligibility runs before availability. Verification runs before protected reads. Exact confirmation runs before writes. This makes the system reviewable and testable rather than dependent on one large prompt."
+  },
+  "live_agent": {
+    "note": "I’ll replay James Porter’s follow-up booking. The phone number retrieves a candidate, DOB verifies him, active coverage and policy availability are checked, the visit is classified as a 15-minute follow-up, and the earliest eligible Priya Raman slot is offered. The write does not happen until an explicit yes. The caller hears a calm answer; the FDE sees the full decision trace."
+  },
+  "metrics": {
+    "note": "Raw automation can reward the wrong behavior. The north star is clinically bounded administrative resolution: correct completion or appropriate transfer, with no safety or privacy violation. I pair patient and operational outcomes with FDE leverage, then gate both with critical correctness and recovery."
+  },
+  "negative_guarantee": {
+    "note": "A healthcare administrative agent is defined by what it refuses to do. It must not search slots for an ineligible patient, disclose appointment detail after a verification failure, override provider continuity, or continue scheduling through urgent language. The emergency case gives the 911 instruction before a lookup. Those are testable negative guarantees, not tone guidelines."
+  },
+  "phase1_to_platform": {
+    "note": "The platform proposal comes directly from work I had to do in Phase 1. I had to verify source quality, clarify contradictions, compile rules, build tests, diagnose behavior, and control change. FieldFlow productizes those repeatable tasks instead of beginning with a generic visual agent builder."
+  },
+  "roadmap": {
+    "note": "Our roadmap starts with the bottleneck Riverbend proved. I would build the source-to-test control plane first, then add diagnosis and release controls, then test cross-clinic modules and shadow-mode suggestions. A visual builder or autonomous learning is premature until the central leverage and quality hypotheses earn the investment."
+  },
+  "sources": {
+    "note": "External standards and frameworks ground our privacy, accessibility, and interoperability choices. The primary evidence remains the Riverbend source packets, scheduling rules, and our tested repository artifacts."
+  },
+  "thesis": {
+    "note": "My central decision was simple: the conversation can be flexible, but clinic authority cannot. I gave the language layer room to understand and communicate, then put identity, eligibility, provider rules, confirmation, and mutations behind deterministic contracts. I will show the agent first, then how the Phase 1 friction becomes a platform. And here is how those decisions map directly to our dual methods."
+  }
+}

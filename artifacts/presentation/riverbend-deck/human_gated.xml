@@ -1,0 +1,32 @@
+<slide id="human_gated">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="520" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>REASON + IMPROVE · GOVERNED LEARNING</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743287033_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMyODcwMzNfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEYCIQCwVllltzz8HvFP5r0-Df5u5mP0NvCKE6cuqoEJjt2bJgIhANE2jGi6Ky5zX434BgpHNiEMHAG9InHC92249WflvuqP" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="820" height="54" font="heading" size="40" color="ink" wrap="false"><strong>Improvement stays human-gated</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1020" height="38" font="body" size="18" color="#56625D">Runtime evidence may draft a change. It never rewrites the approved tenant bundle.</text>
+  <shape id="sense-node" type="rect" x="100" y="226" width="360" height="126" fill="ink"/>
+  <text id="sense-code" x="122" y="244" width="316" height="24" font="mono" size="12" color="chartreuse"><strong>01 · SENSE</strong></text>
+  <text id="sense-title" x="122" y="282" width="316" height="48" font="body" size="21" color="paper"><strong>Cluster a redacted failure pattern</strong></text>
+  <shape id="top-arrow" type="line" x="460" y="289" width="300" height="0" stroke="hairline" stroke-width="3" arrow-end="arrow"/>
+  <shape id="reason-node" type="rect" x="760" y="226" width="360" height="126" fill="ink"/>
+  <text id="reason-code" x="782" y="244" width="316" height="24" font="mono" size="12" color="chartreuse"><strong>02 · REASON</strong></text>
+  <text id="reason-title" x="782" y="282" width="316" height="48" font="body" size="21" color="paper"><strong>Locate prompt · policy · tool · adapter</strong></text>
+  <shape id="right-arrow" type="line" x="940" y="352" width="0" height="80" stroke="hairline" stroke-width="3" arrow-end="arrow"/>
+  <shape id="draft-node" type="rect" x="760" y="432" width="360" height="126" fill="persimmon"/>
+  <text id="draft-code" x="782" y="450" width="316" height="24" font="mono" size="12" color="paper"><strong>03 · DRAFT</strong></text>
+  <text id="draft-title" x="782" y="488" width="316" height="48" font="body" size="21" color="paper"><strong>Propose a source-linked change</strong></text>
+  <shape id="bottom-arrow" type="line" x="760" y="495" width="-300" height="0" stroke="hairline" stroke-width="3" arrow-end="arrow"/>
+  <shape id="replay-node" type="rect" x="100" y="432" width="360" height="126" fill="ink"/>
+  <text id="replay-code" x="122" y="450" width="316" height="24" font="mono" size="12" color="chartreuse"><strong>04 · REPLAY + DEPLOY</strong></text>
+  <text id="replay-title" x="122" y="488" width="316" height="48" font="body" size="21" color="paper"><strong>Regression → canary → rollback-ready</strong></text>
+  <shape id="left-arrow" type="line" x="280" y="432" width="0" height="-80" stroke="hairline" stroke-width="3" arrow-end="arrow"/>
+  <shape id="approval-gate" type="diamond" x="530" y="326" width="220" height="150" fill="chartreuse" stroke="ink" stroke-width="2"/>
+  <text id="approval-text" x="568" y="360" width="144" height="82" font="mono" size="14" color="ink" align="center" anchor="middle"><p><strong>HUMAN</strong></p><p><strong>APPROVAL</strong></p></text>
+  <shape id="approval-in" type="line" x="750" y="401" width="10" height="64" stroke="persimmon" stroke-width="3" arrow-end="arrow"/>
+  <shape id="approval-out" type="line" x="530" y="401" width="-70" height="64" stroke="chartreuse" stroke-width="3" arrow-end="arrow"/>
+  <shape id="decision-band" type="rect" x="100" y="582" width="1020" height="56" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="decision-text" x="122" y="594" width="976" height="32" font="body" size="18" color="ink" align="center"><strong>Allowed:</strong> evidence → draft → review.   <strong color="persimmon">Forbidden:</strong> runtime policy drift.</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">13 / GOVERNED LEARNING</text>
+  <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
+</slide>

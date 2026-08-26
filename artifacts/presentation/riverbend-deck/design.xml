@@ -1,0 +1,15 @@
+<design>
+  <size width="1280" height="720"></size>
+  <color name="ink" value="#122B22"/>
+  <color name="paper" value="#F7F5F0"/>
+  <color name="mist" value="#EBE7DE"/>
+  <color name="hairline" value="#D1CCC0"/>
+  <color name="persimmon" value="#E35D40"/>
+  <color name="chartreuse" value="#B8CC22"/>
+  <color name="critical" value="#D63220"/>
+  <font name="display" family="Lora" size="52"/>
+  <font name="heading" family="Lora" size="34"/>
+  <font name="body" family="Public Sans" size="18"/>
+  <font name="mono" family="Space Mono" size="14"/>
+  <font name="caption" family="Public Sans" size="13"/>
+</design>

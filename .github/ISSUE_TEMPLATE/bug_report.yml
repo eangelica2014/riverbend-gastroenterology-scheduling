@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible defect in policy, tools, UI, accessibility, tests, or documentation.
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic data only. Do not include PHI, credentials, or exploit details for a security issue."
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agent conversation
+        - Policy decision
+        - Tool or mutation
+        - Identity or privacy
+        - Safety or transfer
+        - Accessibility
+        - Scenario or test
+        - FieldFlow platform
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Observed behavior
+      description: Explain what happened and why it is incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide synthetic inputs, route, and exact steps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected evidence
+      description: Include expected reason code, required or forbidden tool, mutation state, or transfer destination.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data and safety confirmation
+      options:
+        - label: I used synthetic data only and included no PHI or credentials.
+          required: true

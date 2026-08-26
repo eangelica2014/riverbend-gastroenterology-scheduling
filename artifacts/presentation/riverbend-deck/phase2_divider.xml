@@ -1,0 +1,17 @@
+<slide id="phase2_divider">
+  <background color="ink"/>
+  <shape id="top-rule" type="rect" x="0" y="0" width="1280" height="12" fill="persimmon"/>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743201008_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMyMDEwMDhfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEQCIA2LwpmlwS8~bvKLJlBR49Yh2FUXSbtSeaL36kGvZPjUAiAP4b81VyuG4Pa7RxkdK7NQ~mtlntSV1uMPa1GJGYW3Sw__" x="1162" y="24" width="48" height="48" fit="contain"/>
+  <text id="phase-code" x="60" y="54" width="360" height="26" font="mono" size="13" color="chartreuse"><strong>PHASE 02 · PLATFORMIZATION</strong></text>
+  <text id="phase-number" x="60" y="112" width="320" height="230" font="display" size="164" color="paper" wrap="false">02</text>
+  <text id="phase-title" x="390" y="184" width="760" height="96" font="display" size="56" color="paper" wrap="false"><strong>Productize the repeatable work</strong></text>
+  <text id="phase-subtitle" x="394" y="322" width="660" height="54" font="body" size="27" color="chartreuse" wrap="false">Preserve the local truth.</text>
+  <shape id="phase-rule" type="line" x="394" y="402" width="700" height="0" stroke="persimmon" stroke-width="5"/>
+  <text id="phase-note" x="394" y="438" width="700" height="54" font="body" size="19" color="#D8DDD9">From one clinic’s evidence to an FDE-first lifecycle for many clinics.</text>
+  <shape id="fieldflow-tab" type="rect" x="740" y="548" width="220" height="58" fill="chartreuse"/>
+  <text id="fieldflow-link" x="756" y="560" width="188" height="34" font="mono" size="13" color="ink" align="center" anchor="middle"><a slide="fieldflow"><strong>ENTER FIELDFlow →</strong></a></text>
+  <shape id="agent-tab" type="rect" x="980" y="548" width="230" height="58" fill="paper"/>
+  <text id="agent-link" x="996" y="560" width="198" height="34" font="mono" size="13" color="ink" align="center" anchor="middle"><a slide="live_agent"><strong>← RETURN TO AGENT</strong></a></text>
+  <shape id="footer-rule" type="line" x="60" y="652" width="1150" height="0" stroke="#F7F5F044" stroke-width="1"/>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">10 / PHASE DIVIDER</text>
+</slide>

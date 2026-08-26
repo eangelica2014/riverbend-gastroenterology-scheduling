@@ -1,0 +1,29 @@
+<slide id="experiments">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="520" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>VALIDATE + IMPROVE · EXPERIMENT PORTFOLIO</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743309288_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1789430400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMzMDkyODhfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&Key-Pair-Id=K2QY5QTL8JSY6C&Signature=MEQCIFXauHLMxus3PQz8N7zDr0eVGv6cRP8Tz03oplwkG~T9AiBPF2GZpMCaXYs1ayE6TVYnGCboGn4uA7sTBdHleCRxsw__" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="940" height="54" font="heading" size="40" color="ink" wrap="false"><strong>Want the answer before wanting the feature</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1020" height="38" font="body" size="18" color="#56625D">Priority combines dependency, safety, and how much the result should change the roadmap.</text>
+  <shape id="priority-rail" type="rect" x="60" y="224" width="18" height="350" fill="persimmon"/>
+  <shape id="exp1-card" type="rect" x="100" y="224" width="520" height="164" fill="ink"/>
+  <text id="exp1-code" x="122" y="242" width="330" height="24" font="mono" size="12" color="chartreuse"><strong>EXP-01 · P0 · WANT ANSWER 10/10</strong></text>
+  <text id="exp1-title" x="122" y="280" width="460" height="50" font="body" size="21" color="paper"><strong>Policy compiler cuts active setup time</strong></text>
+  <text id="exp1-scale" x="122" y="342" width="460" height="28" font="mono" size="12" color="paper">SCALE: ≥30% FASTER · NO CRITICAL REGRESSION</text>
+  <shape id="exp2-card" type="rect" x="660" y="224" width="520" height="164" fill="ink"/>
+  <text id="exp2-code" x="682" y="242" width="330" height="24" font="mono" size="12" color="chartreuse"><strong>EXP-02 · P0 · WANT ANSWER 10/10</strong></text>
+  <text id="exp2-title" x="682" y="280" width="460" height="50" font="body" size="21" color="paper"><strong>Generated scenarios find real defects</strong></text>
+  <text id="exp2-scale" x="682" y="342" width="460" height="28" font="mono" size="12" color="paper">SCALE: ≥25% LIFT · &lt;15% FALSE POSITIVES</text>
+  <shape id="exp3-card" type="rect" x="100" y="410" width="520" height="164" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="exp3-code" x="122" y="428" width="330" height="24" font="mono" size="12" color="persimmon"><strong>EXP-03 · P1 · WANT ANSWER 9/10</strong></text>
+  <text id="exp3-title" x="122" y="466" width="460" height="50" font="body" size="21" color="ink"><strong>Decision traces shorten diagnosis</strong></text>
+  <text id="exp3-scale" x="122" y="528" width="460" height="28" font="mono" size="12" color="ink">SCALE: ≥40% FASTER · NO EXCESS PHI</text>
+  <shape id="exp4-card" type="rect" x="660" y="410" width="520" height="164" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="exp4-code" x="682" y="428" width="330" height="24" font="mono" size="12" color="persimmon"><strong>EXP-04 · P1 · WANT ANSWER 9/10</strong></text>
+  <text id="exp4-title" x="682" y="466" width="460" height="50" font="body" size="21" color="ink"><strong>Ambiguity queue prevents silent assumptions</strong></text>
+  <text id="exp4-scale" x="682" y="528" width="460" height="28" font="mono" size="12" color="ink">SCALE: ZERO PLANTED CRITICAL MISSES</text>
+  <shape id="portfolio-link-bar" type="rect" x="100" y="596" width="1080" height="42" fill="chartreuse"/>
+  <text id="portfolio-link" x="122" y="604" width="1036" height="26" font="mono" size="13" color="ink" align="center"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/experiments"><strong>OPEN SMALLEST TEST · METRIC CONTRACT · STOP RULE →</strong></a></text>
+  <text id="page-number" x="60" y="680" width="210" height="18" font="mono" size="12" color="#6B7069" wrap="false">14 / EXPERIMENTS</text>
+  <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
+</slide>
