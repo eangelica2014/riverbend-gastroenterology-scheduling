@@ -1,0 +1,21 @@
+<slide id="sources">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">APPENDIX / SOURCES + EVIDENCE</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="900" height="54" font="heading" size="38" color="river-green" wrap="false">Sources and evidence</text>
+  <shape id="primary-card" type="rect" x="60" y="178" width="354" height="370" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="primary-label" x="78" y="196" width="318" height="28" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">PRIMARY SUPPLIED SOURCES</text>
+  <text id="primary-copy" x="84" y="248" width="306" height="254" font="body" size="17" color="river-green" line-height="1.5"><p><strong>Take-home assignment</strong></p><p>Phase 1 and Phase 2 requirements, timing, deliverables, and video guidance</p><p><strong>Riverbend scheduling rules</strong></p><p>Clinic rules, providers, availability, FAQs, sample patients</p><p><strong>Candidate résumé + methods</strong></p><p>Role evidence and operating approach</p></text>
+  <shape id="proof-card" type="rect" x="453" y="178" width="354" height="370" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="proof-label" x="471" y="196" width="318" height="28" font="mono" size="14" color="river-green" fill="paper" padding="6 10" wrap="false">PUBLIC RELEASE EVIDENCE</text>
+  <text id="proof-copy" x="477" y="248" width="306" height="240" font="body" size="17" color="river-green" line-height="1.5"><p><strong>Live prototype</strong></p><p>Agent, architecture, scenario lab, FieldFlow, experiments</p><p><strong>Open-source repository</strong></p><p>Policy, fixtures, tests, documentation, governance, CI</p><p><strong>Submission artifacts</strong></p><p>Word PRD, Checklist Manifesto, user guide, interactive deck, script</p></text>
+  <shape id="guidance-card" type="rect" x="846" y="178" width="354" height="370" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="guidance-label" x="864" y="196" width="318" height="28" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">BOUNDARY GUIDANCE</text>
+  <text id="guidance-copy" x="870" y="248" width="306" height="254" font="body" size="17" color="river-green" line-height="1.5"><p><strong>HHS</strong> privacy and accessibility</p><p><strong>NIST AI RMF</strong> risk and evaluation</p><p><strong>HL7 FHIR</strong> appointment, schedule, and slot contracts</p><p><strong>Confido public materials</strong> product and role context</p><p>No source is used to claim certification or production readiness.</p></text>
+  <shape id="link-band" type="rect" x="60" y="574" width="1140" height="42" fill="none" stroke="river-green" stroke-width="1"/>
+  <text id="links" x="80" y="585" width="1100" height="20" font="mono" size="12" color="river-green" align="center"><a slide="cover" color="river-green"><u>RETURN TO COVER</u></a>  ·  <a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling" color="river-green"><u>OPEN REPOSITORY</u></a>  ·  <a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling/blob/main/docs/compliance-evidence-matrix.md" color="river-green"><u>OPEN COMPLIANCE MATRIX</u></a></text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">Primary evidence remains the supplied assignment, clinic rules, and tested repository.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">19 / 19</text>
+</slide>

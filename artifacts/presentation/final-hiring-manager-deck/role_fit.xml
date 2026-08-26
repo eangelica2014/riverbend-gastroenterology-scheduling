@@ -1,0 +1,21 @@
+<slide id="role_fit">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="420" height="26" font="mono" size="13" color="river-green" wrap="false">CONFIDO / PLATFORM PM ROLE FIT</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="1000" height="54" font="heading" size="38" color="river-green" wrap="false">The work mirrors Confido’s Platform PM mandate</text>
+  <table id="role-table" x="60" y="182" width="1160" height="370" columns="3,7" rows="46,54,54,54,54,54,54" font="body" size="16" color="river-green" padding="8 12" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-v="1 ledger-line" border-outer="1 river-green">
+    <tr color="paper"><td><strong>Role mandate</strong></td><td><strong>Riverbend proof</strong></td></tr>
+    <tr><td font="mono"><strong>HANDS-ON BUILDER</strong></td><td fill="chartreuse">Working TypeScript agent, voice/text UX, tests, docs, CI, and public release</td></tr>
+    <tr><td font="mono"><strong>FDE-FIRST PRODUCT</strong></td><td>Source ledger, ambiguity queue, policy diff, scenario replay, trace, and release gates</td></tr>
+    <tr><td font="mono"><strong>MULTI-TENANT LIFECYCLE</strong></td><td fill="chartreuse">FieldFlow contracts from ingest through improve and controlled scale</td></tr>
+    <tr><td font="mono"><strong>FALSIFYING EXPERIMENTS</strong></td><td>Numeric targets, guardrails, and explicit scale, narrow, or stop decisions</td></tr>
+    <tr><td font="mono"><strong>REVENUE LEVERAGE</strong></td><td>FDE hours, time to approved release, defect yield, diagnosis, and second-clinic setup</td></tr>
+    <tr><td font="mono"><strong>QUALITY BENCHMARK</strong></td><td fill="chartreuse">Negative guarantees, reason codes, trace evidence, regression, CI, canary, and rollback</td></tr>
+  </table>
+  <shape id="candidate-ribbon" type="rect" x="60" y="574" width="1160" height="48" fill="persimmon"/>
+  <text id="candidate-ribbon-text" x="80" y="586" width="1120" height="24" font="body" size="18" color="paper" align="center" wrap="false">Human-first technical product lead: field ambiguity → executable contract → validated platform leverage.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="900" height="20" font="caption" size="12" color="muted-green" wrap="false">Role evidence is grounded in the assignment, public repository, résumé, and candidate methods.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">14 / 19</text>
+</slide>

@@ -1,0 +1,23 @@
+<slide id="checklist">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="410" height="26" font="mono" size="13" color="river-green" wrap="false">APPENDIX / CHECKLIST MANIFESTO</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="river-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="900" height="54" font="heading" size="38" color="river-green" wrap="false">Checklist Manifesto</text>
+  <shape id="formula-band" type="rect" x="60" y="164" width="1160" height="52" fill="river-green"/>
+  <text id="formula-text" x="80" y="178" width="1120" height="24" font="mono" size="14" color="paper" align="center" wrap="false">REQUIREMENT → DECISION → PROOF → ROLE SIGNAL → BOUNDARY</text>
+  <shape id="before-card" type="rect" x="60" y="244" width="350" height="304" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="before-label" x="78" y="262" width="314" height="28" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">BEFORE THE DEMO</text>
+  <text id="before-items" x="84" y="314" width="302" height="202" font="body" size="18" color="river-green" line-height="1.48"><p><span color="river-green">✓</span> Reset the agent</p><p><span color="river-green">✓</span> Open scenario lab + CI</p><p><span color="river-green">✓</span> Test microphone or choose text</p><p><span color="river-green">✓</span> Keep booking + emergency ready</p><p><span color="river-green">✓</span> Use synthetic data only</p></text>
+  <shape id="during-card" type="rect" x="455" y="244" width="350" height="304" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="during-label" x="473" y="262" width="314" height="28" font="mono" size="14" color="river-green" fill="paper" padding="6 10" wrap="false">DURING THE PROOF</text>
+  <text id="during-items" x="479" y="314" width="302" height="202" font="body" size="18" color="river-green" line-height="1.48"><p><span color="river-green">✓</span> Name the requirement</p><p><span color="river-green">✓</span> Show the design decision</p><p><span color="river-green">✓</span> Pause on rule + tool + outcome</p><p><span color="river-green">✓</span> Show one negative guarantee</p><p><span color="river-green">✓</span> Connect the role competency</p></text>
+  <shape id="close-card" type="rect" x="850" y="244" width="350" height="304" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="close-label" x="868" y="262" width="314" height="28" font="mono" size="14" color="paper" fill="persimmon" padding="6 10" wrap="false">BEFORE THE CLOSE</text>
+  <text id="close-items" x="874" y="314" width="302" height="202" font="body" size="18" color="river-green" line-height="1.48"><p><span color="persimmon">✓</span> Confirm every required family</p><p><span color="persimmon">✓</span> State production boundaries</p><p><span color="persimmon">✓</span> Name the first investment</p><p><span color="persimmon">✓</span> Name the stop rule</p><p><span color="persimmon">✓</span> Invite deeper evidence review</p></text>
+  <shape id="link-band" type="rect" x="60" y="574" width="1160" height="42" fill="none" stroke="river-green" stroke-width="1"/>
+  <text id="links" x="80" y="585" width="1120" height="20" font="mono" size="12" color="river-green" align="center"><a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling/blob/main/artifacts/Hiring_Manager_Checklist_Manifesto.md" color="river-green"><u>OPEN FULL CHECKLIST</u></a>  ·  <a slide="scorecard" color="river-green"><u>RETURN TO SCORECARD</u></a></text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">The checklist prevents polish from substituting for evidence.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">18 / 19</text>
+</slide>

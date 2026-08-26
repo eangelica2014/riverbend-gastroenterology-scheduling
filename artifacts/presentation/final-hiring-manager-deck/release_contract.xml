@@ -1,0 +1,33 @@
+<slide id="release_contract">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="400" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / RELEASE CONTRACT</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="900" height="54" font="heading" size="38" color="river-green" wrap="false">Quality is a release contract</text>
+  <text id="subtitle" x="60" y="146" width="960" height="28" font="body" size="18" color="muted-green" wrap="false">Every claim is backed by executable evidence and a repeatable gate.</text>
+  <shape id="gate-1" type="rect" x="60" y="190" width="210" height="112" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="gate-1-number" x="78" y="208" width="174" height="44" font="heading" size="31" color="river-green" align="center" wrap="false">19 / 19</text>
+  <text id="gate-1-label" x="78" y="260" width="174" height="28" font="mono" size="12" color="river-green" align="center">ASSERTIONS</text>
+  <shape id="gate-2" type="rect" x="292" y="190" width="210" height="112" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="gate-2-number" x="310" y="208" width="174" height="44" font="heading" size="31" color="river-green" align="center" wrap="false">25 / 25</text>
+  <text id="gate-2-label" x="310" y="260" width="174" height="28" font="mono" size="12" color="river-green" align="center">SCENARIO REPLAYS</text>
+  <shape id="gate-3" type="rect" x="524" y="190" width="210" height="112" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="gate-3-number" x="542" y="208" width="174" height="44" font="heading" size="29" color="river-green" align="center" wrap="false">CLEAN</text>
+  <text id="gate-3-label" x="542" y="260" width="174" height="28" font="mono" size="12" color="river-green" align="center">TYPESCRIPT</text>
+  <shape id="gate-4" type="rect" x="756" y="190" width="210" height="112" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="gate-4-number" x="774" y="208" width="174" height="44" font="heading" size="29" color="river-green" align="center" wrap="false">BUILT</text>
+  <text id="gate-4-label" x="774" y="260" width="174" height="28" font="mono" size="12" color="river-green" align="center">PRODUCTION ARTIFACT</text>
+  <shape id="gate-5" type="rect" x="988" y="190" width="232" height="112" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="gate-5-number" x="1006" y="208" width="196" height="44" font="heading" size="29" color="river-green" align="center" wrap="false">GREEN</text>
+  <text id="gate-5-label" x="1006" y="260" width="196" height="28" font="mono" size="12" color="river-green" align="center">GITHUB ACTIONS</text>
+  <shape id="assertion-panel" type="rect" x="60" y="338" width="548" height="242" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="assertion-label" x="80" y="356" width="250" height="24" font="mono" size="13" color="paper" fill="river-green" padding="5 10" wrap="false">WHAT THE SUITE INSPECTS</text>
+  <text id="assertion-copy" x="84" y="400" width="500" height="146" font="body" size="18" color="river-green" line-height="1.48"><p>Reason code and versioned rule path</p><p>Required and forbidden tool calls</p><p>Transfer destination and safety preemption</p><p>State mutation count and explicit confirmation</p><p>Approved knowledge provenance</p></text>
+  <shape id="audit-panel" type="rect" x="638" y="338" width="582" height="242" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="audit-label" x="658" y="356" width="240" height="24" font="mono" size="13" color="paper" fill="persimmon" padding="5 10" wrap="false">AUDIT → CHANGE → GREEN</text>
+  <text id="audit-copy" x="662" y="398" width="534" height="122" font="body" size="18" color="river-green" line-height="1.42"><p>The fresh requirement audit found that location behavior existed without its own named regression.</p><p><strong>Action:</strong> added <span font="mono">SCN-FAQ-LOCATIONS</span>, direct response assertions, and updated release counts.</p><p><strong>Result:</strong> full local suite, TypeScript, and build pass.</p></text>
+  <text id="audit-links" x="662" y="536" width="534" height="24" font="mono" size="12" color="river-green"><a href="https://technical.eangelica.com/tests" color="river-green"><u>OPEN SCENARIO LAB</u></a>  ·  <a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling/actions" color="river-green"><u>OPEN GITHUB CI</u></a></text>
+  <shape id="footer-rule" type="line" x="60" y="622" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="641" width="900" height="24" font="caption" size="12" color="muted-green" wrap="false">Final CI is rerun after the complete hiring-manager package is committed.</text>
+  <text id="folio" x="1120" y="641" width="100" height="24" font="mono" size="12" color="muted-green" align="right" wrap="false">08 / 19</text>
+</slide>

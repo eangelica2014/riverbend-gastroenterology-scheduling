@@ -1,7 +1,7 @@
 {
   "name": "riverbend-gastroenterology-scheduling",
-  "version": "1.1.0",
-  "description": "Inspectable synthetic-data voice-agent and FDE platform case study for gastroenterology scheduling.",
+  "version": "1.2.0",
+  "description": "Inspectable synthetic-data voice agent, requirement-proof package, and FDE platform case study for gastroenterology scheduling.",
   "type": "module",
   "license": "MIT",
   "author": "Eangelica Germano Aton",
@@ -30,6 +30,7 @@
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "test": "vitest run",
+    "validate:package": "python3 scripts/validate_final_package.py",
     "format": "prettier --write ."
   },
   "dependencies": {

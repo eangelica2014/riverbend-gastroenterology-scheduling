@@ -1,0 +1,22 @@
+<slide id="scorecard">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / REQUIREMENT PROOF</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="river-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="1000" height="54" font="heading" size="37" color="river-green" wrap="false">Every requirement is implemented—and inspectable</text>
+  <shape id="title-rule" type="line" x="60" y="150" width="1160" height="0" stroke="river-green" stroke-width="2"/>
+  <table id="scorecard-table" x="60" y="176" width="1160" height="346" columns="7,2,3" rows="50,59,59,59,59,60" font="body" size="18" color="river-green" padding="10 14" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-outer="1 river-green">
+    <tr color="paper"><td><strong>Assignment promise</strong></td><td align="center"><strong>Coverage</strong></td><td><strong>Evidence</strong></td></tr>
+    <tr><td>Phase 1 functional call surface</td><td fill="chartreuse" align="center"><strong>15 / 15</strong></td><td font="mono" size="14">AGENT + TRACE</td></tr>
+    <tr><td>Phase 1 required submission artifacts</td><td fill="chartreuse" align="center"><strong>3 / 3</strong></td><td font="mono" size="14">AGENT · ARCH · LOG</td></tr>
+    <tr><td>Riverbend clinic-rule families</td><td fill="chartreuse" align="center"><strong>10 / 10</strong></td><td font="mono" size="14">VERSIONED RULES</td></tr>
+    <tr><td>Phase 2 required productization areas</td><td fill="chartreuse" align="center"><strong>5 / 5</strong></td><td font="mono" size="14">DOC + PROTOTYPE</td></tr>
+    <tr><td>Final release quality</td><td fill="chartreuse" align="center"><strong>GREEN</strong></td><td font="mono" size="14">19 TESTS · 25 CASES · CI</td></tr>
+  </table>
+  <shape id="boundary-strip" type="rect" x="60" y="552" width="1160" height="66" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="boundary-label" x="78" y="564" width="210" height="20" font="mono" size="13" color="persimmon" wrap="false">EVIDENCE STANDARD</text>
+  <text id="boundary-copy" x="300" y="560" width="900" height="44" font="body" size="18" color="river-green" anchor="middle">Required work is complete. Production telephony, EHR, tenancy, and compliance remain explicit next gates—not simulated claims.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="800" height="20" font="caption" size="12" color="muted-green" wrap="false">Assignment audit · release evidence · public repository</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">02 / 19</text>
+</slide>

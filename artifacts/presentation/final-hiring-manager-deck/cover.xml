@@ -1,0 +1,17 @@
+<slide id="cover">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="38" height="38" fill="river-green"/>
+  <shape id="brand-river" type="curve" x="68" y="56" width="22" height="12" fill="none" stroke="paper" stroke-width="3"/>
+  <text id="brand-lockup" x="112" y="46" width="430" height="34" font="mono" size="15" color="river-green" wrap="false">RIVERBEND / CLINICAL FIELD NOTEBOOK</text>
+  <shape id="phase-ribbon" type="rect" x="60" y="175" width="270" height="30" fill="persimmon"/>
+  <text id="phase-label" x="74" y="180" width="242" height="20" font="mono" size="13" color="paper" wrap="false">CONFIDO HEALTH · COMPLETE PROOF</text>
+  <text id="cover-title" x="60" y="230" width="860" height="170" font="heading" size="54" color="river-green" line-height="1.02"><p>Riverbend: From Clinic Rules</p><p>to Platform Leverage</p></text>
+  <text id="cover-subtitle" x="64" y="430" width="760" height="56" font="body" size="24" color="muted-green">A complete Phase 1 + Phase 2 proof for the Product Manager, Platform role</text>
+  <shape id="riverline-one" type="curve" x="930" y="190" width="255" height="140" fill="none" stroke="ledger-line" stroke-width="3"/>
+  <shape id="riverline-two" type="curve" x="960" y="300" width="220" height="170" fill="none" stroke="river-green" stroke-width="2" opacity="0.45"/>
+  <shape id="evidence-stamp" type="rect" x="950" y="480" width="220" height="78" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="evidence-stamp-text" x="966" y="493" width="190" height="52" font="mono" size="14" color="river-green"><p><strong>RELEASE DOSSIER</strong></p><p>REQUIREMENT → PROOF</p></text>
+  <shape id="footer-rule" type="line" x="60" y="630" width="1120" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="presenter" x="60" y="654" width="620" height="24" font="body" size="16" color="river-green" wrap="false">Eangelica Germano Aton · August 2026</text>
+  <text id="folio" x="1050" y="654" width="130" height="24" font="mono" size="13" color="muted-green" align="right" wrap="false">COVER / 19</text>
+</slide>

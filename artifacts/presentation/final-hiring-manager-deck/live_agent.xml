@@ -1,0 +1,24 @@
+<slide id="live_agent">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / LIVE AGENT PROOF</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">The caller hears calm; the FDE sees proof</text>
+  <shape id="patient-panel" type="rect" x="60" y="178" width="490" height="404" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="patient-label" x="78" y="194" width="210" height="30" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">PATIENT SURFACE</text>
+  <text id="patient-copy" x="84" y="246" width="430" height="196" font="body" size="20" color="river-green" line-height="1.45"><p><strong>Live transcript</strong> makes a misheard phrase visible.</p><p><strong>One question</strong> keeps cognitive load low.</p><p><strong>Progress</strong> explains the next safe step.</p><p><strong>Human path</strong> remains supported at every boundary.</p></text>
+  <shape id="progress-rule" type="line" x="84" y="474" width="420" height="0" stroke="ledger-line" stroke-width="8"/>
+  <shape id="progress-filled" type="line" x="84" y="474" width="304" height="0" stroke="river-green" stroke-width="8"/>
+  <text id="progress-labels" x="84" y="493" width="420" height="50" font="mono" size="11" color="muted-green" align="center"><p>INTENT · IDENTITY · COVERAGE · POLICY</p><p>AVAILABILITY · CONFIRMATION · OUTCOME</p></text>
+  <shape id="state-spine" type="rect" x="582" y="198" width="116" height="336" fill="river-green"/>
+  <text id="state-spine-text" x="594" y="220" width="92" height="290" font="mono" size="12" color="paper" align="center" line-height="1.9"><p>INTENT</p><p>↓</p><p>VERIFY</p><p>↓</p><p>POLICY</p><p>↓</p><p>SEARCH</p><p>↓</p><p>CONFIRM</p><p>↓</p><p>WRITE</p></text>
+  <shape id="fde-panel" type="rect" x="730" y="178" width="490" height="404" fill="river-green" stroke="river-green" stroke-width="2"/>
+  <text id="fde-label" x="748" y="194" width="230" height="30" font="mono" size="14" color="river-green" fill="chartreuse" padding="6 10" wrap="false">FDE EVIDENCE SURFACE</text>
+  <text id="fde-ledger" x="754" y="246" width="438" height="266" font="mono" size="15" color="paper" line-height="1.55"><p><span color="chartreuse">INTENT</span>  book_appointment</p><p><span color="chartreuse">VERIFY</span> candidate + DOB passed</p><p><span color="chartreuse">RULE</span>  RB-VISIT-01 · RB-PROV-01</p><p><span color="chartreuse">TOOL</span>  searchAvailability</p><p><span color="persimmon">GATE</span>  explicit confirmation required</p><p><span color="chartreuse">RECEIPT</span> one mutation after yes</p></text>
+  <shape id="receipt-stamp" type="rect" x="754" y="522" width="210" height="38" fill="chartreuse"/>
+  <text id="receipt-text" x="766" y="531" width="186" height="20" font="mono" size="12" color="river-green" align="center" wrap="false">VERIFIED WRITE RECEIPT</text>
+  <text id="launch-link" x="990" y="529" width="202" height="24" font="mono" size="13" color="paper" align="right" wrap="false"><a href="https://technical.eangelica.com/agent" color="paper"><u>LAUNCH LIVE AGENT →</u></a></text>
+  <shape id="footer-rule" type="line" x="60" y="622" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="641" width="860" height="24" font="caption" size="12" color="muted-green" wrap="false">Demo: 555-0102 → 1971-07-04 → coverage yes → confirm yes</text>
+  <text id="folio" x="1120" y="641" width="100" height="24" font="mono" size="12" color="muted-green" align="right" wrap="false">05 / 19</text>
+</slide>

@@ -21,16 +21,18 @@ The second half of the case proposes **FieldFlow**, an FDE-first product lifecyc
 | **FieldFlow platform**     | Shows the eight-stage FDE lifecycle and generalization boundary                                                                                          | `/platform`                                                               |
 | **Experiment portfolio**   | Prioritizes falsifiable P0–P2 bets with stop/scale rules                                                                                                 | `/experiments`                                                            |
 | **Native Word PRD**        | Summarizes both assignment phases and appendices                                                                                                         | `artifacts/Riverbend_Gastroenterology_Scheduling_PRD_Eangelica_Aton.docx` |
-| **Presentation source**    | Provides the 22-slide narrative, dedicated testing/CI evidence page, interaction map, and timed empathy-to-design video script                           | `artifacts/presentation/`                                                 |
+| **Checklist Manifesto**    | Turns every assignment and role requirement into a required proof, evidence location, speaking point, and boundary                                       | `artifacts/Hiring_Manager_Checklist_Manifesto.md`                         |
+| **Hiring-manager guide**   | Provides the quick roadmap, artifact navigation, exact live-demo route, recovery plan, and proof-to-role translation                                     | `artifacts/Hiring_Manager_Roadmap_and_User_Guide.md`                      |
+| **Final presentation**     | Provides the 19-slide requirement-proof narrative, testing/CI evidence, complete scorecard, speaker notes, and timed five- and nine-minute video paths   | `artifacts/presentation/final-hiring-manager-deck/`                       |
 
 ## Actual Validation Results
 
-| Check                    |               Result | What it proves                                                                                       |
-| ------------------------ | -------------------: | ---------------------------------------------------------------------------------------------------- |
-| Deterministic assertions |   **18 / 18 passed** | Policy boundaries, privacy gates, emergency routing, confirmation, slot order, and mutation behavior |
-| Scenario catalog         | **24 / 24 replayed** | Booking, denial, identity, appointment, FAQ, transfer, urgent, emergency, and repair paths           |
-| TypeScript               |        **No errors** | The typed client policy and interaction model are internally consistent                              |
-| Production build         |        **Succeeded** | The static evaluator artifact builds; one non-blocking bundle-size optimization remains              |
+| Check                    |               Result | What it proves                                                                                                      |
+| ------------------------ | -------------------: | ------------------------------------------------------------------------------------------------------------------- |
+| Deterministic assertions |   **19 / 19 passed** | Policy boundaries, required FAQs, privacy gates, emergency routing, confirmation, slot order, and mutation behavior |
+| Scenario catalog         | **25 / 25 replayed** | Booking, denial, identity, appointment, hours/location/parking FAQ, transfer, urgent, emergency, and repair paths   |
+| TypeScript               |        **No errors** | The typed client policy and interaction model are internally consistent                                             |
+| Production build         |        **Succeeded** | The static evaluator artifact builds; one non-blocking bundle-size optimization remains                             |
 
 Run these checks locally rather than relying on the table:
 
@@ -39,6 +41,7 @@ pnpm install
 pnpm test
 pnpm check
 pnpm build
+pnpm validate:package
 ```
 
 ## Quick Start

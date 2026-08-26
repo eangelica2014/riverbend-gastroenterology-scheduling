@@ -2,6 +2,20 @@
 
 All notable changes to Riverbend Gastroenterology Scheduling are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses semantic versioning.
 
+## [1.2.0] — 2026-08-26
+
+### Added
+
+The final hiring-manager proof release adds a fresh Phase 1, Phase 2, and Platform Product Manager requirement audit; an executable clinic-location regression; a 25-scenario source of truth; a Checklist Manifesto; a compliance-evidence matrix; a hiring-manager roadmap and user guide; a 19-slide requirement-proof interactive deck with speaker notes; a 9:20 video script with a five-minute fallback; and a deterministic final-package validator for slide order, links, notes, artifacts, and scenario coverage.
+
+### Changed
+
+Validation evidence is now **19/19 automated assertions** and **25/25 scenario replays**. The scenario lab and FieldFlow lifecycle display the final count, the Word PRD was regenerated with the corrected executive and appendix evidence, and the final narrative clarifies that Riverbend demonstrates new-patient behavior through the supplied record’s greater-than-three-year classification while a truly unmatched caller receives a safe front-desk path because no chart-creation tool is supplied.
+
+### Validation
+
+Formatting, Python compile checks, the deterministic suite, TypeScript, the production build, desktop visual verification, DOCX package integrity, presentation rendering, 19-slide state validation, internal-link validation, and 19-slide speaker-note coverage pass locally. The existing non-blocking main-bundle size warning remains visible. Final GitHub CI is run after this release is pushed.
+
 ## [1.1.0] — 2026-08-26
 
 ### Added

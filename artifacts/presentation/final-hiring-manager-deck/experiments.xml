@@ -1,0 +1,21 @@
+<slide id="experiments">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="420" height="26" font="mono" size="13" color="river-green" wrap="false">FIELD FLOW / EXPERIMENT PORTFOLIO</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">Want the answer before the feature</text>
+  <shape id="thesis-band" type="rect" x="60" y="164" width="1160" height="40" fill="river-green"/>
+  <text id="thesis-band-text" x="80" y="174" width="1120" height="20" font="mono" size="13" color="paper" align="center" wrap="false">HYPOTHESIS → SMALLEST FALSIFYING TEST → METRIC CONTRACT → SCALE / NARROW / STOP</text>
+  <table id="experiment-table" x="60" y="224" width="1160" height="326" columns="1,3,4,3" rows="46,70,70,70,70" font="body" size="15" color="river-green" padding="8 10" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-v="1 ledger-line" border-outer="1 river-green">
+    <tr color="paper"><td align="center"><strong>Priority</strong></td><td><strong>Smallest falsifying test</strong></td><td><strong>Numeric scale gate</strong></td><td><strong>Stop / narrow concern</strong></td></tr>
+    <tr><td fill="chartreuse" align="center" font="mono"><strong>P0</strong></td><td><p><strong>Policy compiler</strong></p><p>Two FDEs × two packets; counterbalanced</p></td><td fill="chartreuse"><p><strong>≥30% less active time</strong></p><p>No critical regression</p></td><td color="persimmon">Any compiler-caused critical bypass</td></tr>
+    <tr><td fill="chartreuse" align="center" font="mono"><strong>P0</strong></td><td><p><strong>Generated scenarios</strong></p><p>Seed matched critical defects</p></td><td fill="chartreuse"><p><strong>≥25% defect-yield lift</strong></p><p>&lt;15% false positives</p></td><td color="persimmon">Noise increases total review time</td></tr>
+    <tr><td align="center" font="mono"><strong>P1</strong></td><td><p><strong>Decision trace</strong></p><p>Transcript-only vs. trace diagnosis</p></td><td><p><strong>≥40% faster diagnosis</strong></p><p>No excess PHI exposure</p></td><td color="persimmon">Trace density lowers layer accuracy</td></tr>
+    <tr><td align="center" font="mono"><strong>P1</strong></td><td><p><strong>Ambiguity queue</strong></p><p>Plant cross-source conflicts</p></td><td><p><strong>Zero critical conflicts approved</strong></p><p>≤15% review overhead</p></td><td color="persimmon">Low-severity noise overwhelms review</td></tr>
+  </table>
+  <text id="decision-text" x="60" y="572" width="870" height="34" font="body" size="18" color="river-green" wrap="false">Do not fund broader platform expansion until the two P0 questions earn it.</text>
+  <text id="portfolio-link" x="930" y="572" width="290" height="34" font="mono" size="12" color="river-green" align="right"><a href="https://technical.eangelica.com/experiments" color="river-green"><u>OPEN FULL PORTFOLIO →</u></a></text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">Experiment targets are decision rules—not fabricated outcomes.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">12 / 19</text>
+</slide>

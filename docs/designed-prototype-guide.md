@@ -2,14 +2,14 @@
 
 The Riverbend prototype is an evaluator-accessible, synthetic-data product proof. It combines the Phase 1 voice/text agent with the Phase 2 FieldFlow platform concept in one field-binder navigation system. It does not connect to an EHR, telephony service, production AI model, or real patient record.
 
-| Route | Assignment proof | Recommended evaluator action |
-| --- | --- | --- |
-| `/` | One-clinic-to-platform narrative and role alignment | Read the operating thesis, then choose Phase 1 or Phase 2 |
-| `/agent` | Functional agent, mock tools, voice enhancement, state and trace evidence | Replay “Book follow-up,” “Block a minor,” “Confirm visit,” and “Emergency boundary”; then type a request |
-| `/architecture` | Prompt/knowledge/policy/tool separation, runtime layers, assumptions | Inspect the six-layer field map and the three mutation boundaries |
-| `/tests` | Scenario catalog, evidence-bearing assertions, iteration rationale | Run all 24 scenarios; expand a critical case and inspect expected versus observed evidence |
-| `/platform` | Generalization, designed lifecycle, clinic-versus-platform boundary | Open “Clarify,” “Compile,” “Simulate,” and “Improve”; compare artifacts and decision contracts |
-| `/experiments` | Prioritized hypotheses, metrics, evidence value, stop/scale logic | Open both P0 experiments and inspect the smallest useful test and decision rule |
+| Route           | Assignment proof                                                          | Recommended evaluator action                                                                             |
+| --------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `/`             | One-clinic-to-platform narrative and role alignment                       | Read the operating thesis, then choose Phase 1 or Phase 2                                                |
+| `/agent`        | Functional agent, mock tools, voice enhancement, state and trace evidence | Replay “Book follow-up,” “Block a minor,” “Confirm visit,” and “Emergency boundary”; then type a request |
+| `/architecture` | Prompt/knowledge/policy/tool separation, runtime layers, assumptions      | Inspect the six-layer field map and the three mutation boundaries                                        |
+| `/tests`        | Scenario catalog, evidence-bearing assertions, iteration rationale        | Run all 25 scenarios; expand a critical case and inspect expected versus observed evidence               |
+| `/platform`     | Generalization, designed lifecycle, clinic-versus-platform boundary       | Open “Clarify,” “Compile,” “Simulate,” and “Improve”; compare artifacts and decision contracts           |
+| `/experiments`  | Prioritized hypotheses, metrics, evidence value, stop/scale logic         | Open both P0 experiments and inspect the smallest useful test and decision rule                          |
 
 ## Five-Minute Demo Path
 
@@ -22,4 +22,3 @@ Use the five-minute path, then add the exact Riverbend source ambiguities, the g
 ## Voice and Accessibility
 
 Browser speech recognition and speech synthesis are progressive enhancements. If microphone permission is unavailable, the full product proof remains accessible through text and scripted scenarios. The prototype provides a skip link, keyboard controls, visible focus, semantic labels, and reduced-motion support. Evaluators should not enter real patient information.
-

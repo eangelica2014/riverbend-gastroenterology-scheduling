@@ -1,0 +1,40 @@
+<slide id="architecture">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="410" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / AUTHORITY BOUNDARY</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="980" height="54" font="heading" size="38" color="river-green" wrap="false">Language interprets; deterministic services authorize</text>
+  <shape id="caller-box" type="rect" x="60" y="184" width="120" height="80" fill="paper" stroke="river-green" stroke-width="2"/>
+  <text id="caller-text" x="72" y="205" width="96" height="40" font="mono" size="13" color="river-green" align="center" anchor="middle">CALLER</text>
+  <shape id="arrow-1" type="line" x="180" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="conversation-box" type="rect" x="215" y="184" width="145" height="80" fill="paper" stroke="river-green" stroke-width="2"/>
+  <text id="conversation-text" x="227" y="198" width="121" height="52" font="mono" size="12" color="river-green" align="center" anchor="middle"><p>CONVERSATION</p><p>interpret + repair</p></text>
+  <shape id="arrow-2" type="line" x="360" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="safety-box" type="rect" x="395" y="184" width="120" height="80" fill="paper" stroke="critical-red" stroke-width="2"/>
+  <text id="safety-text" x="407" y="198" width="96" height="52" font="mono" size="12" color="critical-red" align="center" anchor="middle"><p>SAFETY</p><p>preempt</p></text>
+  <shape id="arrow-3" type="line" x="515" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="identity-box" type="rect" x="550" y="184" width="120" height="80" fill="paper" stroke="river-green" stroke-width="2"/>
+  <text id="identity-text" x="562" y="198" width="96" height="52" font="mono" size="12" color="river-green" align="center" anchor="middle"><p>IDENTITY</p><p>verify</p></text>
+  <shape id="arrow-4" type="line" x="670" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="policy-box" type="rect" x="705" y="184" width="120" height="80" fill="river-green"/>
+  <text id="policy-text" x="717" y="198" width="96" height="52" font="mono" size="12" color="paper" align="center" anchor="middle"><p>POLICY</p><p>authorize</p></text>
+  <shape id="arrow-5" type="line" x="825" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="tool-box" type="rect" x="860" y="184" width="145" height="80" fill="paper" stroke="river-green" stroke-width="2"/>
+  <text id="tool-text" x="872" y="198" width="121" height="52" font="mono" size="12" color="river-green" align="center" anchor="middle"><p>TYPED TOOLS</p><p>read / write</p></text>
+  <shape id="arrow-6" type="line" x="1005" y="224" width="35" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="adapter-box" type="rect" x="1040" y="184" width="180" height="80" fill="paper" stroke="river-green" stroke-width="2"/>
+  <text id="adapter-text" x="1052" y="198" width="156" height="52" font="mono" size="12" color="river-green" align="center" anchor="middle"><p>TENANT ADAPTER</p><p>future EHR / PMS</p></text>
+  <shape id="trace-line" type="line" x="287" y="286" width="780" height="0" stroke="chartreuse" stroke-width="7"/>
+  <text id="trace-label" x="465" y="291" width="430" height="24" font="mono" size="12" color="river-green" align="center" wrap="false">REDACTED TRACE · RULE · TOOL · RESULT · RECEIPT</text>
+  <table id="ownership-table" x="60" y="334" width="1160" height="248" columns="2,3,4" rows="42,41,41,41,41,42" font="body" size="15" color="river-green" padding="7 10" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-v="1 ledger-line" border-outer="1 river-green">
+    <tr color="paper"><td><strong>Layer</strong></td><td><strong>Owns</strong></td><td><strong>Must not own</strong></td></tr>
+    <tr><td font="mono">PROMPT</td><td>Scope, tone, repair, confirmation</td><td>Patient records or hidden clinic authority</td></tr>
+    <tr><td font="mono">KNOWLEDGE</td><td>Approved hours, locations, parking</td><td>Mutable appointments or unresolved policy</td></tr>
+    <tr><td font="mono">POLICY</td><td>Eligibility, provider, duration, slot order</td><td>Conversational phrasing or clinical advice</td></tr>
+    <tr><td font="mono">TOOLS</td><td>Validated reads, writes, transfers, receipts</td><td>Free-form business judgment</td></tr>
+    <tr><td font="mono">TRACE</td><td>Redacted reason and outcome evidence</td><td>Unrestricted PHI analytics</td></tr>
+  </table>
+  <shape id="footer-rule" type="line" x="60" y="622" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-link" x="60" y="641" width="900" height="24" font="mono" size="12" color="river-green"><a href="https://technical.eangelica.com/architecture" color="river-green"><u>OPEN LIVE ARCHITECTURE →</u></a></text>
+  <text id="folio" x="1120" y="641" width="100" height="24" font="mono" size="12" color="muted-green" align="right" wrap="false">07 / 19</text>
+</slide>

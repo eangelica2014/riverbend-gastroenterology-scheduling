@@ -1,0 +1,39 @@
+<slide id="scope_boundary">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="440" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / SCOPE + BOUNDARY</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="1000" height="54" font="heading" size="38" color="river-green" wrap="false">I exceeded scope without hiding the boundary</text>
+  <text id="proof-header" x="60" y="170" width="490" height="30" font="mono" size="14" color="river-green" wrap="false">ADDED PROOF THAT IMPROVES TRUST</text>
+  <text id="boundary-header" x="730" y="170" width="490" height="30" font="mono" size="14" color="persimmon" wrap="false">PRODUCTION BOUNDARY KEPT EXPLICIT</text>
+  <shape id="proof-1" type="rect" x="60" y="214" width="490" height="50" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="proof-1-text" x="78" y="228" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Public open-source repository and CI</text>
+  <shape id="link-1" type="line" x="550" y="239" width="160" height="0" stroke="ledger-line" stroke-width="3"/>
+  <shape id="boundary-1" type="rect" x="730" y="214" width="490" height="50" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="boundary-1-text" x="748" y="228" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Not a production clinic deployment</text>
+  <shape id="proof-2" type="rect" x="60" y="276" width="490" height="50" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="proof-2-text" x="78" y="290" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Transcript, progress rail, and FDE trace</text>
+  <shape id="link-2" type="line" x="550" y="301" width="160" height="0" stroke="ledger-line" stroke-width="3"/>
+  <shape id="boundary-2" type="rect" x="730" y="276" width="490" height="50" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="boundary-2-text" x="748" y="282" width="454" height="38" font="body" size="15" color="river-green">Not identity proof or unrestricted PHI logging</text>
+  <shape id="proof-3" type="rect" x="60" y="338" width="490" height="50" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="proof-3-text" x="78" y="352" width="454" height="22" font="body" size="17" color="river-green" wrap="false">25-scenario lab and negative guarantees</text>
+  <shape id="link-3" type="line" x="550" y="363" width="160" height="0" stroke="ledger-line" stroke-width="3"/>
+  <shape id="boundary-3" type="rect" x="730" y="338" width="490" height="50" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="boundary-3-text" x="748" y="352" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Synthetic fixtures and deterministic demo NLU</text>
+  <shape id="proof-4" type="rect" x="60" y="400" width="490" height="50" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="proof-4-text" x="78" y="414" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Editable Word PRD and interactive PPT</text>
+  <shape id="link-4" type="line" x="550" y="425" width="160" height="0" stroke="ledger-line" stroke-width="3"/>
+  <shape id="boundary-4" type="rect" x="730" y="400" width="490" height="50" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="boundary-4-text" x="748" y="414" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Candidate still records and submits the video</text>
+  <shape id="proof-5" type="rect" x="60" y="462" width="490" height="50" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="proof-5-text" x="78" y="476" width="454" height="22" font="body" size="17" color="river-green" wrap="false">Multi-tenant platform contracts</text>
+  <shape id="link-5" type="line" x="550" y="487" width="160" height="0" stroke="ledger-line" stroke-width="3"/>
+  <shape id="boundary-5" type="rect" x="730" y="462" width="490" height="50" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="boundary-5-text" x="748" y="468" width="454" height="38" font="body" size="15" color="river-green">No live tenant auth, storage, EHR, or telephony</text>
+  <shape id="discipline-band" type="rect" x="60" y="560" width="1160" height="58" fill="river-green"/>
+  <text id="discipline-text" x="80" y="575" width="1120" height="28" font="body" size="19" color="paper" align="center" wrap="false">Ambition adds proof. Product discipline preserves the boundary.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="900" height="20" font="caption" size="12" color="muted-green" wrap="false">Synthetic evaluator proof · production gates documented separately</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">15 / 19</text>
+</slide>

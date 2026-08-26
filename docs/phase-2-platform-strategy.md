@@ -19,15 +19,15 @@ The voice agent required four kinds of reasoning that should remain separate. Th
 
 The Riverbend source also proved that onboarding material cannot be treated as clean configuration. A provider row contained a workday/location conflict; annual physicals were explicitly unresolved; policy-number values were absent; and appointment fixtures had to be created by the implementer. Each ambiguity was operationally meaningful. The correct platform behavior is to make it inspectable, assign an owner, and block critical promotion when necessary—not silently guess.
 
-| Phase 1 friction | Evidence from Riverbend | Platform response |
-| --- | --- | --- |
-| Source quality | OCR and small previews misread patient/provider fields | Source ledger, visual verification, field confidence, provenance |
-| Implicit business rules | Eligibility, duration, pairing, and Thursday behavior were embedded in prose/tables | Typed policy schema, reason codes, version diff, approval |
-| Missing or contradictory truth | Whitfield conflict, annual-physical TBD, absent policy numbers | Ambiguity queue with owner, severity, disposition, and release impact |
-| Safety mixed with ordinary intent | Urgent symptoms or emergencies can appear during any administrative flow | Preemptive safety classifier, clinical-transfer contract, critical scenarios |
-| EHR/PMS coupling | Patient, coverage, schedule, slot, and appointment behavior vary by system | Normalized domain contracts plus tenant adapters |
-| QA effort | Correctness depends on sequence, tools, denials, and negative guarantees | Scenario generation, trace replay, forbidden-call assertions, regression gates |
-| Iteration risk | A change can preserve fluent language while breaking a tool or rule | Versioned bundle, environment promotion, canary scope, rollback |
+| Phase 1 friction                  | Evidence from Riverbend                                                             | Platform response                                                              |
+| --------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Source quality                    | OCR and small previews misread patient/provider fields                              | Source ledger, visual verification, field confidence, provenance               |
+| Implicit business rules           | Eligibility, duration, pairing, and Thursday behavior were embedded in prose/tables | Typed policy schema, reason codes, version diff, approval                      |
+| Missing or contradictory truth    | Whitfield conflict, annual-physical TBD, absent policy numbers                      | Ambiguity queue with owner, severity, disposition, and release impact          |
+| Safety mixed with ordinary intent | Urgent symptoms or emergencies can appear during any administrative flow            | Preemptive safety classifier, clinical-transfer contract, critical scenarios   |
+| EHR/PMS coupling                  | Patient, coverage, schedule, slot, and appointment behavior vary by system          | Normalized domain contracts plus tenant adapters                               |
+| QA effort                         | Correctness depends on sequence, tools, denials, and negative guarantees            | Scenario generation, trace replay, forbidden-call assertions, regression gates |
+| Iteration risk                    | A change can preserve fluent language while breaking a tool or rule                 | Versioned bundle, environment promotion, canary scope, rollback                |
 
 ## Primary User and Job
 
@@ -41,16 +41,16 @@ The secondary users are clinic subject-matter owners who must review policy with
 
 ## FieldFlow Lifecycle
 
-| Stage | FDE question | System action | Durable artifact | Gate |
-| --- | --- | --- | --- | --- |
-| **1. Ingest** | What did the clinic actually provide? | Parse documents, tables, forms, transcripts, and existing configurations; preserve page/cell provenance | Source ledger | Unreadable critical source blocks compilation |
-| **2. Clarify** | What is missing, conflicting, or consequential? | Detect ambiguous values and cross-source conflict; assign owner and severity | Ambiguity queue | Critical ambiguity requires disposition |
-| **3. Compile** | What belongs in prompt, knowledge, policy, tool, or adapter configuration? | Produce a typed tenant bundle with rule IDs and source references | Versioned policy bundle | Human approval for critical policy |
-| **4. Simulate** | Can this bundle survive happy paths and failure modes? | Generate scenario families and replay intent, gate, rule, tool, result, and response | Regression matrix | All critical scenarios pass |
-| **5. Approve** | Are clinic truth and safety boundaries correctly represented? | Present source-linked diffs and unresolved risk to clinic/FDE reviewers | Signed release candidate | Named owner and rollback plan |
-| **6. Deploy** | How do we promote without making the clinic the test environment? | Validate adapter health, canary scope, version compatibility, and rollback | Deployment record | Technical and operational readiness |
-| **7. Observe** | Did the workflow resolve correctly and appropriately? | Measure bounded resolution, correct transfer, latency, reason codes, and recovery | Quality dashboard | Threshold alerts and incident playbook |
-| **8. Improve** | Which failures deserve a policy, test, tool, or platform change? | Cluster redacted failures, propose source-linked changes, replay regression | Improvement proposal | Human approval before promotion |
+| Stage           | FDE question                                                               | System action                                                                                           | Durable artifact         | Gate                                          |
+| --------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------- |
+| **1. Ingest**   | What did the clinic actually provide?                                      | Parse documents, tables, forms, transcripts, and existing configurations; preserve page/cell provenance | Source ledger            | Unreadable critical source blocks compilation |
+| **2. Clarify**  | What is missing, conflicting, or consequential?                            | Detect ambiguous values and cross-source conflict; assign owner and severity                            | Ambiguity queue          | Critical ambiguity requires disposition       |
+| **3. Compile**  | What belongs in prompt, knowledge, policy, tool, or adapter configuration? | Produce a typed tenant bundle with rule IDs and source references                                       | Versioned policy bundle  | Human approval for critical policy            |
+| **4. Simulate** | Can this bundle survive happy paths and failure modes?                     | Generate scenario families and replay intent, gate, rule, tool, result, and response                    | Regression matrix        | All critical scenarios pass                   |
+| **5. Approve**  | Are clinic truth and safety boundaries correctly represented?              | Present source-linked diffs and unresolved risk to clinic/FDE reviewers                                 | Signed release candidate | Named owner and rollback plan                 |
+| **6. Deploy**   | How do we promote without making the clinic the test environment?          | Validate adapter health, canary scope, version compatibility, and rollback                              | Deployment record        | Technical and operational readiness           |
+| **7. Observe**  | Did the workflow resolve correctly and appropriately?                      | Measure bounded resolution, correct transfer, latency, reason codes, and recovery                       | Quality dashboard        | Threshold alerts and incident playbook        |
+| **8. Improve**  | Which failures deserve a policy, test, tool, or platform change?           | Cluster redacted failures, propose source-linked changes, replay regression                             | Improvement proposal     | Human approval before promotion               |
 
 This lifecycle echoes NIST’s governance emphasis: trustworthiness must be considered throughout design, development, use, and evaluation, not appended after a demo.[3] It also matches healthcare scheduling interoperability boundaries. HL7 distinguishes a schedule from a reservable slot and a planned appointment, while its workflow notes that availability does not itself establish eligibility.[4] FieldFlow therefore evaluates clinic policy before calling availability and maps vendor-specific systems through adapters rather than placing clinic rules in vendor plumbing.
 
@@ -58,16 +58,16 @@ This lifecycle echoes NIST’s governance emphasis: trustworthiness must be cons
 
 The platform should generalize **contracts and control**, not every clinic decision. A reusable primitive earns platform status when it is cross-tenant, versionable, observable, permissionable, and testable. A rule remains tenant configuration when its meaning depends on local policy, staffing, service scope, location, or unresolved owner judgment.
 
-| Generalize as a platform primitive | Why it compounds | Keep configurable or local | Why it must not become a default |
-| --- | --- | --- | --- |
-| Identity workflow and verification state | Protects reads/writes across tenants | Required attributes and fallback path | Risk and accessible verification practices differ |
-| Policy schema, reason codes, and compiler | Makes business rules diffable and testable | Three-year threshold, age minimum, visit durations | Local clinical and operational policy varies |
-| Typed tool registry and authorization | Standardizes least-privilege reads, writes, transfers, and receipts | Vendor adapter and clinic permissions | EHR/PMS capability and clinic authority vary |
-| Scenario families and assertion DSL | Reuses safety, privacy, repair, and mutation patterns | Patient/provider/appointment fixtures and expected local outcomes | Test truth must reflect the clinic bundle |
-| Trace, replay, release gates, rollback | Reduces diagnosis and migration risk | Retention, visibility, and operational thresholds | Privacy, contracts, and risk appetite vary |
-| Module registry with provenance | Surfaces reusable, field-proven patterns | Module acceptance and policy overrides | A shared pattern is a suggestion until locally approved |
-| Ambiguity queue and review workflow | Prevents silent implementation assumptions | Owner, disposition, and source-specific resolution | Only the clinic can settle some ambiguities |
-| Outcome/incident taxonomy | Enables portfolio learning without raw transcript dependence | Clinic baseline and target | Volume, mix, staffing, and workflow differ |
+| Generalize as a platform primitive        | Why it compounds                                                    | Keep configurable or local                                        | Why it must not become a default                        |
+| ----------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- |
+| Identity workflow and verification state  | Protects reads/writes across tenants                                | Required attributes and fallback path                             | Risk and accessible verification practices differ       |
+| Policy schema, reason codes, and compiler | Makes business rules diffable and testable                          | Three-year threshold, age minimum, visit durations                | Local clinical and operational policy varies            |
+| Typed tool registry and authorization     | Standardizes least-privilege reads, writes, transfers, and receipts | Vendor adapter and clinic permissions                             | EHR/PMS capability and clinic authority vary            |
+| Scenario families and assertion DSL       | Reuses safety, privacy, repair, and mutation patterns               | Patient/provider/appointment fixtures and expected local outcomes | Test truth must reflect the clinic bundle               |
+| Trace, replay, release gates, rollback    | Reduces diagnosis and migration risk                                | Retention, visibility, and operational thresholds                 | Privacy, contracts, and risk appetite vary              |
+| Module registry with provenance           | Surfaces reusable, field-proven patterns                            | Module acceptance and policy overrides                            | A shared pattern is a suggestion until locally approved |
+| Ambiguity queue and review workflow       | Prevents silent implementation assumptions                          | Owner, disposition, and source-specific resolution                | Only the clinic can settle some ambiguities             |
+| Outcome/incident taxonomy                 | Enables portfolio learning without raw transcript dependence        | Clinic baseline and target                                        | Volume, mix, staffing, and workflow differ              |
 
 Riverbend’s three-year threshold, Dr. Crane’s Thursday behavior, provider pairings, lunch closure, annual-physical status, and Whitfield conflict are configuration with provenance. They should never be copied into a second clinic because they happened to work in the first.
 
@@ -87,14 +87,14 @@ This creates a defensible learning loop. Tenant improvements remain tenant-scope
 
 The north star is **clinically bounded administrative resolution**: the share of in-scope requests that end in a correct, policy-compliant administrative outcome or an appropriate transfer, with no safety or privacy violation. Completion without correctness is not success.
 
-| Dimension | Metric | Guardrail |
-| --- | --- | --- |
-| FDE leverage | Median active FDE hours per launch; time to first approved release | Critical scenario pass rate must not decline |
-| Patient outcome | Bounded resolution; correction/repeat rate; appropriate transfer | Zero known medical-advice completions |
-| Quality | Critical regression pass rate; policy/tool error rate | Release blocked by critical failure |
-| Operations | Median diagnosis time; recovery time; rollback success | Trace access is role-scoped and PHI-aware |
-| Platform compounding | Reusable module acceptance; override rate; second-clinic setup time | Zero inherited critical rule errors |
-| Clinic trust | Review turnaround; unresolved ambiguity age; rollback requests | Critical ambiguity requires named disposition |
+| Dimension            | Metric                                                              | Guardrail                                     |
+| -------------------- | ------------------------------------------------------------------- | --------------------------------------------- |
+| FDE leverage         | Median active FDE hours per launch; time to first approved release  | Critical scenario pass rate must not decline  |
+| Patient outcome      | Bounded resolution; correction/repeat rate; appropriate transfer    | Zero known medical-advice completions         |
+| Quality              | Critical regression pass rate; policy/tool error rate               | Release blocked by critical failure           |
+| Operations           | Median diagnosis time; recovery time; rollback success              | Trace access is role-scoped and PHI-aware     |
+| Platform compounding | Reusable module acceptance; override rate; second-clinic setup time | Zero inherited critical rule errors           |
+| Clinic trust         | Review turnaround; unresolved ambiguity age; rollback requests      | Critical ambiguity requires named disposition |
 
 Confido’s public site reports patient and operational outcomes for its products, but those claims are company-reported and do not replace tenant-specific baseline measurement.[1] FieldFlow should define metric contracts before rollout and preserve an honest read of neutral or negative results.
 
@@ -106,14 +106,14 @@ The designed prototype implements the information architecture and interaction m
 
 ## Risks and Mitigations
 
-| Risk | Failure mode | Mitigation |
-| --- | --- | --- |
-| False abstraction | A local clinic rule becomes a platform default | Provenance, local acceptance, override monitoring, cross-tenant evidence threshold |
-| Automation bias | FDE accepts a compiled rule because the system appears confident | Source excerpt, confidence, explicit reviewer action, critical-field checklist |
-| Policy drift | Runtime changes behavior without review | Immutable approved bundle; draft-only improvement proposals |
-| PHI overcollection | Transcripts and traces expose unnecessary data | Redaction, structured events, retention controls, role-based access |
-| Test theater | Passing language tests hide bad tools or mutations | Tool-sequence, forbidden-call, reason-code, and state assertions |
-| Platform burden | New workflow adds review time without lowering setup or defects | Counterbalanced pilot; stop rule if burden exceeds evidence value |
+| Risk               | Failure mode                                                     | Mitigation                                                                         |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| False abstraction  | A local clinic rule becomes a platform default                   | Provenance, local acceptance, override monitoring, cross-tenant evidence threshold |
+| Automation bias    | FDE accepts a compiled rule because the system appears confident | Source excerpt, confidence, explicit reviewer action, critical-field checklist     |
+| Policy drift       | Runtime changes behavior without review                          | Immutable approved bundle; draft-only improvement proposals                        |
+| PHI overcollection | Transcripts and traces expose unnecessary data                   | Redaction, structured events, retention controls, role-based access                |
+| Test theater       | Passing language tests hide bad tools or mutations               | Tool-sequence, forbidden-call, reason-code, and state assertions                   |
+| Platform burden    | New workflow adds review time without lowering setup or defects  | Counterbalanced pilot; stop rule if burden exceeds evidence value                  |
 
 ## Decision
 
@@ -126,4 +126,3 @@ I would fund the **policy compiler + generated critical scenarios** as the P0 pr
 [3]: https://www.nist.gov/itl/ai-risk-management-framework "NIST — AI Risk Management Framework"
 [4]: https://www.hl7.org/fhir/appointment.html "HL7 FHIR R5 — Appointment"
 [5]: https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/hipaa-audio-telehealth/index.html "HHS OCR — HIPAA and Audio-Only Telehealth"
-

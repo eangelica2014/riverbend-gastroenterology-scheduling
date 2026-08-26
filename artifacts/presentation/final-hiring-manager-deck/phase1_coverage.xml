@@ -1,0 +1,25 @@
+<slide id="phase1_coverage">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / PHASE 1 COVERAGE</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">Phase 1 covers the complete call surface</text>
+  <shape id="title-rule" type="line" x="60" y="150" width="1160" height="0" stroke="river-green" stroke-width="2"/>
+  <shape id="appointment-card" type="rect" x="60" y="178" width="354" height="358" fill="none" stroke="river-green" stroke-width="2"/>
+  <shape id="faq-card" type="rect" x="453" y="178" width="354" height="358" fill="none" stroke="river-green" stroke-width="2"/>
+  <shape id="handoff-card" type="rect" x="846" y="178" width="354" height="358" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="appointment-label" x="76" y="194" width="322" height="30" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">APPOINTMENT MANAGEMENT</text>
+  <text id="appointment-items" x="78" y="240" width="316" height="270" font="body" size="18" color="river-green" line-height="1.55"><p><strong>New-visit booking</strong> <span font="mono" size="13" color="muted-green">SCN-NEW</span></p><p><strong>Existing follow-up</strong> <span font="mono" size="13" color="muted-green">SCN-FOLLOWUP</span></p><p><strong>Reschedule</strong> <span font="mono" size="13" color="muted-green">SCN-RESCHEDULE</span></p><p><strong>Cancel</strong> <span font="mono" size="13" color="muted-green">SCN-CANCEL</span></p><p><strong>Confirm</strong> <span font="mono" size="13" color="muted-green">SCN-CONFIRM</span></p></text>
+  <text id="faq-label" x="469" y="194" width="322" height="30" font="mono" size="14" color="paper" fill="river-green" padding="6 10" wrap="false">APPROVED CLINIC KNOWLEDGE</text>
+  <text id="faq-items" x="471" y="240" width="316" height="176" font="body" size="19" color="river-green" line-height="1.6"><p><strong>Hours</strong> <span font="mono" size="13" color="muted-green">SCN-FAQ-HOURS</span></p><p><strong>Locations</strong> <span font="mono" size="13" color="muted-green">SCN-FAQ-LOCATIONS</span></p><p><strong>Parking</strong> <span font="mono" size="13" color="muted-green">SCN-FAQ-PARKING</span></p></text>
+  <shape id="audit-stamp" type="rect" x="471" y="438" width="316" height="72" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="audit-stamp-text" x="485" y="450" width="288" height="48" font="mono" size="13" color="river-green"><p><strong>AUDIT CLOSED</strong></p><p>Dedicated location regression added</p></text>
+  <text id="handoff-label" x="862" y="194" width="322" height="30" font="mono" size="14" color="paper" fill="persimmon" padding="6 10" wrap="false">HANDOFF + FAILURE RECOVERY</text>
+  <text id="handoff-items" x="864" y="237" width="316" height="282" font="body" size="16" color="river-green" line-height="1.45"><p><strong>Front desk</strong> · human / billing / exceptions</p><p><strong>Nurse line</strong> · urgent / clinical judgment</p><p><strong>Emergency</strong> · 911 before lookup</p><p><strong>No patient</strong> · no disclosure</p><p><strong>No appointment</strong> · no mutation</p><p><strong>Unknown</strong> · repair once, then human</p><p><strong>Human request</strong> · immediate handoff</p></text>
+  <shape id="proof-strip" type="rect" x="60" y="556" width="1140" height="60" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="proof-strip-number" x="80" y="567" width="170" height="38" font="heading" size="28" color="river-green" wrap="false">25 / 25</text>
+  <text id="proof-strip-copy" x="250" y="568" width="920" height="36" font="body" size="18" color="river-green" anchor="middle">Named scenarios span booking, appointments, identity, FAQs, transfers, safety, and conversational repair.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="850" height="20" font="caption" size="12" color="muted-green" wrap="false">Assignment coverage · scenario catalog · location audit remediation</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">04 / 19</text>
+</slide>

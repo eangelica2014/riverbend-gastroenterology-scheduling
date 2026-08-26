@@ -1,0 +1,36 @@
+<slide id="fieldflow">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">FIELD FLOW / FDE CONTROL PLANE</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">FieldFlow makes every handoff inspectable</text>
+  <text id="subtitle" x="60" y="146" width="900" height="28" font="body" size="18" color="muted-green" wrap="false">Every stage creates a durable artifact, a named decision, and a release gate.</text>
+  <shape id="stage-1" type="rect" x="60" y="192" width="250" height="130" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="stage-1-text" x="78" y="208" width="214" height="98" font="body" size="16" color="river-green"><p font="mono" size="13"><strong>01 · INGEST</strong></p><p><strong>Source ledger</strong></p><p>Gate: critical source readable</p></text>
+  <shape id="arrow-1" type="line" x="310" y="257" width="38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-2" type="rect" x="348" y="192" width="250" height="130" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="stage-2-text" x="366" y="208" width="214" height="98" font="body" size="16" color="river-green"><p font="mono" size="13" color="persimmon"><strong>02 · CLARIFY</strong></p><p><strong>Ambiguity queue</strong></p><p>Gate: critical issue disposition</p></text>
+  <shape id="arrow-2" type="line" x="598" y="257" width="38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-3" type="rect" x="636" y="192" width="250" height="130" fill="river-green"/>
+  <text id="stage-3-text" x="654" y="208" width="214" height="98" font="body" size="16" color="paper"><p font="mono" size="13"><strong>03 · COMPILE</strong></p><p><strong>Tenant policy bundle</strong></p><p>Gate: human-approved authority</p></text>
+  <shape id="arrow-3" type="line" x="886" y="257" width="38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-4" type="rect" x="924" y="192" width="296" height="130" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="stage-4-text" x="942" y="208" width="260" height="98" font="body" size="16" color="river-green"><p font="mono" size="13"><strong>04 · SIMULATE</strong></p><p><strong>Regression matrix</strong></p><p>Gate: all critical cases pass</p></text>
+  <shape id="down-arrow" type="elbow" x="1140" y="322" width="0" height="68" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-5" type="rect" x="924" y="390" width="296" height="130" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="stage-5-text" x="942" y="406" width="260" height="98" font="body" size="16" color="river-green"><p font="mono" size="13" color="persimmon"><strong>05 · APPROVE</strong></p><p><strong>Signed release candidate</strong></p><p>Gate: owner + rollback plan</p></text>
+  <shape id="arrow-5" type="line" x="924" y="455" width="-38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-6" type="rect" x="636" y="390" width="250" height="130" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="stage-6-text" x="654" y="406" width="214" height="98" font="body" size="16" color="river-green"><p font="mono" size="13"><strong>06 · DEPLOY</strong></p><p><strong>Deployment record</strong></p><p>Gate: canary + rollback ready</p></text>
+  <shape id="arrow-6" type="line" x="636" y="455" width="-38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-7" type="rect" x="348" y="390" width="250" height="130" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="stage-7-text" x="366" y="406" width="214" height="98" font="body" size="16" color="river-green"><p font="mono" size="13"><strong>07 · OBSERVE</strong></p><p><strong>Quality events</strong></p><p>Gate: thresholds + incident path</p></text>
+  <shape id="arrow-7" type="line" x="348" y="455" width="-38" height="0" stroke="river-green" stroke-width="2" arrow-end="arrow"/>
+  <shape id="stage-8" type="rect" x="60" y="390" width="250" height="130" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="stage-8-text" x="78" y="406" width="214" height="98" font="body" size="16" color="river-green"><p font="mono" size="13"><strong>08 · IMPROVE</strong></p><p><strong>Source-linked proposal</strong></p><p>Gate: human approval + replay</p></text>
+  <shape id="learning-loop" type="curve" x="185" y="538" width="575" height="32" fill="none" stroke="persimmon" stroke-width="2" arrow-end="arrow"/>
+  <text id="learning-loop-text" x="300" y="548" width="380" height="22" font="mono" size="12" color="persimmon" align="center" wrap="false">LEARNING RETURNS AS A PROPOSAL—NOT POLICY DRIFT</text>
+  <shape id="footer-rule" type="line" x="60" y="622" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-link" x="60" y="641" width="900" height="24" font="mono" size="12" color="river-green"><a href="https://technical.eangelica.com/platform" color="river-green"><u>OPEN LIVE FIELD FLOW →</u></a></text>
+  <text id="folio" x="1120" y="641" width="100" height="24" font="mono" size="12" color="muted-green" align="right" wrap="false">10 / 19</text>
+</slide>

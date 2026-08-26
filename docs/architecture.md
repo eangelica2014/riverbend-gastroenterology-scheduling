@@ -28,15 +28,15 @@ HL7 FHIR similarly separates an `Appointment` from `Schedule` and `Slot`; publis
 
 ## Layer Contracts
 
-| Layer | Input | Output | Failure behavior |
-| --- | --- | --- | --- |
-| Intent and conversation | Caller utterance plus narrow session state | Supported intent or one repair prompt | Unsupported after one repair transfers to front desk |
-| Safety | Current utterance | Continue, nurse transfer, or 911 instruction plus transfer | Stops ordinary workflow immediately |
-| Identity | Phone candidate plus caller-provided DOB | Verified patient ID | Reveals no appointment detail on failure |
-| Policy | Verified patient, intent, preferences, coverage confirmation | `PolicyDecision` with reason codes and rule IDs | No availability or mutation when denied |
-| Availability | Approved visit type, provider, duration, location | Earliest-first eligible slots | Returns typed no-availability result |
-| Mutation | Verified patient, confirmed action, valid slot or appointment | Structured receipt | Never converts a conflict into conversational success |
-| Trace | Redacted events from every material layer | Replayable decision path | Production design excludes raw secrets and limits PHI visibility |
+| Layer                   | Input                                                         | Output                                                     | Failure behavior                                                 |
+| ----------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- |
+| Intent and conversation | Caller utterance plus narrow session state                    | Supported intent or one repair prompt                      | Unsupported after one repair transfers to front desk             |
+| Safety                  | Current utterance                                             | Continue, nurse transfer, or 911 instruction plus transfer | Stops ordinary workflow immediately                              |
+| Identity                | Phone candidate plus caller-provided DOB                      | Verified patient ID                                        | Reveals no appointment detail on failure                         |
+| Policy                  | Verified patient, intent, preferences, coverage confirmation  | `PolicyDecision` with reason codes and rule IDs            | No availability or mutation when denied                          |
+| Availability            | Approved visit type, provider, duration, location             | Earliest-first eligible slots                              | Returns typed no-availability result                             |
+| Mutation                | Verified patient, confirmed action, valid slot or appointment | Structured receipt                                         | Never converts a conflict into conversational success            |
+| Trace                   | Redacted events from every material layer                     | Replayable decision path                                   | Production design excludes raw secrets and limits PHI visibility |
 
 ## Identity and Privacy Decision
 
@@ -71,4 +71,3 @@ This repository is a synthetic, evaluator-facing prototype. It is not a medical 
 5. [Confido Health — Healthcare AI Receptionist](https://www.confido.health/healthcare-ai-receptionist)
 6. [Cekura — How Confido Health Is Safely Scaling AI Voice Agents](https://www.cekura.ai/case-study/confido-health)
 7. [HHS and DOJ — Guidance on Nondiscrimination in Telehealth](https://www.hhs.gov/civil-rights/for-individuals/disability/guidance-on-nondiscrimination-in-telehealth/index.html)
-

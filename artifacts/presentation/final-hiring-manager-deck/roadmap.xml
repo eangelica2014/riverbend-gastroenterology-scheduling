@@ -1,0 +1,28 @@
+<slide id="roadmap">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="390" height="26" font="mono" size="13" color="river-green" wrap="false">FIELD FLOW / INVESTMENT ROADMAP</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="900" height="54" font="heading" size="38" color="river-green" wrap="false">Roadmap: earn the right to scale</text>
+  <shape id="now-card" type="rect" x="60" y="184" width="255" height="356" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="now-label" x="78" y="202" width="219" height="28" font="mono" size="15" color="river-green" wrap="false"><strong>NOW · PROVE LEVERAGE</strong></text>
+  <text id="now-items" x="80" y="250" width="215" height="188" font="body" size="18" color="river-green" line-height="1.55"><p>Source ledger</p><p>Ambiguity queue</p><p>Policy compiler</p><p>Critical scenarios</p></text>
+  <text id="now-gate" x="80" y="458" width="215" height="56" font="mono" size="12" color="river-green"><p><strong>EXIT</strong></p><p>time gain + no quality loss</p></text>
+  <shape id="next-card" type="rect" x="355" y="184" width="255" height="356" fill="river-green"/>
+  <text id="next-label" x="373" y="202" width="219" height="28" font="mono" size="15" color="paper" wrap="false"><strong>NEXT · CONTROL CHANGE</strong></text>
+  <text id="next-items" x="375" y="250" width="215" height="188" font="body" size="18" color="paper" line-height="1.55"><p>Trace replay</p><p>Source-linked diffs</p><p>Release gates</p><p>Canary + rollback</p></text>
+  <text id="next-gate" x="375" y="458" width="215" height="56" font="mono" size="12" color="chartreuse"><p><strong>EXIT</strong></p><p>faster diagnosis + safe release</p></text>
+  <shape id="later-card" type="rect" x="650" y="184" width="255" height="356" fill="none" stroke="river-green" stroke-width="2"/>
+  <text id="later-label" x="668" y="202" width="219" height="28" font="mono" size="15" color="river-green" wrap="false"><strong>LATER · CONTROLLED REUSE</strong></text>
+  <text id="later-items" x="670" y="250" width="215" height="188" font="body" size="18" color="river-green" line-height="1.55"><p>Module suggestions</p><p>Cross-clinic evidence</p><p>Shadow proposals</p><p>Local acceptance</p></text>
+  <text id="later-gate" x="670" y="458" width="215" height="56" font="mono" size="12" color="muted-green"><p><strong>EXIT</strong></p><p>reuse without inherited error</p></text>
+  <shape id="notyet-card" type="rect" x="945" y="184" width="255" height="356" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="notyet-label" x="963" y="202" width="219" height="28" font="mono" size="15" color="persimmon" wrap="false"><strong>NOT YET · AVOID SCALE RISK</strong></text>
+  <text id="notyet-items" x="965" y="250" width="215" height="188" font="body" size="18" color="river-green" line-height="1.55"><p>Broad visual builder</p><p>Autonomous policy drift</p><p>Ungated self-service</p><p>Unproven abstraction</p></text>
+  <text id="notyet-gate" x="965" y="458" width="215" height="56" font="mono" size="12" color="persimmon"><p><strong>RECONSIDER</strong></p><p>only after P0 + P1 evidence</p></text>
+  <shape id="decision-band" type="rect" x="60" y="566" width="1140" height="52" fill="river-green"/>
+  <text id="decision-band-text" x="80" y="580" width="1100" height="24" font="body" size="19" color="paper" align="center" wrap="false">Fund source-to-policy and policy-to-test first.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">Roadmap sequencing follows evidence gates—not feature enthusiasm.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">13 / 19</text>
+</slide>

@@ -1,0 +1,24 @@
+<slide id="empathy_design">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="380" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / HUMAN-FIRST DESIGN</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">Empathy changed the interaction order</text>
+  <shape id="method-ribbon" type="rect" x="60" y="164" width="760" height="36" fill="river-green"/>
+  <text id="method-text" x="76" y="172" width="730" height="20" font="mono" size="13" color="paper" wrap="false">OBSERVE → FRAME → BUILD → VALIDATE → IMPROVE</text>
+  <shape id="method-stamp" type="rect" x="1000" y="158" width="220" height="48" fill="persimmon"/>
+  <text id="method-stamp-text" x="1014" y="172" width="192" height="20" font="mono" size="13" color="paper" align="center" wrap="false">EMPATHY = CONTRACT</text>
+  <table id="empathy-table" x="60" y="226" width="1160" height="310" columns="3,4,4" rows="44,53,53,53,54,53" font="body" size="16" color="river-green" padding="8 12" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-v="1 ledger-line" border-outer="1 river-green">
+    <tr color="paper"><td><strong>Human concern</strong></td><td><strong>Product decision</strong></td><td><strong>Testable contract</strong></td></tr>
+    <tr><td color="persimmon"><strong>Anxious or distracted</strong></td><td>One question at a time; retain intent</td><td fill="chartreuse">No repeated story before the next gate</td></tr>
+    <tr><td color="persimmon"><strong>Misheard speech</strong></td><td>Live local transcript plus text fallback</td><td fill="chartreuse">Transcript never substitutes for verification</td></tr>
+    <tr><td color="persimmon"><strong>Privacy risk</strong></td><td>Phone finds candidate; DOB verifies</td><td fill="chartreuse">No protected read after mismatch</td></tr>
+    <tr><td color="persimmon"><strong>Opaque waiting</strong></td><td>Seven evidence-derived stages</td><td fill="chartreuse">Progress reflects real state—not animation</td></tr>
+    <tr><td color="persimmon"><strong>Need for human help</strong></td><td>Supported front-desk or nurse handoff</td><td fill="chartreuse">Correct destination; no unsafe continuation</td></tr>
+  </table>
+  <shape id="evidence-line" type="line" x="60" y="562" width="1160" height="0" stroke="persimmon" stroke-width="3"/>
+  <text id="evidence-copy" x="60" y="578" width="1160" height="40" font="body" size="19" color="river-green" align="center">Empathy is proven by the absence of disclosure, unauthorized search, unsafe continuation, and unconfirmed writes.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="800" height="20" font="caption" size="12" color="muted-green" wrap="false">Candidate methods translated into interaction and evaluation</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">03 / 19</text>
+</slide>

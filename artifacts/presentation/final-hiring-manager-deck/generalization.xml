@@ -1,0 +1,23 @@
+<slide id="generalization">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="440" height="26" font="mono" size="13" color="river-green" wrap="false">FIELD FLOW / GENERALIZATION BOUNDARY</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="900" height="54" font="heading" size="38" color="river-green" wrap="false">Generalize contracts—not clinic truth</text>
+  <table id="boundary-table" x="60" y="182" width="1160" height="304" columns="1,1" rows="44,52,52,52,52,52" font="body" size="16" color="river-green" padding="8 12" header-fill="river-green" header-border="2 river-green" border-h="1 ledger-line" border-v="2 river-green" border-outer="1 river-green">
+    <tr color="paper"><td><strong>Platform primitive that compounds</strong></td><td><strong>Tenant-local authority that stays configurable</strong></td></tr>
+    <tr><td fill="chartreuse"><strong>Identity workflow and verification state</strong></td><td>Required attributes and accessible fallback</td></tr>
+    <tr><td fill="chartreuse"><strong>Policy schema and reason codes</strong></td><td>Thresholds, durations, provider pairings</td></tr>
+    <tr><td fill="chartreuse"><strong>Typed tool registry and authorization</strong></td><td>Vendor adapter and clinic permissions</td></tr>
+    <tr><td fill="chartreuse"><strong>Scenario grammar and replay</strong></td><td>Fixtures and expected local outcomes</td></tr>
+    <tr><td fill="chartreuse"><strong>Trace, release gate, and rollback</strong></td><td>Retention, named owners, operational thresholds</td></tr>
+  </table>
+  <shape id="agentic-box" type="rect" x="60" y="510" width="548" height="78" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="agentic-text" x="80" y="522" width="508" height="54" font="body" size="18" color="river-green"><p font="mono" size="13"><strong>AGENTIC CONTRIBUTION</strong></p><p>Extract · suggest · cluster · draft · explain</p></text>
+  <shape id="authority-box" type="rect" x="636" y="510" width="584" height="78" fill="none" stroke="persimmon" stroke-width="2"/>
+  <text id="authority-text" x="656" y="522" width="544" height="54" font="body" size="18" color="river-green"><p font="mono" size="13" color="persimmon"><strong>DETERMINISTIC / HUMAN AUTHORITY</strong></p><p>Authorize · write · approve · promote · roll back</p></text>
+  <text id="decision-ribbon" x="60" y="600" width="1160" height="24" font="mono" size="12" color="river-green" align="center" wrap="false">RIVERBEND RULES NEVER BECOME DEFAULTS BY COPY-PASTE</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">Multi-tenant contracts preserve local acceptance and provenance.</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">11 / 19</text>
+</slide>

@@ -383,7 +383,7 @@ def build_document() -> None:
     # Executive decision
     add_heading(doc, "Executive Decision", 1, "Summary")
     add_body(doc, "Riverbend is a bounded administrative voice agent for appointment management, clinic information, and deliberate human transfers. Flexible conversation is separated from deterministic authority: safety and identity gates run before protected work; a versioned policy engine evaluates eligibility and provider rules before availability; typed tools mediate every read, write, and transfer; and a trace preserves the reason, rule, tool, and result for inspection.")
-    add_body(doc, "Phase 1 demonstrates this system with synthetic patient, provider, slot, and appointment fixtures; browser voice input/output; a fully operable text path; 24 replayable scenarios; and 18 automated assertions. The suite, TypeScript check, and production build pass. The prototype makes no claim of production telephony, live EHR integration, or clinical decision support.")
+    add_body(doc, "Phase 1 demonstrates this system with synthetic patient, provider, slot, and appointment fixtures; browser voice input/output; a fully operable text path; 25 replayable scenarios; and 19 automated assertions. The suite, TypeScript check, and production build pass. The prototype makes no claim of production telephony, live EHR integration, or clinical decision support.")
     add_body(doc, "Phase 2 proposes FieldFlow, an FDE-first control plane that turns clinic artifacts into a source ledger, ambiguity queue, approved tenant policy bundle, regression evidence, controlled deployment, observable outcomes, and human-gated improvements. The recommendation is to fund source-to-policy and policy-to-test first, not a broad no-code builder or autonomous production policy learning.")
     add_table(doc, ["Decision", "What ships now", "What remains explicitly outside the proof"], [
         ("Phase 1", "Inspectable scheduling agent, architecture, scenario catalog, iteration evidence", "Telephony, real EHR/PMS, production identity, real patient data"),
@@ -529,8 +529,8 @@ def build_document() -> None:
     add_heading(doc, "Evaluation Strategy and Actual Results", 1, "Validate")
     add_body(doc, "A believable final sentence is not sufficient evidence. The test strategy inspects the outcome and the path beneath it: reason code, rule IDs, forbidden tools, required tools, state mutation, transfer destination, and source-grounded knowledge. Critical failures block release.")
     add_table(doc, ["Validation", "Actual result", "Interpretation"], [
-        ("Automated assertions", "18 / 18 passed", "Policy boundaries, privacy, safety, mutation confirmation, slot order, and catalog replay"),
-        ("Scenario catalog", "24 / 24 replayed successfully", "Happy paths, denials, identity, FAQs, transfers, urgent and emergency cases"),
+        ("Automated assertions", "19 / 19 passed", "Policy boundaries, required FAQs, privacy, safety, mutation confirmation, slot order, and catalog replay"),
+        ("Scenario catalog", "25 / 25 replayed successfully", "Happy paths, denials, identity, hours/location/parking FAQs, transfers, urgent and emergency cases"),
         ("TypeScript", "No errors", "Typed client policy and interaction model are internally consistent"),
         ("Production build", "Succeeded", "Deployable static artifact; one non-blocking large-chunk optimization warning remains"),
         ("Visual review", "6 representative routes captured", "Field-notebook direction confirmed; failed first-generation images were detected and replaced"),
@@ -654,7 +654,7 @@ def build_document() -> None:
     add_heading(doc, "Deliverable Index", 1, "Submission map")
     add_table(doc, ["Assignment item", "Deliverable", "Where to inspect"], [
         ("The agent", "Interactive voice/text scheduling workspace", "Prototype `/agent`; `client/src/lib/agentEngine.ts`; `agent/system-prompt.md`"),
-        ("Scenarios", "24-case catalog and interactive runner", "Prototype `/tests`; `agent/scenarios.json`; automated tests"),
+        ("Scenarios", "25-case catalog and interactive runner", "Prototype `/tests`; `agent/scenarios.json`; automated tests"),
         ("Architecture write-up", "Prompt/knowledge/policy/tool/runtime design", "Prototype `/architecture`; `docs/architecture.md`"),
         ("Iteration log", "Material changes, triggers, impact, actual validation", "`docs/iteration-log.md`"),
         ("Part 2 short document", "FieldFlow strategy", "`docs/phase-2-platform-strategy.md`"),
@@ -667,7 +667,7 @@ def build_document() -> None:
     # Appendix scenarios in landscape
     section = doc.add_section(WD_SECTION.NEW_PAGE)
     configure_section(section, landscape=True)
-    add_heading(doc, "Appendix A — Complete Scenario Catalog", 1, "24 replayable proofs")
+    add_heading(doc, "Appendix A — Complete Scenario Catalog", 1, "25 replayable proofs")
     scenario_data = json.loads(SCENARIOS.read_text())
     scenario_rows = []
     for item in scenario_data["scenarios"]:
@@ -732,7 +732,7 @@ def build_document() -> None:
     add_table(doc, ["Command", "Purpose"], [
         ("pnpm install", "Install locked dependencies"),
         ("pnpm dev", "Run the local evaluator experience"),
-        ("pnpm test", "Run 18 deterministic assertions, including all 24 scenario replays"),
+        ("pnpm test", "Run 19 deterministic assertions, including all 25 scenario replays"),
         ("pnpm check", "Run TypeScript validation"),
         ("pnpm build", "Create the production artifact"),
     ], widths=[1.55, 4.85], font_size=8)

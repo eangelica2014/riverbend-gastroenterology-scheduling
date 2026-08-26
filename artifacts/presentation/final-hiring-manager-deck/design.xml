@@ -1,0 +1,14 @@
+<design>
+  <size width="1280" height="720"></size>
+  <color name="paper" value="#F9F8F6"/>
+  <color name="river-green" value="#1A362D"/>
+  <color name="persimmon" value="#E86A33"/>
+  <color name="chartreuse" value="#D4E09B"/>
+  <color name="critical-red" value="#C93838"/>
+  <color name="ledger-line" value="#EAE7E1"/>
+  <color name="muted-green" value="#4A5D54"/>
+  <font name="heading" family="Playfair Display" size="36"/>
+  <font name="body" family="Inter" size="18"/>
+  <font name="mono" family="JetBrains Mono" size="16"/>
+  <font name="caption" family="Inter" size="13"/>
+</design>

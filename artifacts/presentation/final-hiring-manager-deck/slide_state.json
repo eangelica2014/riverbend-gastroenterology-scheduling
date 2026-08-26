@@ -1,0 +1,221 @@
+{
+  "project_info": {
+    "title": "Riverbend: From Clinic Rules to Platform Leverage",
+    "created": 1787762465.392,
+    "last_updated": 1787763087.11,
+    "total_slides": 19
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "scorecard",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "empathy_design",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "phase1_coverage",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "live_agent",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "negative_guarantees",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "architecture",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "release_contract",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "friction_platform",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "fieldflow",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "generalization",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "experiments",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 13
+    },
+    {
+      "id": "role_fit",
+      "state": "edited",
+      "pageNum": 14
+    },
+    {
+      "id": "scope_boundary",
+      "state": "edited",
+      "pageNum": 15
+    },
+    {
+      "id": "close",
+      "state": "edited",
+      "pageNum": 16
+    },
+    {
+      "id": "demo_inputs",
+      "state": "edited",
+      "pageNum": 17
+    },
+    {
+      "id": "checklist",
+      "state": "edited",
+      "pageNum": 18
+    },
+    {
+      "id": "sources",
+      "state": "edited",
+      "pageNum": 19
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Riverbend: From Clinic Rules to Platform Leverage",
+      "summary": "Minimal title slide identifying the complete Phase 1 and Phase 2 proof for the Confido Health Product Manager, Platform role.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scorecard",
+      "title": "Every requirement is implemented—and inspectable",
+      "summary": "Executive scorecard covering Phase 1 functions, required artifacts, clinic rule families, Phase 2 areas, and final release evidence.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "empathy_design",
+      "title": "Empathy changed the interaction order",
+      "summary": "Show how human concerns became concrete voice-agent interaction choices and testable contracts.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "phase1_coverage",
+      "title": "Phase 1 covers the complete call surface",
+      "summary": "Map every required appointment, FAQ, transfer, and failure family to explicit evidence.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "live_agent",
+      "title": "The caller hears calm; the FDE sees proof",
+      "summary": "Guide the successful follow-up booking demo and contrast patient experience with operator evidence.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "negative_guarantees",
+      "title": "The negative guarantee is the product",
+      "summary": "Show the forbidden actions that define safety, privacy, eligibility, and human escalation.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "architecture",
+      "title": "Language interprets; deterministic services authorize",
+      "summary": "Explain the prompt, knowledge, policy, tool, adapter, and trace authority boundaries.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "release_contract",
+      "title": "Quality is a release contract",
+      "summary": "Present 19 deterministic assertions, 25 scenario replays, type/build checks, GitHub CI, and the audit-added location test.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "friction_platform",
+      "title": "Phase 1 friction revealed the platform",
+      "summary": "Translate observed FDE work into FieldFlow platform capabilities.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "fieldflow",
+      "title": "FieldFlow makes every handoff inspectable",
+      "summary": "Present the eight-stage FDE lifecycle with durable artifacts and release gates.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "generalization",
+      "title": "Generalize contracts—not clinic truth",
+      "summary": "Separate reusable multi-tenant primitives from tenant-local authority and agentic work from deterministic or human-gated authority.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "experiments",
+      "title": "Want the answer before the feature",
+      "summary": "Show the prioritized P0 and P1 experiments with smallest falsifying tests, numeric scale gates, and guardrails.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Roadmap: earn the right to scale",
+      "summary": "Present Now, Next, Later, and Not Yet investment stages tied to evidence gates.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "role_fit",
+      "title": "The work mirrors Confido’s Platform PM mandate",
+      "summary": "Map delivered evidence to hands-on building, FDE-first product, lifecycle ownership, experimentation, leverage, and quality.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scope_boundary",
+      "title": "I exceeded scope without hiding the boundary",
+      "summary": "Contrast useful added proof with explicit production limitations and next gates.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "close",
+      "title": "Productize the repeatable work. Preserve local truth.",
+      "summary": "Minimal closing decision with links back to the live agent, checklist, FieldFlow, experiments, and repository.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "demo_inputs",
+      "title": "Live demo inputs",
+      "summary": "Appendix cheat sheet with exact inputs and evidence for booking, minor, location FAQ, and emergency demonstrations.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "checklist",
+      "title": "Checklist Manifesto",
+      "summary": "Appendix showing the requirement-to-proof discipline before, during, and after the demo.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and evidence",
+      "summary": "Appendix listing supplied sources, repository evidence, healthcare guidance, and candidate methods.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

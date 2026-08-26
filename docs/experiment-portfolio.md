@@ -7,14 +7,14 @@
 
 The portfolio prioritizes two things before feature breadth: **critical correctness** and **FDE leverage**. “Want the answer” is a 1–10 score for how much the result should change the roadmap. Priority combines that evidence value with dependency order and safety. A P0 result is needed before the team responsibly expands the platform thesis.
 
-| ID | Priority | Experiment | Want the answer | Primary metric | Scale rule | Stop or narrow rule |
-| --- | --- | --- | ---: | --- | --- | --- |
-| EXP-01 | P0 | Policy compiler reduces FDE setup time | 10 | Median active setup time + critical pass rate | ≥30% less active time and non-inferior critical correctness | Any critical regression |
-| EXP-02 | P0 | Generated scenarios find real defects | 10 | Unique critical defects per reviewer hour + false-positive rate | ≥25% defect-yield lift and <15% false positives | Noise increases total review time |
-| EXP-03 | P1 | Decision traces shorten diagnosis | 9 | Median diagnosis time + correct-layer identification | ≥40% faster with no excess PHI exposure | Trace density reduces layer accuracy |
-| EXP-04 | P1 | Ambiguity queue prevents silent assumptions | 9 | Critical ambiguity at approval + review minutes | Zero planted critical conflicts reach approval | >15% added review time without better detection |
-| EXP-05 | P2 | Reusable modules improve second-clinic velocity | 7 | Acceptance, overrides, critical regressions | ≥50% module acceptance and zero inherited critical errors | Overrides erase time benefit |
-| EXP-06 | P2 | Human-gated runtime learning adds value | 6 | Accepted suggestion rate + replay improvement + review time | ≥30% accepted suggestions and zero approval bypasses | Suggestions turn local exceptions into defaults |
+| ID     | Priority | Experiment                                      | Want the answer | Primary metric                                                  | Scale rule                                                  | Stop or narrow rule                             |
+| ------ | -------- | ----------------------------------------------- | --------------: | --------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------- |
+| EXP-01 | P0       | Policy compiler reduces FDE setup time          |              10 | Median active setup time + critical pass rate                   | ≥30% less active time and non-inferior critical correctness | Any critical regression                         |
+| EXP-02 | P0       | Generated scenarios find real defects           |              10 | Unique critical defects per reviewer hour + false-positive rate | ≥25% defect-yield lift and <15% false positives             | Noise increases total review time               |
+| EXP-03 | P1       | Decision traces shorten diagnosis               |               9 | Median diagnosis time + correct-layer identification            | ≥40% faster with no excess PHI exposure                     | Trace density reduces layer accuracy            |
+| EXP-04 | P1       | Ambiguity queue prevents silent assumptions     |               9 | Critical ambiguity at approval + review minutes                 | Zero planted critical conflicts reach approval              | >15% added review time without better detection |
+| EXP-05 | P2       | Reusable modules improve second-clinic velocity |               7 | Acceptance, overrides, critical regressions                     | ≥50% module acceptance and zero inherited critical errors   | Overrides erase time benefit                    |
+| EXP-06 | P2       | Human-gated runtime learning adds value         |               6 | Accepted suggestion rate + replay improvement + review time     | ≥30% accepted suggestions and zero approval bypasses        | Suggestions turn local exceptions into defaults |
 
 ## P0 Experiment Specifications
 
@@ -60,12 +60,11 @@ Cluster de-identified, synthetic or appropriately governed failure events in sha
 
 ## Honest Read Template
 
-| Field | Required entry |
-| --- | --- |
-| Result | Primary metric, confidence interval when useful, and guardrail outcomes |
-| Interpretation | What the evidence supports—and what it does not |
-| Decision | Scale, narrow, repeat, or stop |
-| Product change | Exact lifecycle stage, contract, or interface affected |
-| Risk update | New failure mode or assumption discovered |
-| Next test | Smallest remaining uncertainty worth resolving |
-
+| Field          | Required entry                                                          |
+| -------------- | ----------------------------------------------------------------------- |
+| Result         | Primary metric, confidence interval when useful, and guardrail outcomes |
+| Interpretation | What the evidence supports—and what it does not                         |
+| Decision       | Scale, narrow, repeat, or stop                                          |
+| Product change | Exact lifecycle stage, contract, or interface affected                  |
+| Risk update    | New failure mode or assumption discovered                               |
+| Next test      | Smallest remaining uncertainty worth resolving                          |

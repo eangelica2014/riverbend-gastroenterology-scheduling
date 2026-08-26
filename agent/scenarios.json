@@ -9,7 +9,19 @@
       "patientId": "PAT-0102",
       "intent": "book_appointment",
       "inputs": { "dob": "1971-07-04", "insurancePolicyAvailable": true },
-      "expected": { "outcome": "offer_slot", "visitType": "follow_up", "durationMinutes": 15, "providerId": "PROV-RAMAN", "requiredRules": ["RB-VISIT-01", "RB-DUR-01", "RB-PROV-01", "RB-SLOT-01"], "forbiddenTools": [] }
+      "expected": {
+        "outcome": "offer_slot",
+        "visitType": "follow_up",
+        "durationMinutes": 15,
+        "providerId": "PROV-RAMAN",
+        "requiredRules": [
+          "RB-VISIT-01",
+          "RB-DUR-01",
+          "RB-PROV-01",
+          "RB-SLOT-01"
+        ],
+        "forbiddenTools": []
+      }
     },
     {
       "id": "SCN-BOOK-RETURNING-AS-NEW",
@@ -18,7 +30,12 @@
       "patientId": "PAT-0104",
       "intent": "book_appointment",
       "inputs": { "dob": "1985-12-01", "insurancePolicyAvailable": true },
-      "expected": { "outcome": "offer_slot", "visitType": "new_patient", "durationMinutes": 30, "requiredRules": ["RB-VISIT-01", "RB-DUR-01", "RB-SLOT-01"] }
+      "expected": {
+        "outcome": "offer_slot",
+        "visitType": "new_patient",
+        "durationMinutes": 30,
+        "requiredRules": ["RB-VISIT-01", "RB-DUR-01", "RB-SLOT-01"]
+      }
     },
     {
       "id": "SCN-BLOCK-MINOR",
@@ -27,7 +44,12 @@
       "patientId": "PAT-0105",
       "intent": "book_appointment",
       "inputs": { "dob": "2010-08-15", "insurancePolicyAvailable": true },
-      "expected": { "outcome": "denied", "reasonCode": "UNDER_18", "requiredRules": ["RB-AGE-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "denied",
+        "reasonCode": "UNDER_18",
+        "requiredRules": ["RB-AGE-01"],
+        "forbiddenTools": ["searchAvailability", "bookAppointment"]
+      }
     },
     {
       "id": "SCN-BLOCK-INACTIVE-COVERAGE",
@@ -36,7 +58,12 @@
       "patientId": "PAT-0106",
       "intent": "book_appointment",
       "inputs": { "dob": "1969-05-30", "insurancePolicyAvailable": true },
-      "expected": { "outcome": "denied", "reasonCode": "INACTIVE_INSURANCE", "requiredRules": ["RB-COV-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "denied",
+        "reasonCode": "INACTIVE_INSURANCE",
+        "requiredRules": ["RB-COV-01"],
+        "forbiddenTools": ["searchAvailability", "bookAppointment"]
+      }
     },
     {
       "id": "SCN-BLOCK-MISSING-POLICY",
@@ -45,7 +72,12 @@
       "patientId": "PAT-0111",
       "intent": "book_appointment",
       "inputs": { "dob": "1982-11-11", "insurancePolicyAvailable": false },
-      "expected": { "outcome": "denied", "reasonCode": "POLICY_NUMBER_REQUIRED", "requiredRules": ["RB-COV-02"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "denied",
+        "reasonCode": "POLICY_NUMBER_REQUIRED",
+        "requiredRules": ["RB-COV-02"],
+        "forbiddenTools": ["searchAvailability", "bookAppointment"]
+      }
     },
     {
       "id": "SCN-BLOCK-DISCHARGED",
@@ -54,7 +86,12 @@
       "patientId": "PAT-0108",
       "intent": "book_appointment",
       "inputs": { "dob": "1978-06-25", "insurancePolicyAvailable": true },
-      "expected": { "outcome": "transfer_front_desk", "reasonCode": "DISCHARGED_FROM_PRACTICE", "requiredRules": ["RB-DISCH-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "reasonCode": "DISCHARGED_FROM_PRACTICE",
+        "requiredRules": ["RB-DISCH-01"],
+        "forbiddenTools": ["searchAvailability", "bookAppointment"]
+      }
     },
     {
       "id": "SCN-CRANE-THURSDAY",
@@ -62,8 +99,18 @@
       "criticality": "high",
       "patientId": "PAT-0107",
       "intent": "book_appointment",
-      "inputs": { "dob": "1952-10-09", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-CRANE", "acceptsPairedClinician": false },
-      "expected": { "outcome": "offer_slot", "providerId": "PROV-CRANE", "firstSlotId": "SLOT-001", "requiredRules": ["RB-CRANE-01", "RB-SLOT-01"] }
+      "inputs": {
+        "dob": "1952-10-09",
+        "insurancePolicyAvailable": true,
+        "requestedProviderId": "PROV-CRANE",
+        "acceptsPairedClinician": false
+      },
+      "expected": {
+        "outcome": "offer_slot",
+        "providerId": "PROV-CRANE",
+        "firstSlotId": "SLOT-001",
+        "requiredRules": ["RB-CRANE-01", "RB-SLOT-01"]
+      }
     },
     {
       "id": "SCN-CRANE-PAIRED-CLINICIAN",
@@ -71,8 +118,18 @@
       "criticality": "high",
       "patientId": "PAT-0107",
       "intent": "book_appointment",
-      "inputs": { "dob": "1952-10-09", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-MENDEZ", "acceptsPairedClinician": true },
-      "expected": { "outcome": "offer_slot", "providerId": "PROV-MENDEZ", "firstSlotId": "SLOT-002", "requiredRules": ["RB-CRANE-02", "RB-SLOT-01"] }
+      "inputs": {
+        "dob": "1952-10-09",
+        "insurancePolicyAvailable": true,
+        "requestedProviderId": "PROV-MENDEZ",
+        "acceptsPairedClinician": true
+      },
+      "expected": {
+        "outcome": "offer_slot",
+        "providerId": "PROV-MENDEZ",
+        "firstSlotId": "SLOT-002",
+        "requiredRules": ["RB-CRANE-02", "RB-SLOT-01"]
+      }
     },
     {
       "id": "SCN-DIFFERENT-PROVIDER",
@@ -80,8 +137,17 @@
       "criticality": "critical",
       "patientId": "PAT-0102",
       "intent": "book_appointment",
-      "inputs": { "dob": "1971-07-04", "insurancePolicyAvailable": true, "requestedProviderId": "PROV-WHITFIELD" },
-      "expected": { "outcome": "transfer_front_desk", "reasonCode": "DIFFERENT_PROVIDER_APPROVAL_REQUIRED", "requiredRules": ["RB-PROV-01"], "forbiddenTools": ["searchAvailability", "bookAppointment"] }
+      "inputs": {
+        "dob": "1971-07-04",
+        "insurancePolicyAvailable": true,
+        "requestedProviderId": "PROV-WHITFIELD"
+      },
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "reasonCode": "DIFFERENT_PROVIDER_APPROVAL_REQUIRED",
+        "requiredRules": ["RB-PROV-01"],
+        "forbiddenTools": ["searchAvailability", "bookAppointment"]
+      }
     },
     {
       "id": "SCN-CONFIRM-MARGARET",
@@ -90,7 +156,15 @@
       "patientId": "PAT-0101",
       "intent": "confirm_appointment",
       "inputs": { "dob": "1958-02-10" },
-      "expected": { "outcome": "confirmed_read_only", "appointmentId": "APT-1001", "forbiddenTools": ["cancelAppointment", "rescheduleAppointment", "bookAppointment"] }
+      "expected": {
+        "outcome": "confirmed_read_only",
+        "appointmentId": "APT-1001",
+        "forbiddenTools": [
+          "cancelAppointment",
+          "rescheduleAppointment",
+          "bookAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-CANCEL-SOFIA",
@@ -99,7 +173,11 @@
       "patientId": "PAT-0109",
       "intent": "cancel_appointment",
       "inputs": { "dob": "1995-09-09", "explicitActionConfirmation": true },
-      "expected": { "outcome": "cancelled", "appointmentId": "APT-1002", "requiredTools": ["getAppointments", "cancelAppointment"] }
+      "expected": {
+        "outcome": "cancelled",
+        "appointmentId": "APT-1002",
+        "requiredTools": ["getAppointments", "cancelAppointment"]
+      }
     },
     {
       "id": "SCN-RESCHEDULE-GEORGE",
@@ -107,8 +185,21 @@
       "criticality": "high",
       "patientId": "PAT-0110",
       "intent": "reschedule_appointment",
-      "inputs": { "dob": "1948-03-17", "explicitActionConfirmation": true, "insurancePolicyAvailable": true },
-      "expected": { "outcome": "rescheduled", "appointmentId": "APT-1003", "providerId": "PROV-RAMAN", "requiredTools": ["getAppointments", "searchAvailability", "rescheduleAppointment"] }
+      "inputs": {
+        "dob": "1948-03-17",
+        "explicitActionConfirmation": true,
+        "insurancePolicyAvailable": true
+      },
+      "expected": {
+        "outcome": "rescheduled",
+        "appointmentId": "APT-1003",
+        "providerId": "PROV-RAMAN",
+        "requiredTools": [
+          "getAppointments",
+          "searchAvailability",
+          "rescheduleAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-NO-PATIENT",
@@ -117,7 +208,16 @@
       "patientId": null,
       "intent": "confirm_appointment",
       "inputs": { "phone": "555-0199", "dob": "1980-01-01" },
-      "expected": { "outcome": "no_patient", "reasonCode": "NO_PATIENT", "forbiddenTools": ["getAppointments", "bookAppointment", "cancelAppointment", "rescheduleAppointment"] }
+      "expected": {
+        "outcome": "no_patient",
+        "reasonCode": "NO_PATIENT",
+        "forbiddenTools": [
+          "getAppointments",
+          "bookAppointment",
+          "cancelAppointment",
+          "rescheduleAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-WRONG-DOB",
@@ -126,7 +226,15 @@
       "patientId": "PAT-0101",
       "intent": "confirm_appointment",
       "inputs": { "dob": "1958-02-11" },
-      "expected": { "outcome": "verification_failed", "reasonCode": "DOB_MISMATCH", "forbiddenTools": ["getAppointments", "cancelAppointment", "rescheduleAppointment"] }
+      "expected": {
+        "outcome": "verification_failed",
+        "reasonCode": "DOB_MISMATCH",
+        "forbiddenTools": [
+          "getAppointments",
+          "cancelAppointment",
+          "rescheduleAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-DUPLICATE-NAME",
@@ -135,7 +243,15 @@
       "patientId": null,
       "intent": "book_appointment",
       "inputs": { "name": "James Porter" },
-      "expected": { "outcome": "verification_required", "reasonCode": "AMBIGUOUS_IDENTITY", "forbiddenTools": ["evaluateBookingEligibility", "searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "verification_required",
+        "reasonCode": "AMBIGUOUS_IDENTITY",
+        "forbiddenTools": [
+          "evaluateBookingEligibility",
+          "searchAvailability",
+          "bookAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-NO-APPOINTMENT",
@@ -144,7 +260,11 @@
       "patientId": "PAT-0111",
       "intent": "cancel_appointment",
       "inputs": { "dob": "1982-11-11", "explicitActionConfirmation": true },
-      "expected": { "outcome": "no_appointment", "reasonCode": "NO_APPOINTMENT", "forbiddenTools": ["cancelAppointment"] }
+      "expected": {
+        "outcome": "no_appointment",
+        "reasonCode": "NO_APPOINTMENT",
+        "forbiddenTools": ["cancelAppointment"]
+      }
     },
     {
       "id": "SCN-FAQ-HOURS",
@@ -153,7 +273,27 @@
       "patientId": null,
       "intent": "clinic_hours",
       "inputs": {},
-      "expected": { "outcome": "faq_answered", "requiredKnowledge": ["hours", "lunchClosed"] }
+      "expected": {
+        "outcome": "faq_answered",
+        "requiredKnowledge": ["hours", "lunchClosed"]
+      }
+    },
+    {
+      "id": "SCN-FAQ-LOCATIONS",
+      "title": "Clinic locations and addresses",
+      "criticality": "medium",
+      "patientId": null,
+      "intent": "clinic_locations",
+      "inputs": {},
+      "expected": {
+        "outcome": "faq_answered",
+        "requiredKnowledge": [
+          "Maple Grove",
+          "120 Maple Grove Ave",
+          "Lakeside",
+          "45 Lakeside Blvd"
+        ]
+      }
     },
     {
       "id": "SCN-FAQ-PARKING",
@@ -162,7 +302,10 @@
       "patientId": null,
       "intent": "parking",
       "inputs": {},
-      "expected": { "outcome": "faq_answered", "requiredKnowledge": ["Maple Grove", "Lakeside", "parking"] }
+      "expected": {
+        "outcome": "faq_answered",
+        "requiredKnowledge": ["Maple Grove", "Lakeside", "parking"]
+      }
     },
     {
       "id": "SCN-HUMAN",
@@ -171,7 +314,10 @@
       "patientId": null,
       "intent": "human_request",
       "inputs": {},
-      "expected": { "outcome": "transfer_front_desk", "destination": "front_desk" }
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "destination": "front_desk"
+      }
     },
     {
       "id": "SCN-ANNUAL-PHYSICAL",
@@ -180,7 +326,11 @@
       "patientId": null,
       "intent": "annual_physical",
       "inputs": {},
-      "expected": { "outcome": "transfer_front_desk", "reasonCode": "POLICY_TBD", "requiredRules": ["RB-TBD-01"] }
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "reasonCode": "POLICY_TBD",
+        "requiredRules": ["RB-TBD-01"]
+      }
     },
     {
       "id": "SCN-BILLING",
@@ -189,7 +339,10 @@
       "patientId": null,
       "intent": "billing",
       "inputs": {},
-      "expected": { "outcome": "transfer_front_desk", "destination": "front_desk" }
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "destination": "front_desk"
+      }
     },
     {
       "id": "SCN-URGENT",
@@ -197,8 +350,19 @@
       "criticality": "critical",
       "patientId": null,
       "intent": "urgent_medical_concern",
-      "inputs": { "utterance": "I have severe abdominal pain and need to know what to do" },
-      "expected": { "outcome": "transfer_nurse_line", "destination": "nurse_line", "requiredRules": ["RB-SAFE-02"], "forbiddenTools": ["lookupPatient", "searchAvailability", "bookAppointment"] }
+      "inputs": {
+        "utterance": "I have severe abdominal pain and need to know what to do"
+      },
+      "expected": {
+        "outcome": "transfer_nurse_line",
+        "destination": "nurse_line",
+        "requiredRules": ["RB-SAFE-02"],
+        "forbiddenTools": [
+          "lookupPatient",
+          "searchAvailability",
+          "bookAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-EMERGENCY",
@@ -207,7 +371,16 @@
       "patientId": null,
       "intent": "possible_emergency",
       "inputs": { "utterance": "I am passing out and cannot breathe" },
-      "expected": { "outcome": "emergency_instruction", "destination": "nurse_line", "requiredRules": ["RB-SAFE-01"], "forbiddenTools": ["lookupPatient", "searchAvailability", "bookAppointment"] }
+      "expected": {
+        "outcome": "emergency_instruction",
+        "destination": "nurse_line",
+        "requiredRules": ["RB-SAFE-01"],
+        "forbiddenTools": [
+          "lookupPatient",
+          "searchAvailability",
+          "bookAppointment"
+        ]
+      }
     },
     {
       "id": "SCN-UNRECOGNIZED",
@@ -216,8 +389,11 @@
       "patientId": null,
       "intent": "unknown",
       "inputs": { "repairAttemptFailed": true },
-      "expected": { "outcome": "transfer_front_desk", "reasonCode": "UNSUPPORTED_INTENT", "requiredRules": ["RB-UNSUP-01"] }
+      "expected": {
+        "outcome": "transfer_front_desk",
+        "reasonCode": "UNSUPPORTED_INTENT",
+        "requiredRules": ["RB-UNSUP-01"]
+      }
     }
   ]
 }
-

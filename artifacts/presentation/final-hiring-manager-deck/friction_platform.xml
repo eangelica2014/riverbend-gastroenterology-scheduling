@@ -1,0 +1,44 @@
+<slide id="friction_platform">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="32" height="32" fill="river-green"/>
+  <text id="brand-lockup" x="106" y="47" width="430" height="26" font="mono" size="13" color="river-green" wrap="false">RIVERBEND / PHASE 1 → PHASE 2</text>
+  <text id="nav" x="860" y="46" width="360" height="24" font="mono" size="12" color="muted-green" align="right"><a slide="scorecard" color="muted-green">PROOF</a>  ·  <a slide="checklist" color="muted-green">CHECKLIST</a>  ·  <a slide="close" color="muted-green">CLOSE</a></text>
+  <text id="title" x="60" y="96" width="940" height="54" font="heading" size="38" color="river-green" wrap="false">Phase 1 friction revealed the platform</text>
+  <text id="left-label" x="60" y="166" width="420" height="28" font="mono" size="13" color="persimmon" wrap="false">OBSERVED FDE WORK</text>
+  <text id="right-label" x="710" y="166" width="490" height="28" font="mono" size="13" color="river-green" wrap="false">FIELD FLOW PRODUCT RESPONSE</text>
+  <shape id="left-1" type="rect" x="60" y="202" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-1-text" x="78" y="215" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Verify uneven source packets</text>
+  <shape id="arrow-1" type="line" x="500" y="226" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-1" type="rect" x="710" y="202" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-1-text" x="728" y="215" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Source ledger with provenance + confidence</text>
+  <shape id="left-2" type="rect" x="60" y="260" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-2-text" x="78" y="273" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Resolve missing or conflicting policy</text>
+  <shape id="arrow-2" type="line" x="500" y="284" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-2" type="rect" x="710" y="260" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-2-text" x="728" y="273" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Ambiguity queue with owner + release impact</text>
+  <shape id="left-3" type="rect" x="60" y="318" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-3-text" x="78" y="331" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Translate prose into authority</text>
+  <shape id="arrow-3" type="line" x="500" y="342" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-3" type="rect" x="710" y="318" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-3-text" x="728" y="331" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Typed policy bundle + reason codes</text>
+  <shape id="left-4" type="rect" x="60" y="376" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-4-text" x="78" y="389" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Prove failure behavior</text>
+  <shape id="arrow-4" type="line" x="500" y="400" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-4" type="rect" x="710" y="376" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-4-text" x="728" y="389" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Generated scenarios + forbidden-call assertions</text>
+  <shape id="left-5" type="rect" x="60" y="434" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-5-text" x="78" y="447" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Diagnose change</text>
+  <shape id="arrow-5" type="line" x="500" y="458" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-5" type="rect" x="710" y="434" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-5-text" x="728" y="447" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Source-linked trace replay</text>
+  <shape id="left-6" type="rect" x="60" y="492" width="430" height="48" fill="none" stroke="persimmon" stroke-width="1"/>
+  <text id="left-6-text" x="78" y="505" width="394" height="22" font="body" size="18" color="river-green" wrap="false">Promote safely</text>
+  <shape id="arrow-6" type="line" x="500" y="516" width="190" height="0" stroke="ledger-line" stroke-width="3" arrow-end="arrow"/>
+  <shape id="right-6" type="rect" x="710" y="492" width="490" height="48" fill="chartreuse" stroke="river-green" stroke-width="1"/>
+  <text id="right-6-text" x="728" y="505" width="454" height="22" font="body" size="18" color="river-green" wrap="false">Approval + canary + rollback</text>
+  <shape id="thesis-strip" type="rect" x="60" y="566" width="1140" height="50" fill="river-green"/>
+  <text id="thesis-text" x="82" y="580" width="1096" height="24" font="body" size="19" color="paper" align="center" wrap="false">Productize repeated field work—not a generic visual agent builder.</text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="footer-source" x="60" y="663" width="860" height="20" font="caption" size="12" color="muted-green" wrap="false">Observed Phase 1 friction mapped to durable platform artifacts</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">09 / 19</text>
+</slide>

@@ -1,0 +1,18 @@
+<slide id="close">
+  <background color="paper"/>
+  <shape id="brand-block" type="rect" x="60" y="44" width="38" height="38" fill="river-green"/>
+  <shape id="brand-river" type="curve" x="68" y="56" width="22" height="12" fill="none" stroke="paper" stroke-width="3"/>
+  <text id="brand-lockup" x="112" y="46" width="430" height="34" font="mono" size="15" color="river-green" wrap="false">RIVERBEND / FINAL DECISION</text>
+  <text id="title" x="60" y="182" width="980" height="150" font="heading" size="49" color="river-green" line-height="1.04"><p>Productize the repeatable work.</p><p>Preserve local truth.</p></text>
+  <shape id="decision-band" type="rect" x="60" y="370" width="790" height="72" fill="persimmon"/>
+  <text id="decision-text" x="84" y="388" width="742" height="36" font="body" size="24" color="paper" wrap="false">Fund source-to-policy and policy-to-test first.</text>
+  <shape id="verified-stamp" type="rect" x="930" y="368" width="290" height="76" fill="chartreuse" stroke="river-green" stroke-width="2"/>
+  <text id="verified-stamp-text" x="948" y="384" width="254" height="44" font="mono" size="14" color="river-green" align="center"><p><strong>COMPLETE PROOF</strong></p><p>REQUIREMENT → EVIDENCE</p></text>
+  <shape id="riverline-one" type="curve" x="820" y="164" width="360" height="118" fill="none" stroke="ledger-line" stroke-width="3"/>
+  <shape id="riverline-two" type="curve" x="850" y="235" width="330" height="92" fill="none" stroke="river-green" stroke-width="2" opacity="0.35"/>
+  <shape id="links-frame" type="rect" x="60" y="522" width="1160" height="84" fill="none" stroke="river-green" stroke-width="1"/>
+  <text id="links" x="80" y="550" width="1120" height="30" font="mono" size="13" color="river-green" align="center"><a href="https://technical.eangelica.com/agent" color="river-green">RUN AGENT</a>  ·  <a slide="checklist" color="river-green">OPEN CHECKLIST</a>  ·  <a href="https://technical.eangelica.com/platform" color="river-green">OPEN FIELD FLOW</a>  ·  <a href="https://technical.eangelica.com/experiments" color="river-green">REVIEW EXPERIMENTS</a>  ·  <a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling" color="river-green">OPEN REPOSITORY</a></text>
+  <shape id="footer-rule" type="line" x="60" y="646" width="1160" height="0" stroke="ledger-line" stroke-width="2"/>
+  <text id="presenter" x="60" y="663" width="900" height="20" font="body" size="14" color="river-green" wrap="false">Eangelica Germano Aton · Product Manager, Platform candidate</text>
+  <text id="folio" x="1120" y="663" width="100" height="20" font="mono" size="12" color="muted-green" align="right" wrap="false">16 / 19</text>
+</slide>
