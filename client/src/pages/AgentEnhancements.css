@@ -1,0 +1,428 @@
+/**
+ * Clinical Field Notebook extension: transcript and progress make patient orientation visible
+ * without diluting the adjacent FDE evidence rail. Square rule-led surfaces preserve the binder system.
+ */
+
+.agent-page .agent-workspace {
+  position: relative;
+  height: 900px;
+}
+
+.workspace-folio {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -38px;
+  z-index: 3;
+  display: flex;
+  width: 38px;
+  align-items: center;
+  border: 1px solid var(--river-ink);
+  border-right: 0;
+  background: var(--river-ink);
+  color: var(--paper);
+  writing-mode: vertical-rl;
+}
+
+.workspace-folio span,
+.workspace-folio strong,
+.workspace-folio small {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+}
+
+.workspace-folio span {
+  margin-top: 18px;
+  color: var(--chartreuse);
+  font-size: 8px;
+}
+
+.workspace-folio strong {
+  margin-top: 18px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.workspace-folio small {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #c9d2ce;
+  font-size: 7px;
+}
+
+.workspace-index {
+  border-left: 1px solid rgba(16, 42, 36, 0.24);
+  margin-left: 5px;
+  padding-left: 10px;
+  color: #597000;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.04em;
+}
+
+.agent-page .conversation-panel {
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+}
+
+.scenario-chip:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.live-transcript {
+  border-bottom: 1px solid rgba(16, 42, 36, 0.2);
+  background: #f7f3ea;
+  padding: 13px 17px 12px;
+}
+
+.live-transcript__heading,
+.scheduling-progress__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.live-transcript__heading > div,
+.scheduling-progress__heading > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+}
+
+.live-transcript__heading > span,
+.processing-status {
+  color: var(--graphite);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.live-transcript__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.live-transcript__grid > div {
+  min-width: 0;
+  border-left: 3px solid var(--hairline);
+  padding-left: 10px;
+}
+
+.live-transcript__grid > div:first-child {
+  border-left-color: var(--persimmon);
+}
+
+.live-transcript__grid > div:last-child {
+  border-left-color: var(--chartreuse);
+}
+
+.live-transcript__grid span {
+  display: block;
+  color: var(--graphite);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.transcript-line {
+  display: -webkit-box;
+  min-height: 34px;
+  margin: 4px 0 0;
+  overflow: hidden;
+  color: var(--river-ink);
+  font-size: 11px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.transcript-line--active {
+  color: var(--persimmon-dark);
+  font-weight: 650;
+}
+
+.live-transcript > small {
+  display: block;
+  margin-top: 7px;
+  color: #66736d;
+  font-size: 9px;
+}
+
+.scheduling-progress {
+  border-bottom: 1px solid rgba(16, 42, 36, 0.2);
+  background: var(--paper-light);
+  padding: 12px 16px 14px;
+}
+
+.processing-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.processing-status--active {
+  color: var(--persimmon-dark);
+}
+
+.progress-rail {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(82px, 1fr));
+  gap: 0;
+  margin: 11px 0 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+}
+
+.progress-step {
+  position: relative;
+  min-width: 82px;
+  border-top: 3px solid rgba(16, 42, 36, 0.18);
+  padding: 8px 8px 0 0;
+}
+
+.progress-step::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  background: #b5afa4;
+}
+
+.progress-step--active {
+  border-top-color: var(--persimmon);
+  background: linear-gradient(180deg, rgba(240, 90, 40, 0.08), transparent 72%);
+}
+
+.progress-step--active::after {
+  background: var(--persimmon);
+}
+
+.progress-step--complete {
+  border-top-color: #739400;
+}
+
+.progress-step--complete::after {
+  background: var(--chartreuse);
+}
+
+.progress-step--blocked {
+  border-top-color: var(--danger);
+}
+
+.progress-step--blocked::after {
+  background: var(--danger);
+}
+
+.progress-step--skipped {
+  opacity: 0.5;
+}
+
+.progress-step__index {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--graphite);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+}
+
+.progress-step strong,
+.progress-step small {
+  display: block;
+}
+
+.progress-step strong {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.progress-step small {
+  margin-top: 2px;
+  color: var(--graphite);
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.progress-spinner {
+  animation: riverbend-spin 0.8s linear infinite;
+}
+
+.idle-evidence-note {
+  width: min(92%, 720px);
+  align-self: flex-start;
+  border-top: 3px solid var(--persimmon);
+  border-bottom: 1px solid rgba(16, 42, 36, 0.22);
+  background: linear-gradient(
+    135deg,
+    rgba(240, 90, 40, 0.055),
+    rgba(185, 213, 49, 0.055)
+  );
+  padding: 15px 17px;
+}
+
+.idle-evidence-note__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.idle-evidence-note__heading > strong {
+  font-size: 13px;
+}
+
+.idle-evidence-note__heading > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.idle-evidence-note__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 13px;
+  border-top: 1px solid rgba(16, 42, 36, 0.18);
+  border-bottom: 1px solid rgba(16, 42, 36, 0.18);
+}
+
+.idle-evidence-note__grid > div {
+  border-right: 1px solid rgba(16, 42, 36, 0.18);
+  padding: 10px 10px 10px 0;
+}
+
+.idle-evidence-note__grid > div + div {
+  padding-left: 10px;
+}
+
+.idle-evidence-note__grid > div:last-child {
+  border-right: 0;
+}
+
+.idle-evidence-note__grid span,
+.idle-evidence-note__grid strong {
+  display: block;
+}
+
+.idle-evidence-note__grid span {
+  color: var(--persimmon-dark);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.idle-evidence-note__grid strong {
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+.idle-evidence-note p,
+.idle-provenance p {
+  margin: 10px 0 0;
+  color: var(--graphite);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.idle-provenance {
+  margin: 4px 15px 24px 37px;
+  border-top: 3px solid var(--chartreuse);
+  background: rgba(16, 42, 36, 0.06);
+  padding: 13px 14px;
+}
+
+.idle-provenance > span {
+  display: block;
+  color: #597000;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.idle-provenance > strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.idle-provenance > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+@keyframes riverbend-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 980px) {
+  .agent-page .agent-workspace {
+    height: auto;
+  }
+
+  .agent-page .conversation-panel {
+    min-height: 820px;
+  }
+
+  .workspace-folio {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .live-transcript__heading,
+  .scheduling-progress__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .live-transcript__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-rail {
+    grid-template-columns: repeat(7, 112px);
+  }
+
+  .workspace-index {
+    display: none;
+  }
+
+  .idle-evidence-note__heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .idle-evidence-note__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .idle-evidence-note__grid > div,
+  .idle-evidence-note__grid > div + div {
+    border-right: 0;
+    border-bottom: 1px solid rgba(16, 42, 36, 0.14);
+    padding: 9px 0;
+  }
+
+  .idle-evidence-note__grid > div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-spinner {
+    animation: none;
+  }
+}

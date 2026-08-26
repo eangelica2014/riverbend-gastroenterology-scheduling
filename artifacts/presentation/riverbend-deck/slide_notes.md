@@ -61,3 +61,7 @@ External standards and frameworks ground our privacy, accessibility, and interop
 # 16 - The conversation can flex. The policy cannot.
 
 My central decision was simple: the conversation can be flexible, but clinic authority cannot. I gave the language layer room to understand and communicate, then put identity, eligibility, provider rules, confirmation, and mutations behind deterministic contracts. I will show the agent first, then how the Phase 1 friction becomes a platform. And here is how those decisions map directly to our dual methods.
+
+# 17 - Every change earns a green release
+
+The same deterministic contract runs in GitHub Actions for every main-branch push and pull request, combining locked dependencies, tests, TypeScript, and the production build. The first public run exposed a real duplicate pnpm version failure that only appeared in the remote workflow. Instead of hiding it, I preserved the failure, corrected the workflow, and verified a completely green release run. The bundle-size warning remains visible as a non-blocking optimization so the record stays honest. That is the validate and improve loop in action.

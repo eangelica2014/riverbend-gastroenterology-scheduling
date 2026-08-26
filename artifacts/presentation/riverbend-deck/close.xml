@@ -19,5 +19,5 @@
   <text id="questions-text" x="880" y="446" width="310" height="36" font="mono" size="13" color="paper" align="center" anchor="middle"><strong>QUESTIONS / DISCUSSION</strong></text>
   <text id="close-note" x="860" y="530" width="350" height="58" font="mono" size="12" color="#A8B5AF" align="right"><p>PHASE 1 · AGENT</p><p>PHASE 2 · PLATFORM</p><p>P0 · EVIDENCE</p></text>
   <shape id="footer-rule" type="line" x="60" y="652" width="1150" height="0" stroke="#F7F5F044" stroke-width="1"/>
-  <text id="page-number" x="60" y="680" width="180" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">18 / CLOSE</text>
+  <text id="page-number" x="60" y="680" width="180" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">19 / CLOSE</text>
 </slide>

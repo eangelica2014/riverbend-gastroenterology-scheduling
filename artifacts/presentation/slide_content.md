@@ -27,12 +27,12 @@
 
 **Content:**
 
-| Systemic Design | Innovation | Riverbend translation |
-| --- | --- | --- |
-| Observe | Sense | Read the person, workflow, source, and signal |
-| Frame | Reason | Convert ambiguity into constraints and evidence |
-| Build | Deploy | Connect data, model, interface, tools, and handoff |
-| Validate | Improve | Test in context; feed approved outcomes back |
+| Systemic Design | Innovation | Riverbend translation                              |
+| --------------- | ---------- | -------------------------------------------------- |
+| Observe         | Sense      | Read the person, workflow, source, and signal      |
+| Frame           | Reason     | Convert ambiguity into constraints and evidence    |
+| Build           | Deploy     | Connect data, model, interface, tools, and handoff |
+| Validate        | Improve    | Test in context; feed approved outcomes back       |
 
 **Interaction:** The four rows link to Slides 3, 5, 6, and 8. A **Method Home** button appears on method-led slides and returns here.
 
@@ -61,11 +61,11 @@
 
 **Content:**
 
-| Open item | Conservative demo choice | Production disposition |
-| --- | --- | --- |
-| Whitfield Thursday conflict | No Thursday Whitfield slot | Clinic owner + FDE clarify |
-| Annual physical not implemented | Front-desk transfer | Clinic owner decides scope |
-| Policy numbers absent | Ask only whether available | Integration maps real field |
+| Open item                       | Conservative demo choice   | Production disposition      |
+| ------------------------------- | -------------------------- | --------------------------- |
+| Whitfield Thursday conflict     | No Thursday Whitfield slot | Clinic owner + FDE clarify  |
+| Annual physical not implemented | Front-desk transfer        | Clinic owner decides scope  |
+| Policy numbers absent           | Ask only whether available | Integration maps real field |
 
 **Decision:** No critical ambiguity disappears inside a prompt.
 
@@ -144,34 +144,51 @@
 
 ## Slide 9
 
+**Title:** Every change earns a green release
+
+**Content:**
+
+- **Trigger:** main-branch push, pull request, or manual workflow dispatch.
+- **Pipeline:** locked install → 18 deterministic assertions → TypeScript → production build.
+- **Release evidence:** 24 scenario replays inspect required and forbidden tools, state mutation, and transfer.
+- **Actual iteration:** the first public run exposed a duplicate pnpm version; the workflow was corrected and a green release run was verified.
+
+**Method marker:** Validate + Improve
+
+**Interaction:** **Open CI Evidence** links to the public GitHub Actions workflow. **Run Scenario Lab** opens `/tests`.
+
+**Speaker notes — 4:48–5:18:** “The same quality contract runs in GitHub Actions for every main-branch push and pull request: locked dependencies, deterministic tests, TypeScript, and the production build. The first public run exposed a GitHub-only duplicate pnpm version. I preserved the failure, corrected the workflow, and verified the green release run. That is the Improve loop in practice: operational evidence becomes a controlled change, not a hidden cleanup.”
+
+## Slide 10
+
 **Title:** Phase 1 revealed the platform
 
 **Content:**
 
-| Field friction | Platform response |
-| --- | --- |
-| Uneven sources | Source ledger + confidence |
-| Silent assumptions | Ambiguity queue |
-| Prose-bound rules | Policy schema + compiler |
-| Manual QA | Scenario generation + replay |
-| Opaque failures | Decision trace + reason codes |
-| Risky change | Approval, canary, rollback |
+| Field friction     | Platform response             |
+| ------------------ | ----------------------------- |
+| Uneven sources     | Source ledger + confidence    |
+| Silent assumptions | Ambiguity queue               |
+| Prose-bound rules  | Policy schema + compiler      |
+| Manual QA          | Scenario generation + replay  |
+| Opaque failures    | Decision trace + reason codes |
+| Risky change       | Approval, canary, rollback    |
 
 **Interaction:** Each response links to its FieldFlow stage on Slide 11.
 
 **Speaker notes — 4:30–4:55:** “The platform proposal comes directly from work I had to do in Phase 1. I had to verify source quality, clarify contradictions, compile rules, build tests, diagnose behavior, and control change. FieldFlow productizes those repeatable tasks instead of beginning with a generic visual agent builder.”
 
-## Slide 10
+## Slide 11
 
 **Title:** Productize the repeatable work
 
 **Subtitle:** Preserve the local truth.
 
-**Interaction:** **Enter FieldFlow** advances to Slide 11; **Return to Agent** links to Slide 6.
+**Interaction:** **Enter FieldFlow** advances to Slide 12; **Return to Agent** links to Slide 6.
 
 **Speaker notes — 4:55–5:08:** “This is the Phase 2 decision: productize contracts and control, while preserving clinic-specific truth and clinic ownership.”
 
-## Slide 11
+## Slide 12
 
 **Title:** FieldFlow makes every handoff inspectable
 
@@ -187,19 +204,19 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 5:08–5:42:** “FieldFlow is an FDE control plane for the full lifecycle. Ingest creates a source ledger. Clarify creates an ambiguity queue. Compile produces a tenant policy bundle. Simulate produces regression evidence. Approve signs the exact release candidate. Deploy is reversible. Observe measures bounded outcomes. Improve drafts a human-gated change and replays regression.”
 
-## Slide 12
+## Slide 13
 
 **Title:** Generalize contracts—not clinic truth
 
 **Content:**
 
-| Platform primitives | Tenant truth |
-| --- | --- |
-| Identity workflow | Required attributes + fallback |
+| Platform primitives          | Tenant truth                    |
+| ---------------------------- | ------------------------------- |
+| Identity workflow            | Required attributes + fallback  |
 | Policy schema + reason codes | Thresholds, durations, pairings |
-| Typed tool registry | Vendor adapter + permissions |
-| Scenario DSL + replay | Fixtures + local outcomes |
-| Release gates + rollback | Local owners + thresholds |
+| Typed tool registry          | Vendor adapter + permissions    |
+| Scenario DSL + replay        | Fixtures + local outcomes       |
+| Release gates + rollback     | Local owners + thresholds       |
 
 **Decision:** Riverbend’s three-year rule and provider exceptions never become defaults by copy-paste.
 
@@ -207,7 +224,7 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 5:42–6:14:** “The generalization boundary is the product. Identity state, policy schema, tool authorization, scenario grammar, traces, and rollback compound across clinics. Riverbend’s thresholds, pairings, and unresolved exceptions remain tenant configuration with provenance. A reusable pattern is only a suggestion until the destination clinic approves it.”
 
-## Slide 13
+## Slide 14
 
 **Title:** Improvement stays human-gated
 
@@ -224,18 +241,18 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 6:14–6:42:** “I interpret self-learning carefully in healthcare operations. Runtime evidence can cluster failures and draft a source-linked proposal. It cannot rewrite eligibility or escalation behavior. The approved bundle remains immutable. A human approves the change, the critical suite replays, and deployment remains canary-scoped and reversible.”
 
-## Slide 14
+## Slide 15
 
 **Title:** Want the answer before wanting the feature
 
 **Content:**
 
-| Priority | Experiment | Want answer | Scale signal |
-| --- | --- | ---: | --- |
-| P0 | Policy compiler cuts setup time | 10 / 10 | ≥30% faster; no critical regression |
-| P0 | Generated scenarios find real defects | 10 / 10 | ≥25% defect-yield lift; <15% false positives |
-| P1 | Traces shorten diagnosis | 9 / 10 | ≥40% faster; no excess PHI exposure |
-| P1 | Ambiguity queue prevents silent assumptions | 9 / 10 | Zero planted critical conflicts at approval |
+| Priority | Experiment                                  | Want answer | Scale signal                                 |
+| -------- | ------------------------------------------- | ----------: | -------------------------------------------- |
+| P0       | Policy compiler cuts setup time             |     10 / 10 | ≥30% faster; no critical regression          |
+| P0       | Generated scenarios find real defects       |     10 / 10 | ≥25% defect-yield lift; <15% false positives |
+| P1       | Traces shorten diagnosis                    |      9 / 10 | ≥40% faster; no excess PHI exposure          |
+| P1       | Ambiguity queue prevents silent assumptions |      9 / 10 | Zero planted critical conflicts at approval  |
 
 **Method marker:** Validate + Improve
 
@@ -243,7 +260,7 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 6:42–7:12:** “I prioritize the evidence, not the feature list. The two P0 questions are whether compilation reduces active FDE time without reducing critical correctness and whether generated scenarios improve critical defect yield. Each has a smallest counterbalanced test and an explicit stop rule. I would not fund broader platform expansion before these results.”
 
-## Slide 15
+## Slide 16
 
 **Title:** Fund source-to-policy and policy-to-test first
 
@@ -260,7 +277,7 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 7:12–7:36:** “My roadmap starts with the bottleneck Riverbend proved. I would build the source-to-test control plane, then add diagnosis and release controls, then test cross-clinic modules and shadow-mode suggestions. A visual builder or autonomous learning is premature until the central leverage and quality hypotheses earn the investment.”
 
-## Slide 16
+## Slide 17
 
 **Title:** Measure bounded resolution—not raw completion
 
@@ -268,17 +285,17 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **North star:** Correct administrative outcome **or** appropriate transfer, with no safety or privacy violation.
 
-| Outcome | Leverage | Guardrail |
-| --- | --- | --- |
-| Bounded resolution | FDE hours per launch | Critical pass rate |
-| Correct transfer | Time to approved release | Zero medical-advice completion |
+| Outcome               | Leverage                  | Guardrail                          |
+| --------------------- | ------------------------- | ---------------------------------- |
+| Bounded resolution    | FDE hours per launch      | Critical pass rate                 |
+| Correct transfer      | Time to approved release  | Zero medical-advice completion     |
 | Low repeat/correction | Diagnosis + recovery time | Zero inherited critical rule error |
 
 **Interaction:** Click the north star to reveal the exclusion rule: incorrect completion counts as failure.
 
 **Speaker notes — 7:36–8:00:** “Raw automation can reward the wrong behavior. The north star is clinically bounded administrative resolution: correct completion or appropriate transfer, with no safety or privacy violation. I pair patient and operational outcomes with FDE leverage, then gate both with critical correctness and recovery.”
 
-## Slide 17
+## Slide 18
 
 **Title:** This is how I lead platform product
 
@@ -289,11 +306,11 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 - **Builder fluency:** hands-on React/TypeScript prototype and open-source repository.
 - **FDE product judgment:** field ambiguity → contracts → experiments → reusable leverage.
 
-**Interaction:** Four proof buttons link back to Slides 3, 6, 11, and 14. **Open Repository** links to the Riverbend Gastroenterology Scheduling GitHub repository after publication.
+**Interaction:** Four proof buttons link back to Slides 3, 6, 12, and 15. **Open Repository** links to the Riverbend Gastroenterology Scheduling GitHub repository.
 
 **Speaker notes — 8:00–8:28:** “This reflects how I work as a Technical Product Lead: begin with the person and workflow, make uncertainty visible, reason across the full system, work in the codebase, test negative guarantees, and translate field learning into platform leverage. My healthcare, agentic AI, API, and product-engineering background makes that combination native rather than theoretical.”
 
-## Slide 18
+## Slide 19
 
 **Title:** Build the next care system beside the field
 
@@ -305,24 +322,24 @@ Every stage produces a durable artifact, a named decision, and a release gate.
 
 **Speaker notes — 8:28–8:42:** “Thank you. I’m happy to stay in the prototype, go deeper on the platform boundary, or walk through any scenario and the evidence behind it.”
 
-## Slide 19
+## Slide 20
 
 **Title:** Live demo menu
 
 **Content:**
 
-| Proof | Scripted inputs | Evidence to point out |
-| --- | --- | --- |
+| Proof          | Scripted inputs                                      | Evidence to point out                                                |
+| -------------- | ---------------------------------------------------- | -------------------------------------------------------------------- |
 | Book follow-up | “I need to book” → 555-0102 → 1971-07-04 → yes → yes | Verification, follow-up, Raman, earliest slot, explicit confirmation |
-| Block minor | “I need to book” → 555-0105 → 2010-08-15 → yes | UNDER_18; no availability or write |
-| Confirm | “Confirm my appointment” → 555-0101 → 1958-02-10 | Verified appointment read; no mutation |
-| Emergency | “I am passing out and cannot breathe” | 911 instruction before patient lookup |
+| Block minor    | “I need to book” → 555-0105 → 2010-08-15 → yes       | UNDER_18; no availability or write                                   |
+| Confirm        | “Confirm my appointment” → 555-0101 → 1958-02-10     | Verified appointment read; no mutation                               |
+| Emergency      | “I am passing out and cannot breathe”                | 911 instruction before patient lookup                                |
 
 **Interaction:** Each row links directly to the live agent route; **Back to Demo** returns to Slide 6.
 
 **Speaker notes:** “Use this appendix only as a recording or discussion aid. The scripted scenarios can also be launched from the ribbon at the top of the agent workspace.”
 
-## Slide 20
+## Slide 21
 
 **Title:** Sources and evidence
 
@@ -357,4 +374,3 @@ The primary recording path is Slides 1–18 and lasts approximately 8 minutes 40
 [5]: https://www.nist.gov/itl/ai-risk-management-framework "NIST — AI Risk Management Framework"
 [6]: https://www.hl7.org/fhir/appointment.html "HL7 FHIR — Appointment"
 [7]: https://2026.eangelica.com/#method "Eangelica Aton — Systemic Design and Four-Stage Innovation Methods"
-

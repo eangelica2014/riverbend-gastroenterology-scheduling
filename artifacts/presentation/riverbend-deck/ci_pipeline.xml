@@ -1,0 +1,50 @@
+<slide id="ci_pipeline">
+  <background color="paper"/>
+  <shape id="header-rule" type="line" x="60" y="72" width="1150" height="0" stroke="hairline" stroke-width="1"/>
+  <text id="section-label" x="60" y="28" width="620" height="24" font="mono" size="13" color="persimmon" wrap="false"><strong>VALIDATE + IMPROVE · RELEASE EVIDENCE</strong></text>
+  <image id="riverbend-mark" src="https://private-us-east-1.manuscdn.com/sessionFile/CptiygteRZyIOKuzhsmg3b/sandbox/slides_resource_i1zgb726tot7hga3cqchb-8cf4c938-e2b-prod-us2_1787743147370_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL3JpdmVyYmVuZC1sb2dv.png?x-oss-process=image/resize,w_1560,h_1560/format,webp&amp;Expires=1789430400&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQ3B0aXlndGVSWnlJT0t1emhzbWczYi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pMXpnYjcyNnRvdDdoZ2EzY3FjaGItOGNmNGM5MzgtZTJiLXByb2QtdXMyXzE3ODc3NDMxNDczNzBfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzZGxZbVJsZGkxemRHRjBhV010WVhOelpYUnpMM0pwZG1WeVltVnVaQzFzYjJkdi5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xNTYwLGhfMTU2MC9mb3JtYXQsd2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQzMDQwMH19fV19&amp;Key-Pair-Id=K2QY5QTL8JSY6C&amp;Signature=MEQCIAHOuBve9TSQZBJp6K6Sn4p49~5RkwCS9yUAU5imwggxAiAEvpfvvm0y3Ujw8ONI1dZE9KpB-4POBwJ75mTrAzt9hA__" x="1162" y="20" width="48" height="48" fit="contain"/>
+  <text id="slide-title" x="60" y="104" width="900" height="54" font="heading" size="40" color="ink" wrap="false"><strong>Every change earns a green release</strong></text>
+  <text id="slide-subtitle" x="60" y="166" width="1120" height="36" font="body" size="18" color="#56625D">GitHub Actions reruns the same deterministic contract used in the scenario lab—then preserves the evidence.</text>
+
+  <shape id="trigger-card" type="rect" x="60" y="224" width="225" height="128" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="trigger-code" x="80" y="242" width="185" height="22" font="mono" size="12" color="persimmon"><strong>01 · TRIGGER</strong></text>
+  <text id="trigger-copy" x="80" y="274" width="185" height="62" font="body" size="17" color="ink"><p><strong>Main push</strong></p><p>Pull request · manual dispatch</p></text>
+  <icon id="trigger-arrow" name="arrow-right" x="286" y="271" width="24" height="24" color="persimmon"/>
+
+  <shape id="install-card" type="rect" x="312" y="224" width="225" height="128" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="install-code" x="332" y="242" width="185" height="22" font="mono" size="12" color="persimmon"><strong>02 · INSTALL</strong></text>
+  <text id="install-copy" x="332" y="274" width="185" height="62" font="body" size="17" color="ink"><p><strong>Locked dependencies</strong></p><p>Frozen pnpm lockfile</p></text>
+  <icon id="install-arrow" name="arrow-right" x="538" y="271" width="24" height="24" color="persimmon"/>
+
+  <shape id="verify-card" type="rect" x="564" y="224" width="286" height="128" fill="ink"/>
+  <text id="verify-code" x="584" y="242" width="246" height="22" font="mono" size="12" color="chartreuse"><strong>03 · VERIFY</strong></text>
+  <text id="verify-value" x="584" y="272" width="246" height="36" font="display" size="28" color="paper" wrap="false"><strong>18 / 18 · 24 / 24</strong></text>
+  <text id="verify-copy" x="584" y="312" width="246" height="24" font="body" size="15" color="paper">Assertions + scenario replay</text>
+  <icon id="verify-arrow" name="arrow-right" x="852" y="271" width="24" height="24" color="persimmon"/>
+
+  <shape id="ship-card" type="rect" x="878" y="224" width="332" height="128" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="ship-code" x="898" y="242" width="292" height="22" font="mono" size="12" color="persimmon"><strong>04 · SHIP</strong></text>
+  <text id="ship-copy" x="898" y="274" width="292" height="62" font="body" size="17" color="ink"><p><strong>TypeScript + production build</strong></p><p>Promote only with evidence</p></text>
+
+  <shape id="iteration-card" type="rect" x="60" y="388" width="728" height="204" fill="ink"/>
+  <text id="iteration-label" x="84" y="408" width="330" height="22" font="mono" size="12" color="persimmon"><strong>ACTUAL FAILED → GREEN ITERATION</strong></text>
+  <shape id="failure-chip" type="rect" x="84" y="446" width="218" height="96" fill="#391E17" stroke="persimmon" stroke-width="1"/>
+  <text id="failure-state" x="100" y="460" width="186" height="22" font="mono" size="11" color="persimmon"><strong>RUN 01 · FAILED</strong></text>
+  <text id="failure-copy" x="100" y="489" width="186" height="40" font="body" size="15" color="paper">Duplicate pnpm version surfaced only in public CI.</text>
+  <icon id="recovery-arrow" name="arrow-right" x="322" y="476" width="34" height="34" color="chartreuse"/>
+  <shape id="success-chip" type="rect" x="376" y="446" width="376" height="96" fill="#26351F" stroke="chartreuse" stroke-width="1"/>
+  <text id="success-state" x="394" y="460" width="340" height="22" font="mono" size="11" color="chartreuse"><strong>CORRECTED · VERIFIED GREEN</strong></text>
+  <text id="success-copy" x="394" y="488" width="340" height="42" font="body" size="15" color="paper">One source of pnpm truth; locked install, tests, types, and build all passed.</text>
+  <text id="iteration-note" x="84" y="554" width="668" height="24" font="mono" size="10" color="#AEB9B3">Failure preserved → workflow fixed → green release evidence retained</text>
+
+  <shape id="contract-card" type="rect" x="816" y="388" width="394" height="204" fill="mist" stroke="hairline" stroke-width="1"/>
+  <text id="contract-label" x="838" y="408" width="350" height="22" font="mono" size="12" color="persimmon"><strong>RELEASE CONTRACT</strong></text>
+  <text id="contract-copy" x="838" y="444" width="350" height="92" font="body" size="17" color="ink"><p><strong>Block:</strong> test, type, or build failure.</p><p><strong>Preserve:</strong> reason, run, commit, and recovery.</p><p><strong>Keep visible:</strong> non-blocking bundle-size optimization.</p></text>
+  <text id="contract-status" x="838" y="552" width="350" height="24" font="mono" size="11" color="chartreuse"><strong>✓ GREEN RELEASE VERIFIED</strong></text>
+
+  <shape id="action-bar" type="rect" x="60" y="612" width="1150" height="42" fill="ink"/>
+  <text id="ci-link" x="84" y="625" width="410" height="18" font="mono" size="11" color="chartreuse" wrap="false"><a href="https://github.com/eangelica2014/riverbend-gastroenterology-scheduling/actions/workflows/ci.yml"><strong>OPEN GITHUB ACTIONS →</strong></a></text>
+  <text id="lab-link" x="816" y="625" width="370" height="18" font="mono" size="11" color="chartreuse" align="right" wrap="false"><a href="https://technical.eangelica.com/tests"><strong>RUN SCENARIO LAB →</strong></a></text>
+  <text id="page-number" x="60" y="680" width="300" height="18" font="mono" size="12" color="#6B7069" wrap="false">09 / VALIDATE + IMPROVE</text>
+  <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
+</slide>

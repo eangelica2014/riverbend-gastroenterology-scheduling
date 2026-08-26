@@ -13,5 +13,5 @@
   <shape id="agent-tab" type="rect" x="980" y="548" width="230" height="58" fill="paper"/>
   <text id="agent-link" x="996" y="560" width="198" height="34" font="mono" size="13" color="ink" align="center" anchor="middle"><a slide="live_agent"><strong>← RETURN TO AGENT</strong></a></text>
   <shape id="footer-rule" type="line" x="60" y="652" width="1150" height="0" stroke="#F7F5F044" stroke-width="1"/>
-  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">10 / PHASE DIVIDER</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#A8B5AF" wrap="false">11 / PHASE DIVIDER</text>
 </slide>

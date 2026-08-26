@@ -23,6 +23,6 @@
   <text id="emergency-evidence" x="672" y="524" width="500" height="32" font="mono" size="11" color="paper">911 INSTRUCTION · BEFORE PATIENT LOOKUP</text>
   <shape id="action-bar" type="rect" x="60" y="602" width="1150" height="38" fill="mist" stroke="hairline" stroke-width="1"/>
   <text id="action-links" x="82" y="609" width="1106" height="24" font="mono" size="12" color="persimmon" align="center"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/agent"><strong>OPEN LIVE AGENT →</strong></a>   ·   <a slide="live_agent"><strong>← BACK TO DEMO</strong></a></text>
-  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">19 / DEMO APPENDIX</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">20 / DEMO APPENDIX</text>
   <text id="case-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="thesis">← CASE HOME</a></text>
 </slide>

@@ -15,6 +15,6 @@
   <text id="tenant-list" x="689" y="296" width="497" height="226" font="body" size="20" color="ink" line-height="1.45"><p><strong>Required attributes + fallback</strong></p><p><strong>Thresholds · durations · pairings</strong></p><p><strong>Vendor adapter + permissions</strong></p><p><strong>Fixtures + expected local outcomes</strong></p><p><strong>Owners · thresholds · retention</strong></p></text>
   <shape id="local-band" type="rect" x="60" y="574" width="1150" height="66" fill="ink"/>
   <text id="local-band-text" x="84" y="589" width="1102" height="38" font="body" size="18" color="paper" anchor="middle"><strong color="chartreuse">RIVERBEND STAYS LOCAL:</strong> three-year threshold · provider pairings · Thursday exceptions · annual-physical status</text>
-  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">12 / GENERALIZATION</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">13 / GENERALIZATION</text>
   <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
 </slide>

@@ -91,3 +91,6 @@ The wordmark uses a custom editorial lockup: `RIVERBEND` in tightly tracked Plex
 - The persistent folio structure identifies the current mode and progress through the case study; full-page captures may omit fixed navigation chrome, but the live experience must retain it.
 - Rule ribbons, evidence stamps, and fine riverline connectors form the interface grammar. Important decisions should visibly connect source, rule, tool, test, and outcome wherever density permits.
 - **Signal Persimmon `#F05A28`** marks human attention or unresolved policy, **chartreuse** marks verified or test-passing evidence, and **red** appears only for true safety-critical stops or failing critical gates.
+- The agent workspace makes the **field-binder spine** explicit with a folio index, patient-mode marker, and progress rail; these are orientation devices rather than decoration.
+- Idle operational states still demonstrate the evidence system: known scope, unknown caller need, next safe step, locked prerequisites, and the armed provenance path remain visible before the first turn.
+- Transcript and loading feedback must explain state without implying verification: captured speech helps correction and orientation, while protected reads and scheduling authority remain gated by deterministic evidence.

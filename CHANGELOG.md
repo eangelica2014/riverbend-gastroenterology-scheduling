@@ -2,6 +2,20 @@
 
 All notable changes to Riverbend Gastroenterology Scheduling are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses semantic versioning.
 
+## [1.1.0] — 2026-08-26
+
+### Added
+
+The agent workspace now displays safe interim speech, the latest caller and Riverbend transcript, a seven-stage evidence-derived scheduling progress rail, short processing indicators that prevent duplicate submission, and explicit idle-state provenance. The interactive video script now contains a dedicated empathy-to-design demonstration, and the editable presentation now contains 22 slides with a new automated-testing and GitHub CI/CD release-evidence page.
+
+### Changed
+
+The Clinical Field Notebook identity now uses an explicit workspace folio, patient-mode index, known/unknown/next-safe-step note, and armed provenance path. The README, interaction map, slide numbering, speaker notes, and iteration log reflect the enhanced evaluator path.
+
+### Validation
+
+The deterministic suite remains **18/18**, all **24/24** scenario replays pass, TypeScript reports no errors, the production build succeeds, and desktop/mobile visual captures confirm the new transcript, progress, evidence, and fallback surfaces. The existing non-blocking main-bundle size warning remains visible.
+
 ## [1.0.0] — 2026-08-26
 
 ### Added
@@ -11,4 +25,3 @@ The initial open-source release includes the synthetic Riverbend voice/text agen
 ### Known Limitations
 
 The release is a static evaluator proof. It does not include production telephony, real patient data, EHR/PMS integration, production authentication or authorization, tenant isolation, PHI-grade observability, language coverage, or an autonomous learning system. The production build reports one non-blocking chunk-size optimization warning.
-

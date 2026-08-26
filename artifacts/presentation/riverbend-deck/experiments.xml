@@ -24,6 +24,6 @@
   <text id="exp4-scale" x="682" y="528" width="460" height="28" font="mono" size="12" color="ink">SCALE: ZERO PLANTED CRITICAL MISSES</text>
   <shape id="portfolio-link-bar" type="rect" x="100" y="596" width="1080" height="42" fill="chartreuse"/>
   <text id="portfolio-link" x="122" y="604" width="1036" height="26" font="mono" size="13" color="ink" align="center"><a href="https://3000-i1zgb726tot7hga3cqchb-8cf4c938.us2.manus.computer/experiments"><strong>OPEN SMALLEST TEST · METRIC CONTRACT · STOP RULE →</strong></a></text>
-  <text id="page-number" x="60" y="680" width="210" height="18" font="mono" size="12" color="#6B7069" wrap="false">14 / EXPERIMENTS</text>
+  <text id="page-number" x="60" y="680" width="210" height="18" font="mono" size="12" color="#6B7069" wrap="false">15 / EXPERIMENTS</text>
   <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
 </slide>

@@ -21,6 +21,6 @@
   <text id="repo-evidence" x="665" y="504" width="545" height="60" font="body" size="16" color="ink"><p><span font="mono" size="12" color="chartreuse">[08]</span> <strong>Riverbend repository evidence</strong></p><p font="mono" size="11" color="#56625D">POLICY · FIXTURES · TESTS · ITERATION · PRD · DECK</p></text>
   <shape id="supplied-band" type="rect" x="60" y="588" width="1150" height="52" fill="ink"/>
   <text id="supplied-text" x="84" y="599" width="1102" height="30" font="mono" size="12" color="paper" align="center"><strong>PRIMARY SUPPLIED EVIDENCE:</strong> TAKE-HOME · RIVERBEND RULES · CANDIDATE RÉSUMÉ · TESTED REPOSITORY ARTIFACTS</text>
-  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">20 / SOURCES</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">21 / SOURCES</text>
   <text id="source-links" x="920" y="680" width="290" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="cover">← COVER</a>   ·   <a slide="dual_method">METHOD HOME</a></text>
 </slide>

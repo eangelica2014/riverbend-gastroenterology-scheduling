@@ -37,6 +37,6 @@
   <shape id="arrow-6" type="line" x="510" y="617" width="250" height="0" stroke="persimmon" stroke-width="3" arrow-end="arrow"/>
   <shape id="response-6" type="rect" x="770" y="590" width="440" height="54" fill="chartreuse"/>
   <text id="response-6-text" x="790" y="603" width="400" height="30" font="body" size="18" color="ink"><strong>Approval · canary · rollback</strong></text>
-  <text id="page-number" x="60" y="680" width="240" height="18" font="mono" size="12" color="#6B7069" wrap="false">09 / LEARNING → LEVERAGE</text>
+  <text id="page-number" x="60" y="680" width="240" height="18" font="mono" size="12" color="#6B7069" wrap="false">10 / LEARNING → LEVERAGE</text>
   <text id="platform-link" x="980" y="680" width="230" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="fieldflow">FIELDFlow →</a></text>
 </slide>

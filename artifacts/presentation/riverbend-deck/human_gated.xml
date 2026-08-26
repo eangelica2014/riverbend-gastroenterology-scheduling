@@ -27,6 +27,6 @@
   <shape id="approval-out" type="line" x="530" y="401" width="-70" height="64" stroke="chartreuse" stroke-width="3" arrow-end="arrow"/>
   <shape id="decision-band" type="rect" x="100" y="582" width="1020" height="56" fill="mist" stroke="hairline" stroke-width="1"/>
   <text id="decision-text" x="122" y="594" width="976" height="32" font="body" size="18" color="ink" align="center"><strong>Allowed:</strong> evidence → draft → review.   <strong color="persimmon">Forbidden:</strong> runtime policy drift.</text>
-  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">13 / GOVERNED LEARNING</text>
+  <text id="page-number" x="60" y="680" width="220" height="18" font="mono" size="12" color="#6B7069" wrap="false">14 / GOVERNED LEARNING</text>
   <text id="method-link" x="1000" y="680" width="210" height="18" font="mono" size="12" color="persimmon" align="right" wrap="false"><a slide="dual_method">METHOD HOME →</a></text>
 </slide>

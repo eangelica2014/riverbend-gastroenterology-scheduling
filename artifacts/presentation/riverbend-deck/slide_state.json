@@ -2,8 +2,8 @@
   "project_info": {
     "title": "Riverbend Gastroenterology Scheduling",
     "created": 1787742835.087,
-    "last_updated": 1787743460.811,
-    "total_slides": 21
+    "last_updated": 1787757430.545,
+    "total_slides": 22
   },
   "slides": [
     {
@@ -52,64 +52,69 @@
       "pageNum": 9
     },
     {
-      "id": "phase1_to_platform",
+      "id": "ci_pipeline",
       "state": "edited",
       "pageNum": 10
     },
     {
-      "id": "phase2_divider",
+      "id": "phase1_to_platform",
       "state": "edited",
       "pageNum": 11
     },
     {
-      "id": "fieldflow",
+      "id": "phase2_divider",
       "state": "edited",
       "pageNum": 12
     },
     {
-      "id": "generalization",
+      "id": "fieldflow",
       "state": "edited",
       "pageNum": 13
     },
     {
-      "id": "human_gated",
+      "id": "generalization",
       "state": "edited",
       "pageNum": 14
     },
     {
-      "id": "experiments",
+      "id": "human_gated",
       "state": "edited",
       "pageNum": 15
     },
     {
-      "id": "roadmap",
+      "id": "experiments",
       "state": "edited",
       "pageNum": 16
     },
     {
-      "id": "metrics",
+      "id": "roadmap",
       "state": "edited",
       "pageNum": 17
     },
     {
-      "id": "candidate_fit",
+      "id": "metrics",
       "state": "edited",
       "pageNum": 18
     },
     {
-      "id": "close",
+      "id": "candidate_fit",
       "state": "edited",
       "pageNum": 19
     },
     {
-      "id": "demo_menu",
+      "id": "close",
       "state": "edited",
       "pageNum": 20
     },
     {
-      "id": "sources",
+      "id": "demo_menu",
       "state": "edited",
       "pageNum": 21
+    },
+    {
+      "id": "sources",
+      "state": "edited",
+      "pageNum": 22
     }
   ],
   "outline": [
@@ -166,6 +171,12 @@
       "title": "A believable sentence is not enough",
       "summary": "Present actual automated, scenario, type-check, build, and evidence-contract results.",
       "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "ci_pipeline",
+      "title": "Every change earns a green release",
+      "summary": "Show the GitHub Actions trigger-to-release pipeline, deterministic test and scenario evidence, the actual failed-to-green iteration, and live links to CI and the scenario lab.",
+      "image_plan": "No external image is needed; use an editable native pipeline, evidence stamps, and an actual failure-to-green release record in the deck’s Clinical Field Notebook visual language."
     },
     {
       "id": "phase1_to_platform",

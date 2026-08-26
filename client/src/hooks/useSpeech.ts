@@ -33,31 +33,52 @@ declare global {
 
 export function useSpeech() {
   const [listening, setListening] = useState(false);
+  const [interimTranscript, setInterimTranscript] = useState("");
   const [error, setError] = useState<string | null>(null);
   const recognitionRef = useRef<RecognitionLike | null>(null);
-  const Recognition = typeof window !== "undefined" ? window.SpeechRecognition || window.webkitSpeechRecognition : undefined;
+  const Recognition =
+    typeof window !== "undefined"
+      ? window.SpeechRecognition || window.webkitSpeechRecognition
+      : undefined;
 
   useEffect(() => () => recognitionRef.current?.stop(), []);
 
   const listen = (onFinal: (text: string) => void) => {
     if (!Recognition || listening) return;
     setError(null);
+    setInterimTranscript("");
     const recognition = new Recognition();
     recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.interimResults = true;
     recognition.lang = "en-US";
-    recognition.onresult = (event) => {
-      const transcript = Array.from(event.results)
-        .map((result) => result[0]?.transcript || "")
-        .join(" ")
-        .trim();
-      if (transcript) onFinal(transcript);
+    recognition.onresult = event => {
+      let interim = "";
+      let final = "";
+      Array.from(event.results).forEach(result => {
+        const text = result[0]?.transcript || "";
+        if (result.isFinal) final += `${text} `;
+        else interim += `${text} `;
+      });
+      setInterimTranscript(interim.trim());
+      const completed = final.trim();
+      if (completed) {
+        setInterimTranscript("");
+        onFinal(completed);
+      }
     };
-    recognition.onerror = (event) => {
-      setError(event.error === "not-allowed" ? "Microphone permission was not granted. Use text or a scripted scenario." : `Voice input stopped: ${event.error}.`);
+    recognition.onerror = event => {
+      setError(
+        event.error === "not-allowed"
+          ? "Microphone permission was not granted. Use text or a scripted scenario."
+          : `Voice input stopped: ${event.error}.`
+      );
       setListening(false);
+      setInterimTranscript("");
     };
-    recognition.onend = () => setListening(false);
+    recognition.onend = () => {
+      setListening(false);
+      setInterimTranscript("");
+    };
     recognitionRef.current = recognition;
     setListening(true);
     recognition.start();
@@ -77,12 +98,13 @@ export function useSpeech() {
 
   return {
     inputSupported: Boolean(Recognition),
-    outputSupported: typeof window !== "undefined" && "speechSynthesis" in window,
+    outputSupported:
+      typeof window !== "undefined" && "speechSynthesis" in window,
     listening,
+    interimTranscript,
     error,
     listen,
     stop,
     speak,
   };
 }
-
